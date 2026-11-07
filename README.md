@@ -1,6 +1,6 @@
 # 8002 Pro for Android
 
-[Download 2.8.26 (build 71) · Beta](https://github.com/salmanbashir80/8002-Pro-Releases/releases/tag/v2.8.26-beta.71)
+### 📲 [Download Latest 8002 Pro APK (Releases)](https://github.com/salmanbashir80/8002-Pro-Releases/releases)
 
 This is the official APK-only download/update channel. Source code and signing history remain private. Installing the app does not require source access or an invitation.
 
