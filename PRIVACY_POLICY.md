@@ -1,59 +1,44 @@
-# Privacy Policy & Security Declaration — 8002 CleanUp Pro
+# 8002 CleanUp Pro — Privacy Policy
 
-**Effective Date:** November 7, 2026  
-**Developer:** Salman Bashir (`salmanbashir80`)  
-**Package Name:** `com.salmanbashir.cleanup8002`  
-**Application Name:** 8002 CleanUp Pro
+**Effective date:** November 8, 2026  
+**App:** 8002 CleanUp Pro (`com.salmanbashir.cleanup8002`)  
+**Developer:** Salman Bashir
 
----
+This policy describes permissions and data flows in the current Android beta application. Some functions run entirely on the device; others contact external services or user-selected servers. **Using a VPN, browser, downloader, weather service, or update checker involves network traffic**. This policy is a disclosure, not a certificate of Google Play Protect approval.
 
-## 1. Overview & Commitment to User Privacy
+## 1. Device permissions and local processing
 
-**8002 CleanUp Pro** is designed with a strict **Privacy-First and Offline-First** philosophy. We believe that utilities, system clean-up tools, file managers, and calculation worksheets should serve the user without tracking, logging, or harvesting user data. 
+- **Files and media:** Storage analysis, media scanning, OCR, cleanup, downloads, file exploration, and private media functions use file/media access. Device file metadata and selected content may be processed locally. Sharing, FTP, cloud-picker, or download features can transfer files to or from destinations deliberately selected by the user. Review each operation before deleting or sharing data.
+- **Installed apps and usage:** App Manager, App Locker, Shield, and Boost may use package visibility, app-usage access, and optional Shizuku authorization to identify apps or carry out user-requested operations. The app cannot override Android security restrictions without platform authorization.
+- **Accessibility:** The optional App Locker accessibility service responds to window-state and notification-state events to identify transitions into protected apps. The service declares `canRetrieveWindowContent="false"`; accessibility does not grant the app permission to read typed text or chat contents. Disable the service in Android Accessibility settings when not needed.
+- **Location:** If location access is granted, location-dependent utilities may use it; external weather or other network lookups can involve location-derived queries. Permission can be revoked in Android Settings.
+- **Camera and OCR:** Camera access is used for user-initiated scanning, including on-device OCR. Files or results shared through other features may leave the device only when those functions are used.
+- **Other system permissions:** Notifications, network state, background/foreground services, VPN, and installation permissions support the app's optional features. Android controls access to these capabilities.
 
-8002 CleanUp Pro does **not** sell, rent, monetize, or transmit any user information to third-party advertisers, data brokers, or external analytics servers.
+## 2. Internet connections and third parties
 
----
+The app can contact outside hosts for requested features. Depending on the feature, destination servers can observe your public IP address, request timing, and data sent to them under their own policies.
 
-## 2. Permitted Capabilities & Usage Declarations
+- **Updates:** GitHub's public release API and GitHub-hosted download infrastructure are contacted to check or download updates.
+- **Full VPN:** The optional WireGuard feature connects to a VPN gateway whose configuration is imported by the user. **Traffic routed over that tunnel reaches the chosen gateway; it is not exclusively processed on-device.** The gateway operator may be able to observe connection metadata or unencrypted traffic. The app also performs exit-IP/country checks using `api4.ipify.org` and `ipapi.co` and a DNS connectivity check. The app does not bundle free VPN server credentials.
+- **Local VPN / DNS protection:** Local DNS filtering and per-app firewall operation are distinct from the Full VPN mode. DNS queries or network traffic may still reach upstream resolvers and destination services; a local filter is not a guarantee of anonymity.
+- **Browser, downloader, weather, currency, diagnostics:** User-entered sites, media servers, and external information/diagnostic providers can receive requests and their associated network information. Browser pages and linked services have their own privacy practices.
+- **Local sharing:** FTP/FTPS and LAN file sharing transfer user-selected information to destinations on the relevant network. Review the network and recipient before enabling them.
 
-### A. Storage Access (`MANAGE_EXTERNAL_STORAGE`, `READ_MEDIA_*`)
-- **Purpose**: Used strictly for user-initiated device storage analysis, temporary cache cleanup, large file inspection, WhatsApp media categorization, and EX Downloader file saving.
-- **Data Handling**: File inspection occurs entirely on-device. No filenames, media, photos, or documents are ever uploaded to remote servers.
+The Android network security configuration blocks cleartext HTTP by default and defines limited exceptions for specified loopback/local-router hosts. This is **not** a blanket guarantee that all external providers, websites, or end-to-end VPN traffic are private or encrypted at every hop.
 
-### B. Network & Diagnostics (`INTERNET`, `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`)
-- **Purpose**: Used for:
-  1. Ping, DNS latency, and internet speed test diagnostics requested by the user.
-  2. Currency exchange rate updates.
-  3. EX Downloader streaming from user-entered URLs.
-  4. Local network subnet discovery (identifying devices on the user's private Wi-Fi).
-- **Security**: All external communications default to encrypted HTTPS via `network_security_config`. Cleartext traffic is prohibited except for user-requested LAN router admin diagnostics (`192.168.x.x`).
+## 3. Data stored on the device
 
-### C. Local VPN Service (`BIND_VPN_SERVICE`)
-- **Purpose**: Used solely to provide on-device DNS filtering and an app-specific firewall.
-- **Data Handling**: All filtering happens locally on the Android device via a virtual loopback interface. User network packets are **never** proxied, inspected, or recorded on remote servers.
+Application settings, protected-app selections, local histories, download records, and credentials or imported VPN configurations may be stored on the device for the corresponding feature. Security-sensitive settings should use Android-backed protected storage where implemented. Uninstalling the app or clearing its data removes app-managed local data subject to Android storage behavior, but does not recall files already exported, downloaded, backed up, or sent to third parties.
 
-### D. App Protection & Privacy Gate (`BIND_ACCESSIBILITY_SERVICE`)
-- **Purpose**: Used optionally and strictly for the **App Locker** feature to detect when a user-selected protected application (such as WhatsApp or Gallery) is launched, displaying the local PIN / Biometric verification prompt.
-- **Safety**: Window contents are explicitly **not readable** (`android:canRetrieveWindowContent="false"`). Keystrokes, text inputs, and on-screen content are never recorded, transmitted, or monitored.
+This policy does not assert that no network requests, diagnostics, or third-party data processing ever occur. External service operators control their own retention, logging, and privacy practices.
 
-### E. Camera & OCR (`CAMERA`)
-- **Purpose**: Used on-demand for Document Studio scanner and offline Tesseract OCR text recognition. Camera streams are processed in memory and never transmitted externally.
+## 4. Your choices
 
----
+You can decline optional permissions, switch off App Locker accessibility access, disconnect VPN modes, remove imported VPN endpoints, stop local sharing, or uninstall the app. Some utility features will not operate without the relevant permission. For Android installations from GitHub, keep Play Protect enabled and independently assess security warnings.
 
-## 3. Play Protect & Safety Compliance
+## 5. Contact and updates
 
-8002 CleanUp Pro adheres to Google Play Protect Device and Network Abuse policies:
-- **No Stalkerware / Spyware**: The application does not monitor user location in the background, does not access contacts, and does not monitor private calls or text messages.
-- **No Unauthorized Modifications**: The application does not download executable binary code or bypass Android sandbox security.
-- **User Control & Transparency**: All cleanup, locking, and diagnostic operations require explicit user interaction and can be paused or uninstalled at any time through standard Android settings.
+For app information or to report a privacy/security issue, use the developer's [GitHub profile](https://github.com/salmanbashir80) and the [official release repository](https://github.com/salmanbashir80/8002-Pro-Releases). The source repository is private; its URL is not a public support channel.
 
----
-
-## 4. Developer Contact & Verification
-
-For security audits, Play Protect verification inquiries, or vulnerability reports:
-- **GitHub Repository**: [salmanbashir80/8002CleanUp-Android-source](https://github.com/salmanbashir80/8002CleanUp-Android-source)
-- **Releases Portal**: [salmanbashir80/8002-Pro-Releases](https://github.com/salmanbashir80/8002-Pro-Releases)
-- **Email Contact**: `salmanbashir80@users.noreply.github.com`
+This policy may be updated as features and network integrations change. The effective date above identifies the current version.
