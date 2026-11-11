@@ -1,0 +1,11 @@
+{
+  "version": "2.8.97",
+  "build": 146,
+  "package": "com.salmanbashir.cleanup8002",
+  "bytes": 63371337,
+  "sha256": "0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da",
+  "aabBytes": 33855861,
+  "aabSha256": "9e53f55c6932b4a8043d5e823df8e080742f808f6062de2c086ac960e27c44b5",
+  "signerSha256": "92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706",
+  "source": "6e1859dbde4f72e2c041723b100627304b7989f4"
+}
