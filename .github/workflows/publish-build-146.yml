@@ -1,0 +1,63 @@
+name: Publish verified 8002 build 146
+on:
+  push:
+    branches: [release-staging/v2.8.97-beta.146]
+    paths: [.github/workflows/publish-build-146.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: github.repository == 'salmanbashir80/8002-Pro-Releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact signed build and publish beta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        working-directory: release-assets
+        shell: python
+        run: |
+          import pathlib,subprocess,json,hashlib
+          repo='salmanbashir80/8002-Pro-Releases'
+          tag='v2.8.97-beta.146'
+          title='8002 CleanUp Pro v2.8.97 (Build 146) - Premium Home & Search'
+          meta=json.loads(pathlib.Path('build-info.json').read_text())
+          assert meta['version']=='2.8.97' and meta['build']==146
+          assert meta['source']=='6e1859dbde4f72e2c041723b100627304b7989f4'
+          assert meta['package']=='com.salmanbashir.cleanup8002'
+          assert meta['signerSha256']=='92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706'
+          assert meta['sha256']=='0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da'
+          assert meta['aabSha256']=='9e53f55c6932b4a8043d5e823df8e080742f808f6062de2c086ac960e27c44b5'
+          subprocess.run(['sha256sum','--check','SHA256SUMS.txt'],check=True)
+          files=['8002CleanUp-Pro.apk','8002CleanUp-Pro.aab','8002CleanUp-Pro-v2.8.97-beta.146.apk','8002CleanUp-Pro-v2.8.97-beta.146.aab','build-info.json','SHA256SUMS.txt']
+          def gh(*args):
+              return subprocess.check_output(['gh',*args],text=True).strip()
+          def api(route):
+              return json.loads(gh('api',route))
+          def release():
+              matches=[r for r in api('repos/'+repo+'/releases?per_page=100') if r['tag_name']==tag]
+              assert len(matches)<=1
+              return matches[0] if matches else None
+          r=release()
+          if r is None:
+              target=api('repos/'+repo+'/git/ref/heads/main')['object']['sha']
+              gh('release','create',tag,'--repo',repo,'--target',target,'--draft','--prerelease','--latest=false','--title',title,'--notes-file','release-notes-146.md')
+              r=release()
+          assert r['name']==title and meta['source'] in r['body']
+          for name in files:
+              p=pathlib.Path(name)
+              digest='sha256:'+hashlib.sha256(p.read_bytes()).hexdigest()
+              asset=next((a for a in r['assets'] if a['name']==name),None)
+              if asset is None:
+                  assert r['draft'],'Do not change a published release'
+                  gh('release','upload',tag,name,'--repo',repo)
+                  r=release()
+                  asset=next(a for a in r['assets'] if a['name']==name)
+              assert asset['state']=='uploaded' and asset['size']==p.stat().st_size and asset.get('digest')==digest
+          if r['draft']:
+              gh('release','edit',tag,'--repo',repo,'--draft=false','--prerelease','--latest=false')
+          r=release()
+          assert not r['draft'] and r['prerelease']
+          print('VERIFIED_BETA_PUBLISHED',r['html_url'])
