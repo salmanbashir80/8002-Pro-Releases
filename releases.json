@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.99-beta.148",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.99 (Build 148) - Reliable Updates, Connected Shield & Manual Boost",
+    "body": "Reliable public updates and refreshed daily controls.\n\n- Fix GitHub API403 update checks: use public static metadata first, with an independent API alternate. Native downloads use the same metadata fallback and retain exact-tag, SHA-256, size/package and downgrade checks. No device/account token is embedded.\n- Restore the animated connected Shield indicator, driven by actual DNS protection state and respecting reduced-motion preferences.\n- Boost only starts after a user click. A completed nonempty scan posts the measured junk size/file count; tapping the notification opens Boost for review. No scheduled scans or automatic deletion. Notification settings are available from the bell.\n- Verified active paid licenses hide the Home upgrade card. Header Launcher/crown pills are replaced with a modern workspace identity and settings action. Options menu offers Set as default Home and Open launcher.\n- Preserve all100 catalog tools, display zoom, existing package and signing identity.\n\nExisting2.8.97/2.8.98 installations need one manual install-over to receive the403 repair. Do not uninstall the app. Include beta builds to receive this prerelease. Android confirms Home-role selection and package updates.\n\nValidation:213 Node tests,79 Android JVM tests,6 feed-publisher tests and15 API30 metadata/notification/archive instrumentation tests passed. Browser checks cover actual403 recovery, beta preference, trusted download links, active paid vs trial promotion, no auto-start/manual Boost actions, connected animation/reduced motion, both themes and all100 Home tile frames. The prior build147 to148 upgrade retained a sentinel file. Physical-device and live external WireGuard acceptance were not performed. GitHub Actions billing prevents hosted runs, so artifacts were built and verified locally and the public feed is explicitly refreshed after publishing.\n\nSource commit: 46b6e2b01b372a0a80316bf3a0bbc06a86df7245\nAPK SHA-256: 1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55\nAAB SHA-256: da47d30205676088e057e2ca6c513d0d0f7666dfa1a456b74e8651a7710315d8\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
+    "published_at": "2026-11-12T03:07:36Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.99-beta.148.apk",
+        "state": "uploaded",
+        "size": 63391827,
+        "digest": "sha256:1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.99-beta.148/8002CleanUp-Pro-v2.8.99-beta.148.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63391827,
+        "digest": "sha256:1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.99-beta.148/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.98-beta.147",
     "draft": false,
     "prerelease": true,
@@ -552,23 +576,6 @@
         "size": 62958286,
         "digest": "sha256:68c3cd95926dcd90dd5bcc2f61f93f8fae503f99cd6cb86b5b064a13751053b0",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.65-beta.114/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.64-beta.113",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.64 (Build 113) - Enhanced EX Downloader Pro & Secret Vault",
-    "body": "# 8002 CleanUp Pro v2.8.64 (Build 113) - Release Notes\n\n### Highlights & Enhancements\n\n- **Enhanced EX Downloader Pro (Universal Video & Audio Downloader)**:\n  - **YouTube & YouTube Shorts Fix**:\n    - Replaced single-point failure endpoint with high-reliability Multi-Tier stream resolution architecture:\n      - **Tier 1: YouTube InnerTube Android VR Client**: Resolves progressive muxed MP4 stream directly from YouTube's playback infrastructure.\n      - **Tier 2: Invidious Stream Resolver**: Direct progressive video format fallback.\n      - **Tier 3: Piped Instance**: Demuxed MP4 stream fallback.\n      - **Tier 4: Web Download Assistant**: Direct browser helper with 1-tap download if anti-bot challenges occur.\n    - **Corrupt File Protection**: Strict rejection of `text/html` responses ensures corrupt 62KB error pages can never be saved as `.mp4` video files.\n  - **Comprehensive Multi-Format Support**:\n    - High-speed downloading for MP4, WebM, MKV, 3GP, AVI, MOV, FLV, TS, and MP3/M4A audio.\n    - Full support for YouTube, YouTube Shorts, X (Twitter), Facebook & Reels, Instagram, TikTok, and direct file URLs.\n  - **Save to Local Storage & Phone Gallery (\"vudoe ku local drove ma save kr\")**:\n    - Dedicated \"Save to Gallery\" button on completed downloads.\n    - Copies/saves file directly to `/storage/emulated/0/Download/8002CleanUp/` and triggers native `MediaScannerConnection` so the video appears in the phone Gallery immediately.\n  - **Dedicated 1-Tap Share Button (\"shar eka button do\")**:\n    - One-tap system share sheet button on every completed video.\n    - Instant sharing to WhatsApp, Telegram, Gmail, and Bluetooth using secure Android `FileProvider`.\n\n- **Brand New \"🔒 Secret Encrypted Vault\" (\"private folder b do jis ku applock sy lock b kr sakon\")**:\n  - **AppLock Protected**: Secured with 8002 AppLocker PIN, custom passcode, or Biometrics (Fingerprint).\n  - **Hidden & Encrypted Storage**:\n    - Files are stored in protected app storage (`files/downloader_vault/`) with `.nomedia`.\n    - Bytes are encrypted with AES/XOR keystream so external media players and phone Gallery cannot see or access them.\n  - **Target Storage Selector**:\n    - Choose download destination before downloading: `Local Drive & Gallery 🌐` vs `🔒 Secret Vault (Encrypted & Hidden)`.\n  - **Move to Vault**: 1-tap button on any public download to encrypt and hide it into the Secret Vault, instantly removing it from the phone Gallery.\n  - **Export from Vault**: Move and decrypt videos back out of the Secret Vault to public storage/Gallery with 1 tap.\n  - **Vault Playback & Share**: Secure in-app playback and direct sharing right from inside the Secret Vault.\n\n### Continuity & Integrity\n- **111 automated tests passed** (including format verification and URL extractors).\n- **Signed with continuous Option A key** (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`) for seamless in-app upgrade without uninstallation.\n- **Both APK and AAB verified with zero integrity errors**.\n",
-    "published_at": "2026-11-08T17:16:04Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62946873,
-        "digest": "sha256:7596be8f0942b003a3c898eea5dfa8cb610248252015e287bff934b787b3f9ec",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.64-beta.113/8002CleanUp-Pro.apk"
       }
     ]
   }
