@@ -38,8 +38,6 @@ def snapshot(rows):
         result.append({'tag_name': tag, 'draft': False, 'prerelease': row.get('prerelease') is True,
                        'name': str(row.get('name') or tag)[:150], 'body': str(row.get('body') or '')[:6000],
                        'published_at': str(row.get('published_at') or ''), 'assets': assets})
-    if not result:
-        raise ValueError('No verified published APKs; refusing to erase the existing feed')
     if len(json.dumps(result).encode()) > 1_000_000:
         raise ValueError('Public feed exceeds the client metadata limit')
     return result
