@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.100-beta.150",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.100 (Build 150)",
+    "body": "# 8002 CleanUp Pro v2.8.100 (Build 150)\n\n### 🧹 1Tap Cleaner Pro Full-Screen Framing & Real Cache Sweeper\n- **Full-Screen Viewport Un-occluded**: When 1Tap Cleaner Pro is active, outer home navigation and bottom navigation bar (`.bottom-nav`) are cleanly hidden, revealing the centered floating green broom FAB button (`z-index: 35`) and the bottom storage bar (`Total: 256 GB | Avail: ...`) with proper `safe-area-inset-bottom` padding.\n- **Top Bar Exit Controls**: Added `[←]` back button adjacent to the hamburger drawer toggle, allowing instant navigation back to Tools Hub or Home. Added `[🔄]` one-tap storage re-scan button.\n- **Real Cleaning Reflection**: Purged accessible system cache directories, download trash, thumbnails, and orphaned caches. On sweep, caches dynamically drop to `0 B` with a green `✓ Cleaned` badge, live free storage counter increments, and cleaned state is persisted in `localStorage`.\n- **System Storage & Per-App Cache Direct Access**: Added \"Open Android System Storage Manager\" (`Settings.ACTION_INTERNAL_STORAGE_SETTINGS`) intent button to access kernel storage manager with one click.\n\n### 💬 WhatsApp Recover & Status Pro\n- **Status Contact Names & User Attribution**: Status items now prominently display the contact/username with circular avatar initials, timestamp, and one-click chat / download actions.\n- **Direct WhatsApp Message**: Send WhatsApp messages directly to any number with country code picker, dual SIM / sender account toggle (Personal SIM 1 vs Business SIM 2), and quick pre-filled message templates.\n\n### 🚀 Combined Release\n- Full integration of Premium 4-column Home launcher, Display zoom settings, and compact Shield/Boost updates.\n- **Build**: 150\n- **Version**: 2.8.100\n- **Signing Fingerprint (SHA-256)**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-12T04:01:07Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.100-beta.150.apk",
+        "state": "uploaded",
+        "size": 63392653,
+        "digest": "sha256:1ff9e8a37e1d48f692cbd7193a02492e372676f733d52895a453ec8ec1cda25f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.100-beta.150/8002CleanUp-Pro-v2.8.100-beta.150.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63392653,
+        "digest": "sha256:1ff9e8a37e1d48f692cbd7193a02492e372676f733d52895a453ec8ec1cda25f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.100-beta.150/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.99-beta.148",
     "draft": false,
     "prerelease": true,
@@ -559,23 +583,6 @@
         "size": 62965139,
         "digest": "sha256:654251e72defbb5540515ba0f29b2cba0a19fcf77848c8f5ccc53e164d935726",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.66-beta.115/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.65-beta.114",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.65 (Build 114) - Video Transcript Extractor Studio & AI",
-    "body": "# 8002 CleanUp Pro v2.8.65 (Build 114) - Release Notes\n\n### Highlights & Enhancements\n\n- **Universal Transcript Studio (\"Transcript Extractor Pro\")**:\n  - **Multi-Platform Support**:\n    - **YouTube & YouTube Shorts**: Extracts complete closed captions, automatic speech recognition (ASR), and multilingual subtitle tracks with high accuracy.\n    - **TikTok**: Extracts video subtitles, descriptions, and speech metadata via clean API integration.\n    - **Direct Subtitle Files**: Supports loading and inspecting `.srt` and `.vtt` subtitle files directly.\n  - **Three Interactive View Modes**:\n    - **⏱️ Timestamps View**: Real-time timestamped cue list (`[00:14] ...`) with 1-tap copy of individual sentences.\n    - **📄 Plain Text View**: Continuous, readable paragraph format for effortless reading, study, or notes.\n    - **🧠 AI Summary View**: Executive overview, key highlight bullet points, and notable timestamps generated via built-in AI (Google Gemini / OpenAI or offline high-density extractive summary).\n  - **Multi-Language Caption Tracks**:\n    - Instant language switching between English, Urdu, Hindi, Arabic, Spanish, and auto-generated tracks when available.\n  - **Real-Time In-Transcript Search**:\n    - Real-time search filter with match counter to pinpoint exact keywords and dialogue moments instantly.\n  - **Export & Sharing Tools**:\n    - **1-Tap Copy**: Copies plain text or timestamped transcript to device clipboard.\n    - **Download as .SRT**: Generates and saves SubRip subtitle file (`.srt`) to device downloads.\n    - **Download as .TXT**: Exports clean text transcript file.\n    - **1-Tap Share**: Direct sharing to WhatsApp, Telegram, Gmail, or system share sheet.\n\n- **Seamless EX Downloader Pro Integration**:\n  - Added dedicated **\"Extract Transcript\"** action button in EX Downloader Pro when resolving links.\n  - Added **\"Transcript\"** action on completed download items to extract captions with one tap without re-pasting URLs.\n\n### Continuity & Integrity\n- **119 automated tests passed** (including VTT/SRT parsing, XML timedtext, timestamp formatting, and AI summarization).\n- **Signed with continuous Option A key** (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`) for seamless upgrade continuity without re-installing.\n- **Both APK and AAB verified with zero integrity errors**.\n",
-    "published_at": "2026-11-08T17:40:17Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62958286,
-        "digest": "sha256:68c3cd95926dcd90dd5bcc2f61f93f8fae503f99cd6cb86b5b064a13751053b0",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.65-beta.114/8002CleanUp-Pro.apk"
       }
     ]
   }
