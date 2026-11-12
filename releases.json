@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.104-beta.154",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.104 (Build 154)",
+    "body": "# 8002 CleanUp Pro v2.8.104 (Build 154) Release Notes\n\n### 🎯 Framing & Layout Fixes (Google Files Material UI/UX)\n- **Eliminated Header Conflict**: Fixed double header where the workspace app header was rendering directly above the Google Files search bar pill.\n- **Full Screen Utility Mode**: Added `file-manager` to full-screen mode alongside `calculator` and `cleaner`, hiding redundant top headers and bottom navigation tabs for an immersive, edge-to-edge native Google Files experience.\n- **CSS Class Alignment**:\n  - Restored horizontal scrolling carousel for Recent files (`.gf-carousel-wrap` with `.gf-recent-card`) eliminating unwanted vertical stacking.\n  - Aligned Google Files search bar with pill radius, hamburger menu, and search icon.\n  - Aligned 2x3 Categories grid (`.gf-cards-grid` and `.gf-card-pill`) for Downloads, Images, Videos, Audio, Documents, and Apps.\n  - Aligned Collections and Storage sections with proper icon boxes and metadata typography.\n- **Bottom Floating Action Button (FAB)**: Properly centered green Floating Clean Button (`.gf-fab-button`) above system safe area.\n- **Slide-out Navigation Drawer**: Added \"Back to 8002 Tools\" quick-return button and integrated Android native back gesture handling with `useUtilityBack`.\n",
+    "published_at": "2026-11-12T10:52:24Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.104-beta.154.apk",
+        "state": "uploaded",
+        "size": 63408716,
+        "digest": "sha256:46f8c0c046e1d7c42752f375753ca30fc155b827c21ca587c6927e90533f8d8f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.104-beta.154/8002CleanUp-Pro-v2.8.104-beta.154.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63408716,
+        "digest": "sha256:46f8c0c046e1d7c42752f375753ca30fc155b827c21ca587c6927e90533f8d8f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.104-beta.154/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.103-beta.153",
     "draft": false,
     "prerelease": false,
@@ -587,23 +611,6 @@
         "size": 62985036,
         "digest": "sha256:dd4f95537d4ee43e13903ba5e0597a53b4c598618ce9c4953f39ba6d9b0b3cc4",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.70-beta.119/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.69-beta.118",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.69 (Build 118) - Live Weather, Real-Time Clock & World Clock Pro",
-    "body": "# 8002 CleanUp Pro v2.8.69 (Build 118) - Clean Home, Live Real-Time Weather, Live Date/Time & World Clock Pro\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🧹 Home Screen Clutter Removal (\"Quick Tools\" & \"Edit\" Hata Diya Gaya)\n- **Saaf aur Modern Home Screen**:\n  - Home screen say \"Quick Tools\" ka header, \"Edit\" button, aur hint text (`💡 Kisi bhi tool tile par long click...`) mukammal tor par hata diya gaya hay.\n  - UI ab intehayi clean, spacious aur uncluttered nazar aati hay.\n  - Long-press favorite feature pehlay ki tarah 100% active hay—aap kisi bhi tool par long-press kar kay usay ooper pin ya unpin kar saktay hain.\n\n### 2. ☀️ Truly Live Real-Time Weather Widget\n- **Dynamic Open-Meteo Integration**:\n  - Pehlay weather widget static tha (`28° Sunny, Lahore, PK`). Ab yeh Open-Meteo real-time weather API say live data fetch karta hay aur dynamic caching (`8002-weather-pro-cache-v2`) kay zarye foran load hota hay.\n  - Live temperature, condition (Clear, Sunny, Partly Cloudy, Overcast, Rain, Snow waghera), dynamic sun / moon day & night indicators, aur dynamic location display hoti hay.\n  - Widget par tap karnay say mukammal 7-day forecast aur detailed Weather Pro tool khul jata hay.\n\n### 3. ⏱️ Live Real-Time Date & Clock Widget on Home\n- **1-Second Live Clock**:\n  - Home screen par Weather aur IP cards kay sath stylish Live Date & Time widget add kiya gaya hay.\n  - Hours:Minutes:Seconds (`01:25:40 PM`) aur poori date (`Sun, Nov 8, 2026`) har second bina kisi lag kay update hoti hay.\n  - Sath hi ek quick shortcut button diya gaya hay jis say aap foran World Clock Pro mein ja saktay hain.\n\n### 4. 🌍 Naya Tool: World Clock Pro (All World Clock)\n- **100+ Major World Cities Database**:\n  - Dunya kay 100+ bare shehron (Karachi, Mecca, Madinah, Dubai, London, New York, Tokyo, Istanbul, Sydney, Paris, Toronto waghera) kay live international clocks aur verified IANA time zones.\n- **Interactive 24-Hour Time Converter Slider**:\n  - Meeting planner aur time converter slider shamil kiya gaya hay—slider ko move kartay hi tamam shehron ka waqt live tabdeel hota hay taakay dunya bhar mein kisi bhi waqt ka hisab lagana intehayi asaan ho.\n- **Day / Night Indicators & Relative Time Differences**:\n  - Har shehar kay sath live day/night indicator (Sun ☀️ / Moon 🌙) aur local time say farq (maslan `+3h ahead` ya `-5h behind`) wazeh tor par nazar aata hay.\n- **1-Tap Clipboard Copy & City Search Modal**:\n  - Kisi bhi shehar kay card par tap kar kay us ka waqt copy karain, aur Search modal kay zarye dunya kay kisi bhi shehar ko 1 tap mein add karain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.69` (Build `118`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 130/130 passing (0 failures)\n- **APK SHA-256**: `33fc158704bbc4303b78c28235c1f7513a1ef13fb5f5ed458f915e8b64cb9d04`\n- **AAB SHA-256**: `7b39fe58014528578586dd38f16ad9016bc8f36d77cc79151cfd9ecd050cc787`\n- **Total Tools Catalog**: 100 tools active\n",
-    "published_at": "2026-11-08T20:14:18Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62981922,
-        "digest": "sha256:33fc158704bbc4303b78c28235c1f7513a1ef13fb5f5ed458f915e8b64cb9d04",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.69-beta.118/8002CleanUp-Pro.apk"
       }
     ]
   }
