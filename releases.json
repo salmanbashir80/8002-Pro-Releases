@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.108-beta.158",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.108 (Build 158)",
+    "body": "# 8002 CleanUp Pro v2.8.108 (Build 158) Release Notes\n\n### 💬 WhatsApp Message Archive (WMA) & Chat Experience\n- **WMA Notification Capture**: Enhanced SQLite notification interception preserving incoming message previews, deleted text detection, and contact attribution.\n- **In-App WMA Chat Interface**: Streamlined chat viewer with direct message replies, media viewing, and fast WhatsApp launching.\n- **Deleted Messages & Status Saver**: Instant status saving for photos and videos with high-resolution preview and local storage archiving.\n\n### 📁 File Manager Pro & Real Storage Wiring\n- **Home-Style Depth**: Refined visual depth and card elevation matching the Aurora Dark aesthetic.\n- **Google Files Material You**: 2-column rounded category pills (`Downloads`, `Images`, `Videos`, `Audio`, `Documents`, `Apps`) with dynamic storage metrics.\n- **Storage Navigation**: Direct internal storage exploration at `/storage/emulated/0` with multi-select, zip, search, and notepad integration.\n\n### ⚙️ Settings & Tools Search Refinements\n- **Compact Settings**: Redesigned settings view eliminating clutter and optimizing vertical viewport usage.\n- **Tool Search**: Fast tool search with pinned instant results across all 100 catalog utilities.\n",
+    "published_at": "2026-11-12T14:09:55Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.108-beta.158.apk",
+        "state": "uploaded",
+        "size": 63409779,
+        "digest": "sha256:d7388f3ca376f5427f9660a54f4ca0c7eb828e3c26bc12cce2a4b4472570cd4c",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.108-beta.158/8002CleanUp-Pro-v2.8.108-beta.158.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63409779,
+        "digest": "sha256:d7388f3ca376f5427f9660a54f4ca0c7eb828e3c26bc12cce2a4b4472570cd4c",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.108-beta.158/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.104-beta.154",
     "draft": false,
     "prerelease": false,
@@ -594,23 +618,6 @@
         "size": 62988424,
         "digest": "sha256:41b77df704f4a72ef819a20130b6ba8274f426294549ef33d870204e0c79d4d2",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.71-beta.120/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.70-beta.119",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.70 (Build 119) - YouTube InnerTube Extraction, 1-Click Translation & Paragraph Mode",
-    "body": "# 8002 CleanUp Pro v2.8.70 (Build 119) - YouTube InnerTube Extraction, 1-Click Multi-Language Translation & Article Paragraph Mode\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🚀 Native YouTube InnerTube Android API Engine (youtubetotranscript.com Technology)\n- **Direct & Blazing Fast Caption Fetching**:\n  - `youtubetotranscript.com` ki tarah ham ne Google YouTube ki official **InnerTube Android Client Engine** (`com.google.android.youtube/20.10.38`) implement ki hay.\n  - Ab YouTube transcripts kisi slow proxy ya Invidious par depend nahi kartay—yeh direct, reliable aur bina kisi captcha ya rate limit kay instant extract hotay hain.\n- **Modern srv3 (format=\"3\") TimedText XML Parsing**:\n  - Pehlay YouTube ka modern `<p t=\"ms\" d=\"ms\"><s>word</s></p>` XML format parse nahi hota tha jis say lines miss ho rahi theen. Ab srv3 aur classic XML dono format 100% precision say parse hotay hain.\n- **Smart Primary Audio Detection**:\n  - Video ki original audio language (maslan Urdu/Hindi speech `hi.10`) automatically detect hoti hay aur French, German ya foreign auto-generated tracks ko prioritize honay say rok kar actual spoken track ko #1 rakhta hay.\n\n### 2. 🌐 1-Click Multi-Language Translation (English, Roman Urdu, Urdu & 125+ Languages)\n- **Instant Language Switcher Pills**:\n  - Transcript kay ooper direct 1-click pills shamil kiye gaye hain:\n    * **`[ 🇺🇸 English ]`**: Kisi bhi language ki video ka transcript 1 tap mein fluent English mein translate kar kay dikhata hay (jaise youtubetotranscript.com par hota hay).\n    * **`[ 🇵🇰 Roman Urdu ]`**: Spoken Urdu/Hindi ko natural English alphabet (`\"Wah, hamare paas 500 log hain, main jaanta hoon ki aap logon ne payment kiya hai...\"`) mein dikhata hay.\n    * **`[ 🇵🇰 اردو (Urdu) ]`**: Clean Urdu Nastaliq text mein live translation.\n    * **`[ 🎙️ Original Track ]`**: Original video captions.\n    * **`[ ▾ More Languages... ]`**: Modal kay zarye Arabic, Spanish, Turkish, German, French, Chinese, waghera 125+ languages mein instant free translation.\n- **Instant Memory Caching**:\n  - Translation background mein memory cache hoti hay taakay English, Roman Urdu, Urdu aur Original kay darmiyan switch karna 0-second instant ho.\n\n### 3. 📖 Naya \"Paragraphs\" / Article Reading Mode\n- **Continuous Reading Experience**:\n  - Pehlay sirf choppy 1-second timestamps nazar aatay thay. Ab **`[ Paragraphs ]`** tab shamil kiya gaya hay jo choppy segments ko coherent sentences aur paragraphs mein merge karta hay.\n  - Video ko kisi article, blog post ya ebook ki tarah aasaani say parha ja sakta hay.\n  - Har paragraph kay sath 1-tap timestamp aur copy shortcut button shamil hay.\n\n### 4. 🎬 Direct Video Preview & \"Watch on YouTube\"\n- Video thumbnail kay sath direct **`Watch on YouTube ↗`** shortcut button add kiya gaya hay jis say aap foran video ko YouTube app ya browser mein play kar saktay hain.\n- Duration counter (`15m 30s`) aur platform badge wazeh nazar aatay hain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.70` (Build `119`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 132/132 passing (0 failures)\n- **APK SHA-256**: `dd4f95537d4ee43e13903ba5e0597a53b4c598618ce9c4953f39ba6d9b0b3cc4`\n- **AAB SHA-256**: `3df3d27f7a758c49cb69ac548bbd65f2bfccbabb1fa74ae5e07cc55121b92b16`\n- **Total Tools Catalog**: 100 tools active\n",
-    "published_at": "2026-11-08T20:28:57Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62985036,
-        "digest": "sha256:dd4f95537d4ee43e13903ba5e0597a53b4c598618ce9c4953f39ba6d9b0b3cc4",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.70-beta.119/8002CleanUp-Pro.apk"
       }
     ]
   }
