@@ -575,22 +575,5 @@
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.68-beta.117/8002CleanUp-Pro.apk"
       }
     ]
-  },
-  {
-    "tag_name": "v2.8.67-beta.116",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.67 (Build 116) - Long-Press Favorite Tools & Top Pinning",
-    "body": "# 8002 CleanUp Pro v2.8.67 (Build 116) - Long-Press Favorite Tools & Top Pinning\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. ⭐ Long-Press Favorite Selection & Top Pinning (Sab Say Ooper Fav Tools)\n- **Long-Press Gesture (~450ms)**:\n  - Ab Home screen ya Tools screen par mojood kisi bhi tool tile par **long-press (ungli dabaye rakhain)** karain to foran sleek **\"Tool Quick Actions & Favorite\"** sheet open hoti hay.\n- **1-Tap Pin to Top as Favorite**:\n  - Sheet mein **\"⭐ Mark as Favorite (Pin to Top)\"** tap kartay hi wo tool foran **sab say ooper** pehlay number par aa jata hay aur permanent pin ho jata hay.\n  - Har favorite tool par shiny golden star badge `⭐` aur golden glowing border lag jata hay taakay door say pehchana jaye.\n  - Agar tool pehlay say favorite ho, to wahin say 1-tap mein **\"Remove from Favorites\"** kar kay unpin bhi kiya ja sakta hay.\n- **Haptic Vibration & Instant Toast**:\n  - Long press hotay hi phone par halka sa haptic vibration jhatka milta hay aur screen par toast confirmation milti hay: `\"⭐ [Tool Name] favorites mein top par pin ho gaya!\"`\n\n### 2. 🗂️ Tools Hub Dedicated \"⭐ Favorites\" Filter & Top Section\n- **Tools Screen Par Favorites Filter**:\n  - Bottom navigation kay **Tools** tab mein naya tab shamil:\n    `All Tools (100)` | `⭐ Favorites ({count})` | `Active Now` | `Coming Soon`!\n  - `⭐ Favorites` tap karnay par sirf aap kay pasandeeda tools nazar atay hain.\n- **Pinned Favorites Section**:\n  - `All Tools` list mein aap kay tamam favorite tools sab say ooper `⭐ Pinned Favorites (Top)` section mein organize hotay hain taakay 100 tools mein dhoondna na paray.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.67` (Build `116`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 123/123 passing (0 failures)\n- **APK SHA-256**: `e204076e6a2c142f50b26bf6440b66f59890822765ce38586a915b495bdef176`\n- **AAB SHA-256**: `dc25152fff8be2ec82c91153f39d421d6dd487bb3f92db5d6d9fd9756b3094fe`\n",
-    "published_at": "2026-11-08T19:32:24Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62968456,
-        "digest": "sha256:e204076e6a2c142f50b26bf6440b66f59890822765ce38586a915b495bdef176",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.67-beta.116/8002CleanUp-Pro.apk"
-      }
-    ]
   }
 ]
