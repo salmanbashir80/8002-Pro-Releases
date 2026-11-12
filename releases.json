@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.101-beta.151",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.101 (Build 151)",
+    "body": "# 8002 CleanUp Pro v2.8.101 (Build 151)\n\n### 🧹 1Tap Cleaner Pro - Real Cleaning & Persistent Cleaned Cache State\n- **Persistent Storage Telemetry**: Resolves the issue where tapping the top-bar re-scan button `[🔄]` would un-clean apps back to their prior cache sizes. Cleaned apps now strictly preserve their `0 B ✓ Cleaned` badge and their freed storage tally across re-scans and re-renders.\n- **Direct Per-App Quick-Clean Actions**: Every app card with active cache now features a direct `[🧹 Clear Cache]` action button, enabling 1-tap deep linking straight to that app's native Android Storage page for direct kernel-level cache purge.\n- **Enhanced Native Junk Deletion**: Sweeper purges additional real cache repositories including `.thumbnails` across DCIM, Pictures, and Movies, Download trash/cache directories, `.Statuses` cached media, and orphaned `.tmp`/`.log` files.\n- **Raw Baseline Re-scan**: Added drawer control to reset storage telemetry baseline and re-query unmitigated kernel stats whenever explicitly required.\n\n### 🚀 Build Metadata\n- **Build**: 151\n- **Version**: 2.8.101\n- **Signing Fingerprint (SHA-256)**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-12T04:14:08Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.101-beta.151.apk",
+        "state": "uploaded",
+        "size": 63393119,
+        "digest": "sha256:ef1a810be1626ea6e94417d6223bba23f1a777117710cb87e85f54fa7ae8424d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.101-beta.151/8002CleanUp-Pro-v2.8.101-beta.151.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63393119,
+        "digest": "sha256:ef1a810be1626ea6e94417d6223bba23f1a777117710cb87e85f54fa7ae8424d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.101-beta.151/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.100-beta.150",
     "draft": false,
     "prerelease": false,
@@ -566,23 +590,6 @@
         "size": 62968456,
         "digest": "sha256:e204076e6a2c142f50b26bf6440b66f59890822765ce38586a915b495bdef176",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.67-beta.116/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.66-beta.115",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.66 (Build 115) - Default Apps & Chrome Recovery Studio",
-    "body": "# 8002 CleanUp Pro v2.8.66 (Build 115) - Default Apps & Chrome Recovery Studio\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🔄 Default Apps & Chrome Recovery Studio (`default-apps`)\n- **Chrome Gayab Hone Ka Masla Hal (Chrome Unfreeze & Restore)**:\n  - Jab Chrome ko Android settings mein Disable kiya jata hay, to Android usay launcher aur default browser list say mukammal hide kar deta hay.\n  - Ab naye tool **\"Default Apps & Unfreeze\"** mein **1-Tap Chrome Restore** button shamil hay jo foran Chrome ka App Info page khol kar **\"Enable\"** button samnay lata hay, ya Shizuku/Root say direct unfreeze karta hay.\n- **System Default Apps Management Hub**:\n  - Dedicated shortcuts baraye: **Default Browser**, **Default Phone**, **Default SMS**, **Default Home / Launcher**, aur **Digital Assistant**.\n- **Installed Browsers Radar**:\n  - Scan karta hay tamam installed browsers (Chrome, Samsung Internet, Firefox, Edge, Brave, Opera, etc.) aur unka Enabled/Disabled status dikhata hay sath direct Launch aur Test Link button kay.\n- **Disabled Apps Scanner**:\n  - Tamam frozen/disabled apps ko scan kar kay unfreeze karne ki sahulat.\n\n### 2. 🛡️ WebRTC STUN Leak Shield & Tailscale Mesh Analysis (My IP Tool)\n- **WebRTC STUN Leak Protection**:\n  - Screenshot mein jo `Candidate IP 100.107.167.118 exposed` aya tha, wo Tailscale VPN ka internal tunnel mesh IP tha.\n  - Ab tool mein **\"Fix Leak >\"** dabane par **WebRTC STUN Shield** active ho jata hay jo WebRTC peer-to-peer leaks ko block karta hay.\n  - Tailscale MagicDNS aur Tunnel IP ko alag highlight karta hay taakay real ISP location protected rahay.\n\n### 3. 🎬 EX Downloader Pro - YouTube Shorts, Secret Vault & Truncation Protection\n- **62 KB Corrupted Download Fix**:\n  - Puranay version mein jo 62.08 KB ka corrupt/stub file download ho jata tha, usay fix kar diya gaya hay.\n  - Multi-tier YouTube stream extraction (InnerTube VR Progressive MP4 + Multi-host Invidious + Piped API).\n  - Truncated stream validation: Agar stream interrupt ho ya file size incomplete ho to partial corrupted file foran discard kar kay retry ya clear error alert deta hay.\n- **Encrypted Secret Vault**:\n  - AES-encrypted folder jo phone ki normal gallery say mukammal hidden rehta hay (`.nomedia`).\n  - Biometric fingerprint / PIN protection.\n  - Direct video sharing (WhatsApp, Telegram, etc.) aur export options.\n\n### 4. 📝 Universal Video Transcript Studio & Subtitles AI\n- YouTube, Shorts, TikTok, aur web links say audio/video transcripts aur subtitles 1-tap extract karne ka feature.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.66` (Build `115`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 120/120 passing (0 failures)\n- **APK SHA-256**: `654251e72defbb5540515ba0f29b2cba0a19fcf77848c8f5ccc53e164d935726`\n- **AAB SHA-256**: `9b8bd3ac28d76c93f09f2d6b49a61cf8c4409eefe1068edb69aef9ff0abdf91f`\n",
-    "published_at": "2026-11-08T19:15:33Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62965139,
-        "digest": "sha256:654251e72defbb5540515ba0f29b2cba0a19fcf77848c8f5ccc53e164d935726",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.66-beta.115/8002CleanUp-Pro.apk"
       }
     ]
   }
