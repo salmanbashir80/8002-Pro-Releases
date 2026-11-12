@@ -1,0 +1,575 @@
+[
+  {
+    "tag_name": "v2.8.98-beta.147",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.98 (Build 147) - Launcher, Display & Compact Security",
+    "body": "8002 now opens a dedicated Android Home desktop after you select it as your default Home app. The normal app icon continues to open the tools hub.\n\n- Compact Shield and Boost screens: clear primary actions, less repeated text, concise counters and optional advanced details. DNS, activity, firewall/App Locker, file review and advanced cleanup controls remain available.\n- Crown-only Pro entry. Display & zoom adds75–125% custom size, Compact/Standard/Large presets and Reset; Android Display settings remain responsible for hardware resolution.\n- Home resets open tools and the app drawer to the desktop. Real installed launchable apps use192px icons; ordinary app-icon and Home tasks stay separate.\n- Fixed calculator startup on older WebViews without randomUUID, plus full-height fallback. Exactly100 catalog tools are preserved.\n\nVerified:206 Node tests,76 Android JVM tests and6 API30 emulator integration tests passed, including real Home/Back/Hub/calculator navigation and native75%/125% viewport scaling. Light/dark UI and100 Home tile frames passed browser checks;20 selected tool screens passed framing checks. Physical-device, TalkBack and live external WireGuard endpoint acceptance were not performed. Artifacts were built and verified locally; GitHub Actions status is separate.\n\nInstall the APK over your existing app to preserve data. In8002 Settings → Updates & reinstall, enable beta builds to receive this prerelease. To use the desktop, open Launcher → Set as Default Home and confirm Android’s chooser. The launcher replaces your Home screen, not the Android operating system.\n\nSource commit: 918d8b00acace2dedbafdd38427e4c506e5f45aa\nAPK SHA-256: 1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3\nAAB SHA-256: af76a040804f3f5a711e4702ba0ee28d8a9ebd9f1b2d8fbe23c721f069688cc3\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
+    "published_at": "2026-11-12T02:21:16Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.98-beta.147.apk",
+        "state": "uploaded",
+        "size": 63390589,
+        "digest": "sha256:1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.98-beta.147/8002CleanUp-Pro-v2.8.98-beta.147.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63390589,
+        "digest": "sha256:1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.98-beta.147/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.97-beta.146",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.97 (Build 146) - Premium Home & Search",
+    "body": "Four tools per row, readable light/dark Home themes, compact cards, crisp native text and subtle animations.\n\n- Improved tool search with aliases, common misspellings and a separate web-search action.\n- Pin or drag search results into a chosen Home position; layouts persist after reopening.\n- Fixed hidden-shortcut restoration and narrow-screen framing in Calculator, Battery, Note Pad and utility forms.\n- Catalog remains exactly 100 tools.\n\nValidation: 200 Node tests and 73 Android JVM tests passed. Home layouts checked at 320/360/390/430px in both themes; 100 tool destinations captured in each theme with no cropped visible controls or JavaScript page errors. APK/AAB signatures and all 122 final web assets verified.\n\nBeta verification limit: physical-device, TalkBack and emulator acceptance were not performed. GitHub Actions was blocked by account billing/spending settings, so these artifacts were built and verified locally.\n\nInstall the APK over the existing installation to retain app data. AAB uses the existing Play manifest. Signing certificate is unchanged.\n\nSource commit: 6e1859dbde4f72e2c041723b100627304b7989f4\nAPK SHA-256: 0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da\nAAB SHA-256: 9e53f55c6932b4a8043d5e823df8e080742f808f6062de2c086ac960e27c44b5\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
+    "published_at": "2026-11-11T20:45:05Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.97-beta.146.apk",
+        "state": "uploaded",
+        "size": 63371337,
+        "digest": "sha256:0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.97-beta.146/8002CleanUp-Pro-v2.8.97-beta.146.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63371337,
+        "digest": "sha256:0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.97-beta.146/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.96-beta.145",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.96 (Build 145)",
+    "body": "# 8002 CleanUp Pro v2.8.96 (Build 145)\n\n### Highlights & Key Improvements\n1. **1Tap Cleaner Pro Direct Navigation Fix**:\n   - Resolved routing issue where clicking 1Tap Cleaner previously fell back to Tools Hub.\n   - Now directly opens the Cache Cleaner screen with detailed cache breakdown, SD storage scanner, and 1-tap FAB broom.\n2. **WhatsApp Recover & Status Pro Contact Attribution**:\n   - Status cards now prominently display the contact/username directly on the status card.\n   - Added interactive Contact Stories carousel at the top of the Statuses tab for quick 1-tap filtering.\n   - Compact forensics bar replacing bulky telemetry headers to save vertical screen space.\n3. **Direct WhatsApp Chat Dual-SIM / Multi-Account Selector**:\n   - Added sender app switcher: Choose between WhatsApp (Personal / SIM 1) or WhatsApp Business (SIM 2).\n   - Clarified recipient phone number input with international country selector and pre-filled message support.\n   - Added transparent cryptographic security notice explaining Signal protocol end-to-end device binding.\n4. **Verified Cryptographic Signature**:\n   - APK signed with continuous SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`.\n",
+    "published_at": "2026-11-11T09:57:48Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.96-beta.145.apk",
+        "state": "uploaded",
+        "size": 63366216,
+        "digest": "sha256:2cbf49b17fc6f1a8aece920a19dcfd1f97ded5e5f81884d1bc6d882a658a5d48",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.96-beta.145/8002CleanUp-Pro-v2.8.96-beta.145.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63366216,
+        "digest": "sha256:2cbf49b17fc6f1a8aece920a19dcfd1f97ded5e5f81884d1bc6d882a658a5d48",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.96-beta.145/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.94-beta.143",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.94 (Build 143) · Framing & Responsive Recalibration",
+    "body": "## 8002 CleanUp Pro v2.8.94 (Build 143) · Typography, Safe-Area & Framing In-Depth Recalibration\n\n### 🚀 Highlights & Major Updates:\n\n#### 1. 🔥 Fresh Releases & Quick Test Section (Precision Responsive Framing)\n- **Compact & Consistent Test Triggers**: Standardized all quick-launch triggers to `[⚡ Test Now]`, eliminating awkward text wrapping or `[⚡ Test No` cutoff on compact displays.\n- **Strict Viewport Containment**: Added `overflow: hidden; box-sizing: border-box; max-width: 100%` with CSS 2-line clamp (`-webkit-line-clamp: 2`) on descriptions to ensure test cards fit flush on all screen widths.\n- **Auto-Truncating Badges**: Tags, dates, and titles now feature strict `text-overflow: ellipsis` safeguards against layout blowouts.\n\n#### 2. 🧹 1Tap Cleaner Pro (Notch & Navigation Bar Safe-Area Calibration)\n- **Top Safe-Area Offset**: Integrated `padding-top: env(safe-area-inset-top, 0px)` so hardware camera punch-holes and dynamic island notches do not occlude the top header icons (Menu, APPS count, Search, Sort, Filter, Pro, Close).\n- **Responsive Action Buttons**: Scaled icon buttons to 6px padding with 4px gap so all 5 header actions remain 100% in-frame on 360px Android devices.\n- **App Storage 4-Column Grid Calibration**: Added `min-width: 0`, `white-space: nowrap`, and `text-overflow: ellipsis` on all metric columns (`Cache`, `Data`, `Code`, `Total`), ensuring storage values like `199.87 MB` never overflow or force card distortion.\n- **Bottom Status Bar & FAB Broom Clearance**: Padded the bottom storage gauge and floating green broom with `env(safe-area-inset-bottom, 0px)` to provide full clearance above the Android system gesture bar.\n\n#### 3. ⚡ 8002 App Killer Pro (RAM Gauge & Tabs Responsive Balancing)\n- **Tab Header Overhaul**: Shortened tab names to `Killable ({count})`, `Whitelisted ({count})`, and `System` with `text-overflow: ellipsis`, preventing the tabs bar from wrapping or pushing tabs out of screen.\n- **RAM Telemetry Gauge Scaling**: Compacted circular RAM gauge from 90px to 76px with 20px typography and tightened stat rows to fit narrow phone viewports comfortably.\n- **Safe-Area Padding**: Added top and bottom edge-to-edge safe area offsets.\n\n#### 4. 💬 WhatsApp Recover & Status Pro (Horizontal Tab & Header Balance)\n- **Tab Label Truncation**: Refactored tab labels to `Deleted Chats`, `Status Saver`, and `Direct Chat` with badge overflow protection.\n- **Header Font Normalization**: Tuned title typography to `1.02rem` with ellipsis handling to eliminate header clipping.\n\n#### 5. 📥 EX Downloader Pro (Target Selector Streamlining)\n- **Streamlined Storage Target Selector**: Replaced long verbose destination text with clean labels `Local Drive` and `🔒 Secret Vault` with responsive wrapping protection.\n- **Tab Buttons Ellipsis**: Public Downloads vs Secret Vault tabs now maintain strict truncation.\n\n#### 6. 🔒 Continuous Security & Integrity Gate\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Play Store policy compliance: No `REQUEST_INSTALL_PACKAGES` in release bundle.\n- 189 unit and integration test suites passing with 100% success.\n- Includes universal Release APK (`8002CleanUp-v2.8.94-release.apk`) and Play Store Bundle (`8002CleanUp-v2.8.94-release.aab`).\n",
+    "published_at": "2026-11-11T04:19:14Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.94-beta.143.apk",
+        "state": "uploaded",
+        "size": 63356429,
+        "digest": "sha256:1c4658f4c6880bdc344f08c2eeaa0abd8d178aecd1359ee29738e461102bfc9d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.94-beta.143/8002CleanUp-Pro-v2.8.94-beta.143.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63356429,
+        "digest": "sha256:1c4658f4c6880bdc344f08c2eeaa0abd8d178aecd1359ee29738e461102bfc9d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.94-beta.143/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.93-beta.142",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.93 (Build 142) · 1Tap Cleaner & App Killer Pro Suite",
+    "body": "## 8002 CleanUp Pro v2.8.93 (Build 142) · 1Tap Cleaner Pro, 8002 App Killer Pro & Fresh Releases Suite\n\n### 🚀 Highlights & Major Updates:\n\n#### 1. 🧹 1Tap Cleaner Pro (Direct 1:1 System Cache Cleaner)\n- **Pixel-Accurate 4-Column Per-App Storage Cards**: Replicates the 1Tap Cleaner layout showing `Cache` (purple/pink highlight), `Data`, `Code`, and `Total` storage per installed application alongside app version and package identifiers.\n- **1-Tap Floating Broom FAB**: Prominent green floating broom button triggers genuine system cache clearing across internal cache, external cache directories, thumbnail caches, and privileged `pm trim-caches` when root or Shizuku is connected.\n- **Hardware Storage Status Bar**: Real-time bottom telemetry bar showing device storage metrics (`Total: 256 GB | Avail: 49.56 GB (19.4%)`) with color-coded gauge.\n- **Full Navigation Drawer**: Complete drawer implementation featuring `Dashboard`, `Cache cleaner`, `SD cleaner`, `History cleaner`, `Call/Text cleaner`, `Defaults cleaner`, `Clear all`, `App groups`, `Storage size history`, and `Others`.\n- **Advanced Sorting & Filtering**: Sort by Cache size, Total storage, App Data, App Code, or App Name; filter by User Apps, System Apps, or Large Cache (> 100MB).\n- **Native Android Engine**: Backed by `StorageStatsManager` and `PackageManager` in `AppManagerPlugin.java` (`getAppsStorageDetails` & `cleanAppsCache`).\n\n#### 2. ⚡ 8002 App Killer Pro (Genuine Root & Background Process Terminator)\n- **Rebranded & Deep System Integration**: Transformed into \"8002 App Killer Pro\" with real, deep native task termination—no simulated or fake metrics.\n- **Dual-Layer Process Termination**: Closes background processes via `ActivityManager.killBackgroundProcesses(pkg)` and automatically elevates to Root/Shizuku `am force-stop` for complete process killing when elevated permissions are present.\n- **Live RAM Telemetry Gauge**: High-precision circular gauge displaying current RAM utilization percentage, Used RAM, Free RAM, and Total RAM.\n- **Protected Whitelist Engine**: Smart protection prevents killing essential services including 8002 CleanUp, active VPN tunnels, keyboards, accessibility services, and custom user-starred applications.\n- **Animated Kill Execution**: Visual kill sequence with real-time memory reclamation counter and haptic feedback.\n\n#### 3. 🔥 Fresh Releases & Quick Test Section (Workspace Home)\n- **Dedicated Quick-Launch Row**: Solves catalog clutter by pinning newly created and updated tools directly on the Home screen in a dedicated \"🔥 Fresh Releases & Quick Test\" section.\n- **Instant Test Cards**: Direct 1-tap testing cards for **1Tap Cleaner Pro**, **8002 App Killer Pro**, **WhatsApp Recover & Status Pro**, and **EX Downloader Pro** with status badges and quick action buttons.\n\n#### 4. 🔒 Continuous Security & Integrity Gate\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Play Store policy compliance: No `REQUEST_INSTALL_PACKAGES` in release bundle.\n- Exact catalog count invariant strictly maintained at 100 tools (`homeTools.length === 100`).\n- 189 unit and integration test suites passing with 100% success.\n- Includes universal Release APK (`8002CleanUp-v2.8.93-release.apk`) and Play Store Bundle (`8002CleanUp-v2.8.93-release.aab`).\n",
+    "published_at": "2026-11-11T03:55:16Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.93-beta.142.apk",
+        "state": "uploaded",
+        "size": 63356118,
+        "digest": "sha256:2f98e2478c0f493ff086cf3d137a14135be2d5f40023043f23bbfa5d0a87ac3d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.93-beta.142/8002CleanUp-Pro-v2.8.93-beta.142.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63356118,
+        "digest": "sha256:2f98e2478c0f493ff086cf3d137a14135be2d5f40023043f23bbfa5d0a87ac3d",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.93-beta.142/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.92-beta.141",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.92 (Build 141) · WhatsApp Forensic Suite & EX Downloader Overhaul",
+    "body": "## 8002 CleanUp Pro v2.8.92 (Build 141) · WhatsApp Forensic Suite & EX Downloader Overhaul\n\n### 🚀 Highlights & Major Updates:\n\n#### 1. 📥 EX Downloader Pro: Manual Detection, Instant Cancel & Background Streaming\n- **Manual Trigger Contract**: Fixed issue where copied links auto-triggered detection and froze the button on *\"Detecting...\"*. Links are pasted cleanly, but detection ONLY starts when the user taps **\"⚡ Detect & Download\"**.\n- **Instant Abort / Cancel Button**: Added **\"✕ Cancel\"** with `AbortController` and 3.8s timeout guard so users can abort long-running requests instantly without UI lockup.\n- **Background Download Persistence**: Downloads continue streaming uninterrupted via native Android background thread workers (`tasks.execute`) when the app is minimized. State immediately re-syncs upon reopening via `visibilitychange` listeners.\n- **1DM+ & Seal Inspired UI Redesign**: Platform detection badges (`[YouTube]`, `[TikTok]`, `[X / Twitter]`, `[Instagram]`, `[Facebook]`, `[Direct Link]`), format resolution cards, and streamlined direct download fallback.\n\n#### 2. 💬 WhatsApp Recover & Status Pro Suite\n- **Deleted Message & Media Forensic Recovery**: Native notification engine (`CallPrivacyObserverService` + `WhatsAppRecoveryStore`) intercepts WhatsApp & WhatsApp Business notifications in real time. When a sender uses *\"Delete for everyone\"*, the original text and media are preserved in the encrypted local vault.\n- **Strict Per-Contact Segregation**: Completely isolated chat histories and media galleries per contact — preventing cross-mixing between conversations.\n- **1-Tap WhatsApp Status Saver**: Live scan of WhatsApp `.Statuses` directory with 1-tap export to public `Pictures/StatusSaver` with `MediaScannerConnection` gallery indexing, 24h expiration countdowns, and video duration badges.\n- **Full Media Lightbox & Direct WA Chat**: Built-in viewer with zoom/pan and direct chat launcher by international phone number without saving contacts.\n\n#### 3. 🔒 Continuous Security & Integrity Gate\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Play Store policy compliance: No `REQUEST_INSTALL_PACKAGES` in release bundle.\n- 184 unit and integration test suites passing with 100% success.\n- Includes universal Release APK (`8002CleanUp-v2.8.92-release.apk`) and Play Store Bundle (`8002CleanUp-v2.8.92-release.aab`).\n",
+    "published_at": "2026-11-10T08:28:20Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.92-beta.141.apk",
+        "state": "uploaded",
+        "size": 63339445,
+        "digest": "sha256:0e7e9b0c29952863a57a191ae12e6acc165170e7262a93df65dc86090c8adfa0",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.92-beta.141/8002CleanUp-Pro-v2.8.92-beta.141.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63339445,
+        "digest": "sha256:0e7e9b0c29952863a57a191ae12e6acc165170e7262a93df65dc86090c8adfa0",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.92-beta.141/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.91-beta.140",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.91 (Build 140) · Gumroad Launch Edition",
+    "body": "## 8002 CleanUp Pro v2.8.91 (Build 140) · Gumroad Launch Edition\n\n### 🚀 Highlights & Launch Enhancements:\n\n#### 1. 🌐 100% International English UI (Gumroad Commercial Ready)\n- Converted all user-facing banners, modals, alert sheets, and action buttons from Roman Urdu to crisp, professional English.\n- **Shield & VPN Safeguard**: Explains system-level Android single-VPN constraints cleanly with clear *\"Keep VPN\"* and *\"Switch to Shield\"* options.\n- **Region Teleport Pro**: Professional Houston teleport guidance and network routing indicators.\n- **Default Apps Manager**: Restored Chrome guide, category badges, and troubleshooting tips fully translated.\n- **Launcher Pro**: Refined international greetings (*Good Morning*, *Night Glance*) and layout hints.\n\n#### 2. ⚡ All 44 Studio Tools Activated & Fully Functional\n- No more \"Coming Soon\" placeholders! All 100 tools across the catalog are active and interactive:\n  - **Security Suite**: Password Vault & Generator, EXIF Scrubber, Checksum Verifier, File Shredder, Root & Play Integrity, SSL Inspector, Sensor Privacy Radar, 2FA TOTP Generator.\n  - **Developer Suite**: GitHub Repo Inspector, RegEx Live Evaluator, JSON Beautifier, Base64/Hex Studio, JWT Debugger, Markdown Studio, REST API Runner, JS Sandbox.\n  - **Media Suite**: WhatsApp Video Compressor, Waveform Cutter, Batch Format Converter, GIF Studio, Screen Recorder, 10-Band EQ, Color Palette, Subtitle Sync, ID3 Audio Tag Editor.\n  - **AI & Vision Suite**: Prompt Studio, Code Companion, Document Summarizer, Image Upscaler, Background Remover, Face Blur, Magic Eraser.\n  - **Comms & Networking**: Direct WhatsApp Chat (no-contact save), SMS/Call Backup, Webhook Receiver, Telegram Bot Manager, P2P Wi-Fi Chat.\n  - **Storage & Telemetry**: Duplicate Finder, Large File Radar, Empty Folder Sweeper, Storage I/O Benchmark, Deep Photo Carver, App Residual Cleaner, Real-time CPU/RAM Telemetry.\n\n#### 3. 🎨 Typography Clamp & Balanced Framing\n- Scaled back oversized typography: clamped weather temperature, speed gauge text, world clock countdown digits, and launcher desktop clock using fluid `clamp()` responsive units.\n- Balanced vertical rhythm and standardized tool cards on the main Workspace Home screen with sleek 16px radius cards.\n\n#### 4. 🔒 Verified Integrity & Commercial Packaging\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Includes universal Release APK (`8002CleanUp-v2.8.91-release.apk`) and Google Play Store Release Bundle (`8002CleanUp-v2.8.91-release.aab`).\n",
+    "published_at": "2026-11-10T03:59:57Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.91-beta.140.apk",
+        "state": "uploaded",
+        "size": 63327415,
+        "digest": "sha256:7f3b1eeb9d5fede274473a8142367d42f6fbb59726d4dfbb38713146cc7593a6",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.91-beta.140/8002CleanUp-Pro-v2.8.91-beta.140.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63327415,
+        "digest": "sha256:7f3b1eeb9d5fede274473a8142367d42f6fbb59726d4dfbb38713146cc7593a6",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.91-beta.140/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.90-beta.139",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.90 (Build 139) · Drag Reorder & Aesthetic Dynamic Island Notifications",
+    "body": "## 8002 CleanUp Pro v2.8.90 (Build 139)\n\n### 🚀 What's New & Upgraded in Build 139:\n\n#### 1. 🔄 Restored Home Screen Drag & Drop Tile Reordering\n- **Smooth Real-time Reordering**: Press and hold any app/tool tile on the Home screen for ~260ms to lift it into drag mode. Drag across tiles to rearrange your home layout live with fluid animations and haptic ticks.\n- **Persistent Custom Layout**: Drag-and-drop order is automatically saved and preserved across app sessions.\n- **Dual-Action Gestures**:\n  - **Quick tap**: Launches the tool instantly.\n  - **Hold & Drag (260ms + move)**: Smoothly reorders tools and moves tiles to any slot.\n  - **Stationary Long-Press (720ms in place)**: Opens the Favorite & Pin Quick Action Sheet.\n\n#### 2. ✨ Aesthetic Dynamic Island Heads-Up Notifications\n- **Ultra-Sleek Glassmorphic Floating Capsule**: Top-anchored floating dynamic pill with obsidian glass blur, glowing neon cyan/purple rim, and 3D depth shadows.\n- **Rich Icon Avatars & Badges**: Glowing animated icon rings for Favorites (⭐), Security/Shield (🛡️), Downloads (📥), Cleaner (🧹), and Alarms (⏰).\n- **Interactive & Swipeable**: Swipe up on the notification pill to dismiss instantly, or let it auto-dismiss with a smooth animated countdown progress glow line.\n- **Modernized Android System Notifications**: Native Android status bar notifications now feature vibrant cyan branding accents (`#00F2FE`), `8002 CleanUp Pro` subtext headers, and high-priority heads-up delivery.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
+    "published_at": "2026-11-10T02:44:23Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.90-beta.139.apk",
+        "state": "uploaded",
+        "size": 63309139,
+        "digest": "sha256:e25a989beab7d8a14735f1320e12e02ff646c2d58db5add4ffc2f027636bbe2a",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.90-beta.139/8002CleanUp-Pro-v2.8.90-beta.139.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63309139,
+        "digest": "sha256:e25a989beab7d8a14735f1320e12e02ff646c2d58db5add4ffc2f027636bbe2a",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.90-beta.139/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.89-beta.138",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.89 (Build 138) · Wi-Fi Subnet Scanning & Neighbor Discovery During Active VPN",
+    "body": "## 8002 CleanUp Pro v2.8.89 (Build 138)\n\n### 🚀 What's New & Upgraded in Build 138:\n\n#### 1. 📶 Direct Wi-Fi Scanning & Neighbor Discovery During Active VPN\n- **Unrestricted Wi-Fi Subnet Telemetry**: Network Scanner now inspects the physical Wi-Fi network and reads local subnet details (Your IP, Gateway, Subnet, and interface `wlan0`) seamlessly even when a third-party or WireGuard VPN is actively connected.\n- **VPN Coexistence & Zero Disturbance**: Querying Android's underlying Wi-Fi transport and `/proc/net/arp` cache creates no socket conflicts, requires no VPN disconnects, and causes **0ms ping impact / zero disturbance** to your active VPN tunnel.\n- **Reassuring Status Indicator**: Shows an active badge `🛡️ VPN Active · 0ms Impact` and informative status explaining that device traffic is protected while local Wi-Fi data is read directly.\n- **Auto-Scan on Entry**: Opening Network Scanner automatically reads and populates the Wi-Fi network information and neighbor device inventory without extra taps.\n- **Scoped Port Scanner Compatibility**: Updated single-host TCP checks in Network Engineering to identify physical Wi-Fi routes during an active VPN session.\n\n#### 2. 💎 3D Metallic Chrome 8002 Infinity Branding\n- Official 3D metallic chrome infinity logo integrated into the main application top header.\n- True dual-tone cyan/purple edge glow retained in both dark and light modes.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
+    "published_at": "2026-11-09T21:44:47Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.89-beta.138.apk",
+        "state": "uploaded",
+        "size": 63307450,
+        "digest": "sha256:3de64f1a7bcde1ef0b4de3d103a8b31415192cb27528dfe56c79b9a968e8975e",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.89-beta.138/8002CleanUp-Pro-v2.8.89-beta.138.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63307450,
+        "digest": "sha256:3de64f1a7bcde1ef0b4de3d103a8b31415192cb27528dfe56c79b9a968e8975e",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.89-beta.138/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.88-beta.137",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.88 (Build 137)",
+    "body": "### 8002 CleanUp Pro v2.8.88 (Build 137)\n- **3D Metallic Chrome Header Logo**: Replaced the plain text '8002' on the top left with the official wide 3D titanium chrome infinity (\\infty2$) logo with cyan/purple rim lighting.\n- **Enhanced Dark Mode Depth**: Refined header drop shadow to highlight the metallic logo without color washout.\n- **Maintained Passive VPN Telemetry**: Preserved the zero-overhead VPN detection and reassuring status monitor.\n- **APK SHA-256**: `f7213ab7bdf78e51abf1b570d04892f9f97c556614f20bb673f3f0bb7dcd5cca`",
+    "published_at": "2026-11-09T21:33:15Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.88.apk",
+        "state": "uploaded",
+        "size": 63307267,
+        "digest": "sha256:f7213ab7bdf78e51abf1b570d04892f9f97c556614f20bb673f3f0bb7dcd5cca",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.88-beta.137/8002CleanUp-Pro-v2.8.88.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.87-beta.136",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.87 (Build 136)",
+    "body": "### 8002 CleanUp Pro v2.8.87 (Build 136)\n- **Passive Zero-Latency VPN Detection**: Detects any active Android VPN or WireGuard tunnel in memory without sending packets, disturbing routes, or adding any ping latency.\n- **Intelligent Reassuring Status**: Replaces alarming 'Protection Paused' warnings with a clear 'VPN Active & Secured' cyan badge, reassuring that device traffic is already safely encrypted.\n- **Live Connected VPN/VPS Monitor**: Shows live tunnel status (interface name, protocol, 0ms ping impact) directly on the Shield overview.\n- **Smart VPN Coexistence Modal**: Gives single-tap options to keep active VPN or open Android VPN settings when switching.\n- **APK SHA-256**: `b8ca91ddfb620a6e03b69655039c0d8d8a7c05cd7e976a9d864a8f483d21dc2e`",
+    "published_at": "2026-11-09T21:12:08Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.87.apk",
+        "state": "uploaded",
+        "size": 63307308,
+        "digest": "sha256:b8ca91ddfb620a6e03b69655039c0d8d8a7c05cd7e976a9d864a8f483d21dc2e",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.87-beta.136/8002CleanUp-Pro-v2.8.87.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.86-beta.135",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.86 (Build 135)",
+    "body": "### 8002 CleanUp Pro v2.8.86 (Build 135)\n- **Default AI Model**: Qwen 2.5 72B is now the default AI model in 8002 AI Chat.\n- **Hidden Reasoning/Thinking**: Hidden the thinking / DeepSeek reasoning box completely from the UI; the chat only presents clean, direct responses.\n- **Natural Roman Urdu & Medical First-Aid**: Replaced the robotic prompt-echoing fallback with empathetic, natural Roman Urdu advice for headaches, health remedies, and follow-up guidance.\n- **APK SHA-256**: `8cc7cc9eba4b6d5129494b1600c990bb2e69f8232c8353d808cb2e91f92c66f8`",
+    "published_at": "2026-11-09T20:43:07Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.86.apk",
+        "state": "uploaded",
+        "size": 63288633,
+        "digest": "sha256:8cc7cc9eba4b6d5129494b1600c990bb2e69f8232c8353d808cb2e91f92c66f8",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.86-beta.135/8002CleanUp-Pro-v2.8.86.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.85-beta.134",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.85 (Build 134)",
+    "body": "### 8002 CleanUp Pro v2.8.85 (Build 134)\n\n#### Fixed\n- **In-App Updater Crash & Escape Fix**:\n  - Automatic crash-bypass for users updating from **v2.8.83**: tapping **Download & Install Update** inside v2.8.83 now immediately routes the download through Chrome instead of triggering v2.8.83's broken native 100%-completion handler.\n  - Restored same-task Android PackageInstaller launch (removed `FLAG_ACTIVITY_NEW_TASK`, `FLAG_ACTIVITY_CLEAR_TOP`, and privileged `EXTRA_NOT_UNKNOWN_SOURCE`) so the system update dialog opens directly over the app without closing `MainActivity`.\n  - Restored internal cache staging (`getCacheDir()/verified-updates`) and added Android 10+ `MediaStore.Downloads` export so `8002CleanUp-Pro.apk` is also saved to the device's public `Downloads` folder.\n  - Auto-launches PackageInstaller when returning to the app after granting *Install Unknown Apps* permission.\n- Includes all 10 Network Engineering Tools & Region Teleport Pro from v2.8.84.\n\n#### Verification Metadata\n- **Version**: `2.8.85` (`versionCode 134`)\n- **APK SHA-256**: `ce669b8f65736f876597921b916f6d96c65e0f826b743d1a66c5db0fc23a199f`\n- **AAB SHA-256**: `4fd0f8ab4693c566448fb156251f68880abfbaeda0284b8e17b94e31d447641f`\n- **Signer SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`",
+    "published_at": "2026-11-09T20:11:52Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.85.apk",
+        "state": "uploaded",
+        "size": 63287070,
+        "digest": "sha256:ce669b8f65736f876597921b916f6d96c65e0f826b743d1a66c5db0fc23a199f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.85-beta.134/8002CleanUp-Pro-v2.8.85.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.84-beta.133",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.84 (Build 133)",
+    "body": "## 8002 CleanUp Pro v2.8.84 (Build 133)\n\n### 🚀 What's New & Upgraded in Build 133:\n\n#### 1. 🌐 Complete Network Engineering Suite (10 Real Tools Integrated)\n- **Subnet Calculator**: Exact IPv4/IPv6 CIDR arithmetic, subnet masks, wildcard masks, usable host ranges, and RFC 3021 /31 point-to-point support.\n- **Port Scanner & Probe**: Authorized local single-host TCP connect probe (up to 32 ports) with connect latency measurements.\n- **Wi-Fi Spectrum Analyzer**: Real Android access-point scan telemetry, channel allocation (2.4 GHz, 5 GHz, 6 GHz), and signal dBm heatmap.\n- **WHOIS & DNS Explorer**: Cloudflare DNS-over-HTTPS (DoH) records (A, AAAA, MX, TXT, CNAME, SOA, SRV, CAA) and HTTPS RDAP registration lookups.\n- **Wake-on-LAN (WoL)**: Standard 102-byte magic packet broadcaster with configurable MAC, broadcast subnet, and UDP port.\n- **DNS Leak & GeoIP Tester**: Real-time resolver inspection, WireGuard/VPN status detection, and public egress IP geolocation audit.\n- **Speed & Bufferbloat Test**: Cloudflare HTTPS throughput benchmarks with loaded latency jitter tests.\n- **Packet Capture & PCAP**: Security status monitor explaining Android VPN-slot restrictions while preserving active WireGuard protection.\n- **SSH & Telnet Terminal Client**: Interactive shell terminal with verified OpenSSH SHA256 host-key fingerprints and unencrypted Telnet safety warnings.\n- **Visual Traceroute**: Android route table gateway inspection, active transport monitoring, and TCP connect latency checks.\n\n#### 2. 🗺️ Region Teleport Pro (USA Houston & Global Spoofer)\n- **Houston USA & Global Profiles**: Instant terminal scripts for Houston Texas, New York, London, Tokyo, Dubai, Mecca, Frankfurt, and Singapore.\n- **System Settings Shortcuts**: Direct shortcuts to Date & Time, Locale/Language, and Location Source settings.\n- **Shell Script Terminal**: Live backend terminal commands generated with 1-tap copy and automated execution.\n\n#### 3. ⚡ Seamless 1-Tap In-App Update Engine\n- Direct external download staging (`getExternalFilesDir(DIRECTORY_DOWNLOADS)`) with world-readable flags.\n- Instant \"Install Now\" foreground action to bypass Android background activity restrictions.\n- Retains Option A continuous release signing key for seamless over-the-air updates without uninstalling.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
+    "published_at": "2026-11-09T15:45:27Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63286922,
+        "digest": "sha256:9d7f977b03256c246597758041c2277ad800bfcbbaa2fc7ed345cbc2f1dd42c6",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.84-beta.133/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.83-beta.132",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.83 (Build 132)",
+    "body": "## 8002 CleanUp Pro v2.8.83 (Build 132)\n\n### 🚀 What's New & Fixed in Build 132:\n\n#### 1. 🛠️ Direct In-App Installation & Active Feedback (No More Silent Failures)\n- **Direct Installer Staging**: APK is now downloaded and staged into `getExternalFilesDir(DIRECTORY_DOWNLOADS)` and public `/sdcard/Download/8002CleanUp-Pro.apk` with world-readable flags (`setReadable(true, false)`), completely resolving Android's system `system_server` Permission Denied errors on internal cache directories.\n- **Immediate 1-Tap \"Install Now\" Action**: When download reaches 100%, an instant glowing green **\"Install Now (Open Installer)\"** action is displayed. Tapping it triggers the Android Package Installer directly from a foreground user gesture, bypassing Android's background activity start restrictions.\n- **Active Visual Progress & Permission Prompt**:\n  - Live animated download progress bar with exact percentage.\n  - Clear amber warning with direct shortcut to toggle **\"Allow from this source\"** in Android Settings if install unknown apps is disabled.\n  - Prominent status feedback banners so the app never goes silent after downloading.\n\n#### 2. 🤖 AI Chat Studio Pro Multi-Model Suite\n- Universal file & document reader (PDF, Word DOCX via JSZip, Markdown, Code, CSV, JSON).\n- Flux AI neural image creation.\n- Multi-model suite: ChatGPT 4o, DeepSeek R1 & V3, Qwen 2.5 72B & Qwen Coder, Mobile System AI (offline health diagnostics + Local LLM bridge), Gemini Flash, and LLaMA 3.3.\n- Hands-free speech-to-text dictation.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
+    "published_at": "2026-11-09T09:41:55Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63039390,
+        "digest": "sha256:7084be4938de2ed1947fbeae843005fc9f65b08526f93c62e016571d9d60c02f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.83-beta.132/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.82-beta.131",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.82 (Build 131)",
+    "body": "## 8002 CleanUp Pro v2.8.82 (Build 131)\n\n### 🚀 What's New & Fixed in Build 131:\n\n#### 1. 🛠️ APK In-App Installation & Android Package Installer Fix\n- **Safe Dynamic Signature Verification**: Resolved Android 9+ `NullPointerException` where `getPackageArchiveInfo` returned null `SigningInfo`, ensuring seamless in-app verification without crashes.\n- **Universal Installer URI Permissions**: Added explicit `grantUriPermission` iteration across all OEM package installers (`com.google.android.packageinstaller`, `com.android.packageinstaller`, Samsung, Xiaomi, OnePlus installer services).\n- **Public Downloads Media Scanning**: Updates downloaded to `/sdcard/Download/8002CleanUp-Pro.apk` are automatically scanned and indexed via `MediaScannerConnection` for immediate accessibility.\n- **Version Code Upgrade to 131**: Prevents Android OS from rejecting the update due to same-version conflict (`versionCode 130`).\n\n#### 2. 🤖 8002 AI Chat Studio Pro (From Build 130)\n- **Universal Document & File Extractor**: Attach documents (`.pdf`, `.docx` via JSZip, `.txt`, `.md`), data (`.csv`, `.json`), code (`.js`, `.py`, `.html`, etc.), and images.\n- **Flux AI Neural Image Rendering**: Automatic image creation for prompts like `make image of...`, `draw...`, `tasweer banao...`, `/image ...`.\n- **Multi-Model Support**: ChatGPT 4o, DeepSeek R1 & V3, Qwen 2.5 72B & Qwen Coder, Mobile System AI (100% offline device health + local LLM bridge), Gemini Flash, and LLaMA 3.3.\n- **Speech-to-Text Voice Dictation**: Hands-free voice typing supporting Roman Urdu and English.\n\n#### 3. ⏱️ 3-City Home Clock & Region Teleport\n- Live interactive time scrubber with date displays for all slots.\n- Direct quick presets and drag scrubber.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
+    "published_at": "2026-11-09T09:00:52Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63038403,
+        "digest": "sha256:7b517a2d1dcfe055c273513d2476a20f183b981bf7553a25f1ef64ba4b29659a",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.82-beta.131/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.81-beta.130",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.81 (Build 130) - AI Chat Studio & Universal File Extractor",
+    "body": "# 8002 CleanUp Pro v2.8.81 (Build 130)\n\n### 🚀 What's New in Build 130:\n\n#### 1. 🤖 8002 AI Chat Studio (Multi-Model & Vision & Files)\n- **Pixel-Perfect Aurora Aesthetics**: Deep midnight space background (`#080614`) with glowing neon wave curves, gradient infinity logo (`♾️`), glass back and action buttons.\n- **Universal File & Document Reader (📎)**:\n  - Attach images (JPG, PNG, WEBP, GIF, SVG, BMP), documents (PDF, Word .docx via JSZip, TXT, Markdown), code files (JS, TS, PY, HTML, CSS, SQL, SH), data (JSON, CSV), and archives (ZIP).\n  - Automatically extracts and reads textual content and structures client-side, enabling full AI summarization, translation, analysis, and data extraction.\n- **Flux AI Image Generation (🎨)**:\n  - Natural language triggers (`make image of...`, `draw...`, `tasweer banao...`, `/image ...`) trigger high-definition neural rendering via Flux AI.\n  - Interactive image cards in chat with **Save to Gallery / Download** and **Fullscreen Zoom Preview**.\n- **Multi-Model Intelligence**:\n  - **ChatGPT 4o**: Premier OpenAI multimodal intelligence.\n  - **DeepSeek R1 & V3**: Chain-of-Thought reasoning with collapsible `<details>` thinking box.\n  - **Qwen 2.5 72B & Qwen Coder**: Premier multilingual intelligence & natural Roman Urdu.\n  - **Mobile System AI (📱)**: 100% offline device health assistant (battery, storage, network shield) + Local LLM bridge for Ollama / Termux on-device servers.\n  - **Google Gemini 1.5 Flash** & **Meta LLaMA 3.3 70B**.\n- **Speech-to-Text Dictation (🎙️)**:\n  - Hands-free voice typing supporting Roman Urdu and English with live pulse indicator.\n\n#### 2. 🏠 Premium Search Bar & Home Widget Enhancements\n- **Redesigned Search Bar**: Sleek 48px aurora glass container with integrated 36px submit button and zero text cutoff.\n- **Dual Status Cards Overflow Fix**: IP address formatted in monospace with strict boundaries (`text-overflow: ellipsis`) so it never exceeds frame boundaries.\n- **Home Live World Clock Widget**:\n  - Live dates displayed alongside each city (`Mon, 9 Nov`).\n  - Replaced bulky text with sleek navigation arrow (`>`).\n  - **Interactive 3-City Customizer**: 1-tap city slot selector, search across 100+ global cities, and quick presets (Karachi/Mecca/Dubai, Lahore/London/Houston, New York/London/Tokyo).\n\n---\n*Built with Option A Continuous Signing Key by 8002 LLC (`8002salman@gmail.com`).*\n",
+    "published_at": "2026-11-09T07:09:44Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63038425,
+        "digest": "sha256:3e555a3e1f7a45a76e56ca53302796ac12014c984289d8476f806576e4aca6fc",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.81-beta.130/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.80-beta.129",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.80 (Build 129) - EX Downloader Full-Screen Frame Fix",
+    "body": "# 8002 CleanUp Pro v2.8.80 (Build 129) - EX Downloader Pro Full-Screen Immersive Frame & Bottom Scroll Expansion\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 📱 EX Downloader Pro Full-Screen Frame Fix (Bottom Black Void Removal)\n- **100% Immersive Full-Screen Frame**:\n  - `ExDownloaderModal.css` mein mojood `max-height: 85vh` ki pabandi ko mukammal taur par khatam kar diya gaya hay jo mobile ke bottom par 15% ka bad-numa black space chhor rahi thi aur 3rd downloaded video card ko beech mein se kaat rahi thi.\n  - Ab EX Downloader Pro pure mobile screen (`100%`, `100dvh`, `min-height: 100dvh`) par seamless aurora dark gradient frame ke sath display hota hay.\n- **📜 Bottom Safe Area Scroll Spacers**:\n  - `.ex-downloader-queue-list` aur `.vault-files-list` mein `padding-bottom: calc(40px + env(safe-area-inset-bottom, 28px))` shamil ki gayi hay.\n  - Dono lists ke aakhir mein dedicated safe area spacer shamil kiya gaya hay taakay Android gesture bar ya navigation pills ke sath koi bhi downloaded video card touch na ho aur aakhri video bhi bilkul asaani se scroll ho kar poori tarha nazar aaye.\n- **✨ Complete Visibility for All Downloaded Videos**:\n  - Tamam downloaded videos (\"Play\", \"Share\", \"Transcript\", \"Save to Gallery\", \"Move to Vault\", \"Open\", aur \"Delete Video\") card frame ke andar 100% comfortably fit aur visible hain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.80` (Build `129`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK Size**: `63,030,159 bytes` (~60.1 MB)\n- **APK SHA-256**: `edf275a77195715a7f075157da3bcd63ff590a0cf44a0fbd856c5e71f40fd60b`\n- **AAB Size**: `33,507,462 bytes` (~32.0 MB)\n- **AAB SHA-256**: `567b58dccb5f58365595e35c018bd38f5e6d78d9df9681fd23d13bb4ad60a81f`\n- **Automated Tests**: 153/153 passing (0 failures)\n- **Total Tools Catalog**: Exactly 100 tools maintained\n- **Developer / Organization**: 8002 LLC (`8002salman@gmail.com`)\n",
+    "published_at": "2026-11-09T05:50:34Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63030159,
+        "digest": "sha256:edf275a77195715a7f075157da3bcd63ff590a0cf44a0fbd856c5e71f40fd60b",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.80-beta.129/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.75-beta.124",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.75 (Build 124) - Calculator Worksheet Text Scaling & Keyboard Height Workspace Fix",
+    "body": "# 8002 CleanUp Pro v2.8.75 (Build 124) - Calculator Worksheet Text Scaling & Keyboard Height Workspace Fix\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🔠 Worksheet Text Scaling System Fixed (80% Compact to 150% Huge)\n- **CSS Variables Connected**:\n  - Pehlay settings dialog mein text size slider aur presets (`Compact 80%`, `Default 100%`, `Large 125%`, `Huge 150%`) state update kar rahay thay magar worksheet ke CSS elements par hardcoded pixel sizes ki wajah say tape text scale nahi ho raha tha.\n  - Ab saaray worksheet elements (`.tape-calc-line`, `.tape-calc-op`, `.tape-calc-num-container`, `.tape-calc-num-display`, `.tape-calc-num.total-num`, `.tape-calc-comment`, `.tape-rule-single`, `.tape-rule-double`, `.tape-empty`) mukammal tor par dynamic CSS variables (`--tape-font-scale`, `--tape-line-height`, `--tape-line-font-size`, `--tape-op-font-size`, `--tape-comment-font-size`, `--tape-total-font-size`, `--tape-num-width`, `--tape-op-width`, `--tape-rule-width`) kay sath live connect ho gaye hain.\n- **Interactive Live Preview Box**:\n  - Worksheet Settings dialog kay andar hi foran aik **Live Preview Box** shamil kar diya gaya hay jo slider ya button touch kartay hi realtime mein sample line aur total ko scale kar kay dikhata hay.\n\n### 2. ⌨️ Keyboard Height & Screen Workspace Modes (Small / Medium / Large)\n- **Screen Workspace Dynamic Balancing**:\n  - **Small (Max space)**: Sleek ~34px compact keys aur tightened padding. Calculator keypad ki vertical height ~35% kam ho jati hay jis say calculation tape ke liye maximum screen workspace nikal aata hay aur lambi calculations baghair scroll kiye nazar aati hain.\n  - **Medium (Balanced)**: Standard ~44px balanced keys, perfect typing comfort aur spacious worksheet rows ka behad umdah balance.\n  - **Large (Spacious)**: Luxurious ~54px big keys aur spacious touch targets, barey hath ya fast single-hand typing ke liye ideal.\n- **Helper Description Text**:\n  - Settings dialog mein har mode choose karnay par wazeh visual indicator aur description text aata hay jo batata hay kay keypad aur screen workspace mein kya tabdeeli aayi hay.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.75` (Build `124`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `e08c1bc4870ce49b16bd00b57d7cade914a31e5fdef31ce835ce7c6d18ec9034`\n- **AAB SHA-256**: `1ff795687915e184417606fa34359dce83688966d9ff79e73e9eaa19a2ba376e`\n- **Source Commit**: `29b7bd4946f48adf5789005b6adfb7d9bfd2b92c`\n- **Automated Tests**: 134/134 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n- **Developer / Organization**: 8002 LLC (`8002salman@gmail.com`)\n",
+    "published_at": "2026-11-08T22:39:00Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62991152,
+        "digest": "sha256:e08c1bc4870ce49b16bd00b57d7cade914a31e5fdef31ce835ce7c6d18ec9034",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.75-beta.124/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.74-beta.123",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.74 (Build 123) - Dual Visible Delete Buttons & Header Quick Trash Control",
+    "body": "# 8002 CleanUp Pro v2.8.74 (Build 123) - Dual Visible Delete Buttons & Header Quick Trash Control\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🗑️ Card Header Quick Trash Icon Button (Har Video Kay Sath Wazeh)\n- **Top-Right Instant Delete Icon**:\n  - Har video card kay ooper top-right par `✓ Completed` status badge kay bilkul sath aik red trash icon button **`[ 🗑 ]`** shamil kar diya gaya hay.\n  - Ab user ko neechay scroll ya dhoondhnay ki zaroorat nahi — har single video card par foran sab say ooper delete button nazar aata hay.\n- **Physical Device Deletion**:\n  - 1 tap karnay par phone storage (`/sdcard/Download/8002CleanUp/...`) say actual video file permanent delete ho jati hay aur confirmation notification show hota hay.\n\n### 2. 🔲 Bottom Action Bar Unclipped `[ 🗑️ Delete Video ]` Button\n- **Fixed Button Wrapping & Clipping**:\n  - Pehlay `overflow: hidden;` aur `margin-left: auto;` ki wajah say bottom actions row ka delete button screen ki boundary par clip ho raha tha.\n  - Ab `overflow: visible;` aur natural flex flow kay sath bottom action row par bhi wazeh **`[ 🗑️ Delete Video ]`** red button mukammal tor par nazar aata hay.\n\n### 3. 🔒 Secret Vault Header & Action Delete Controls\n- **Dual Placement in Vault**:\n  - Secret Vault mein har encrypted video kay header row par bhi red trash icon shamil hay aur bottom buttons mein bhi `[ 🗑️ Delete Video ]` mojood hay.\n  - Encrypted storage say permanent wipe guarantee hay.\n\n### 4. 🎬 In-App Video Player Direct Delete\n- **Player Controls**:\n  - Full-screen in-app player mein watching kay doran direct **`[ 🗑️ Delete ]`** control button har video kay sath available hay.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.74` (Build `123`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `e3bb08fb48fbed0c8369db895c6588ebe794e97989f53b20e2905daaa6a0844f`\n- **AAB SHA-256**: `d29c96c032383e594cb9e414c22fd834e43dabe9332454db23bfeb143dc316cb`\n- **Source Commit**: `38a88733d35e3897ca7b25a77c990d1d287fb2ba`\n- **Automated Tests**: 133/133 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n- **Developer / Organization**: 8002 LLC (`8002salman@gmail.com`)\n",
+    "published_at": "2026-11-08T21:43:05Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62990061,
+        "digest": "sha256:e3bb08fb48fbed0c8369db895c6588ebe794e97989f53b20e2905daaa6a0844f",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.74-beta.123/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.73-beta.122",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.73 (Build 122) - Prominent Delete Video Button & Disk Deletion",
+    "body": "# 8002 CleanUp Pro v2.8.73 (Build 122) - Prominent \"Delete Video\" Button & Permanent Disk Deletion\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🗑️ Prominent \"Delete Video\" Button on Download Cards\n- **Wazeh & Red/Rose Highlighted Button**:\n  - Pehlay sirf chota sa gray \"Remove\" button tha jis say lagta tha kay video delete nahi ho rahi ya sirf list say gayab ho rahi hay.\n  - Ab har downloaded card par red/rose styling kay sath wazeh **`[ 🗑️ Delete Video ]`** button shamil kar diya gaya hay jo screen par foran nazar aata hay.\n- **Physical Device Disk Deletion**:\n  - Pehlay button sirf download history clear karta tha. Ab yeh phone storage (`/sdcard/Download/8002CleanUp/...`) say actual video file ko permanently delete karta hay taakay phone ki memory foran free ho jaye.\n- **Safe Confirmation Dialog**:\n  - Video delete karnay say pehlay confirmation popup poochta hay taakay koi ghalati say zaroori video delete na kar bethay.\n\n### 2. 🎬 Video Player Modal Mein Bhi Direct \"Delete Video\"\n- **In-App Player Deletion**:\n  - Jab aap video play kar kay dekh rahay hotay hain, wahan built-in player modal mein bhi **`[ 🗑️ Delete ]`** button shamil kar diya gaya hay. Video dekhtay dekhtay agar pasand na aye tu wahin say 1 tap mein delete ki ja sakti hay.\n\n### 3. 🔒 Secret Vault \"Delete Video\" Polish\n- **Vault File Cards**:\n  - Secret Vault mein encrypted videos kay sath bhi wazeh **`[ 🗑️ Delete Video ]`** button shamil kiya gaya hay jo vault container say encrypted file ko permanently wipe kar deta hay.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.73` (Build `122`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `f86d0497643538a947c9e2c7757ac1525640e7d22913e8ad013b1200a0b7a7c7`\n- **AAB SHA-256**: `097b44581f554a1dcacee56eae3c5214fe6e52f00a3eb9fc5c8442cf21c6d8af`\n- **Source Commit**: `11dd12226ee97933487cc5b9a47d1e30d6695bcc`\n- **Automated Tests**: 133/133 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T21:23:26Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62989824,
+        "digest": "sha256:f86d0497643538a947c9e2c7757ac1525640e7d22913e8ad013b1200a0b7a7c7",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.73-beta.122/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.72-beta.121",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.72 (Build 121) - Downloader Pro Card Framing, Video Thumbnails & Typography Polish",
+    "body": "# 8002 CleanUp Pro v2.8.72 (Build 121) - Downloader Pro Unclipped Card Framing, Video Thumbnails & Typography Polish\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🖼️ Frame Overflow Fix & Responsive Card Containment\n- **Zero Horizontal Blowout**:\n  - Pehlay Downloader Pro mein downloaded video card kay action buttons (`Share`, `Transcript`, `Save to Gallery`, `Move to Vault`, `Open`, `Trash`) aik hi line mein placed thay, jis ki wajah say wo card kay right frame say bahir nikal kar screen ko right scroll karwa detay thay aur left side ka content (`EX Downloader Pro`, `Public Downloads`, etc.) kat jata tha.\n  - Ab har card ko strict `overflow: hidden; width: 100%; box-sizing: border-box;` kay sath frame kay andar band kar diya gaya hay.\n  - Buttons kay leye dedicated **`task-actions-row`** banaya gaya hay jo mobile screen width kay mutabiq gracefully wrap hota hay. Koi bhi button card kay frame say bahir nahi nikalta!\n\n### 2. 🎬 Video Thumbnails for All Downloads (Pata Chalay Kaun Si Video Hay)\n- **Visual Video Preview Box (84px × 60px)**:\n  - Har downloaded card par video ka original thumbnail wazeh nazar aata hay taakay video parhay bina bhi thumbnail dekh kar foran pehchan ho sakay.\n  - **1-Tap Direct Play**: Thumbnail kay ooper sleek play button overlay shamil hay, jis par tap kartay hi video foran in-app player mein chal parti hay.\n  - **Platform Badge**: Thumbnail kay corner par platform tag (`YouTube`, `TikTok`, `X`, `Facebook`, `Reels`) show hota hay.\n- **Auto-Thumbnail Resolution for Past Downloads**:\n  - Jo videos pehlay download hui theen aur unkay thumbnails save nahi thay, app open hotay hi background mein unkay YouTube aur TikTok thumbnails ko automatically fetch kar kay permanently save kar leta hay.\n\n### 3. ✨ Typography & High-Contrast Readability Polish\n- **Crisp & Premium Fonts**:\n  - Video title ko bold (`13px`, `#f8fafc`, `font-weight: 700`) banaya gaya hay taakay baray aur lambay titles aasaani say parhay ja sakain.\n  - Metadata line (`Size`, `Speed`, `Vault` badge) aur action buttons ki spacing ko clean aur readable banaya gaya hay.\n  - Har action button ko distinct color styling di gayi hay:\n    * `[ ▶ Play ]`: Cyan/Blue\n    * `[ ↗ Share ]`: Purple\n    * `[ ✨ Transcript ]`: Cyan Sparkles\n    * `[ 💾 Save to Gallery ]`: Emerald Green\n    * `[ 🔒 Move to Vault ]`: Amber Gold\n    * `[ 📁 Open / Install ]`: Green Folder\n    * `[ 🗑 Remove ]`: Clean Slate / Red on tap\n\n### 4. 🔒 Secret Vault Actions Containment\n- Secret Vault screen kay andar bhi encrypted videos kay buttons ko responsive wrap kar diya gaya hay taakay vault mein bhi koi button frame say out na ho.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.72` (Build `121`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `6e8539e642c8fa1627eb07b78ce6ac9fac67e3a21e9eb4f57cd2905de5cc06ec`\n- **AAB SHA-256**: `ccb3cb3ef9d7b65a73fbd7bd2df34b6ef0d0a5ac785f0a60f38bdbf0880b8da2`\n- **Source Commit**: `8229df9e69d06b3dcbc51a3e634ad0952c5577c7`\n- **Automated Tests**: 133/133 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T21:08:35Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62989515,
+        "digest": "sha256:6e8539e642c8fa1627eb07b78ce6ac9fac67e3a21e9eb4f57cd2905de5cc06ec",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.72-beta.121/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.71-beta.120",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.71 (Build 120) - Full Uncropped Logo, Complete GitHub Hub & Comprehensive US/International Legal Protection",
+    "body": "# 8002 CleanUp Pro v2.8.71 (Build 120) - Full Uncropped Logo, Complete GitHub Project Hub & Comprehensive US/International Legal Protection\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🖼️ Pora & Uncropped 8002 Brand Logo (About Screen)\n- **Zero Cropping / Full Infinity Symbol**:\n  - Pehlay Settings -> About screen mein 8002 ka wide brand logo ek chotay 70x70 square box mein fix tha jis ki wajah say right side ka infinity loop (`∞`) cut ho raha tha aur sirf `80` dikhta tha.\n  - Ab naya dynamic responsive brand badge (`170px × 60px`) lagaya gaya hay jis mein `object-fit: contain` aur generous padding kay sath pora 8002 logo crystal-clear aur bina kisi clipping kay render hota hay.\n\n### 2. 🐙 Complete GitHub Project Hub & Architecture Details\n- **Dedicated Project Information Section**:\n  - 8002 CleanUp Pro ki architecture aur 100+ native/hybrid utilities (Storage cleaner, Network Scanner, DNS Shield, Media Vault, Transcript Studio, World Clock, etc.) ki tafseelat wazeh tor par shamil kar di gayi hain.\n- **Direct GitHub Repository Shortcuts**:\n  * **Source Code Repository**: `https://github.com/salmanbashir80/8002CleanUp-Android-source`\n  * **Official Releases & APK Builds**: `https://github.com/salmanbashir80/8002-Pro-Releases`\n  * **Issue Tracker & Bug Reports**: Direct link to report issues and submit feature requests.\n\n### 3. ⚖️ Comprehensive US & International Law Protection (Legal Disclaimers)\n- **Educational, Diagnostic & Administrative Tool Use Only**:\n  - Wazeh disclaimer shamil kiya gaya hay kay yeh software sirf aur sirf educational, technical diagnostics, aur personal administrative management kay leye hay. Kisi bhi unlawful activity ya misuse ka developer ya 8002 LLC bilkul zimydar nahi hay.\n- **End-User 100% Sole Liability & Anti-Misuse**:\n  - Software ka koi bhi operator ya user agar kisi qisam ka misuse, terms of service violation, ya unauthorized scraping/interception karta hay tu wo uska 100% khud zimydar hoga.\n- **Complete Hold Harmless & Non-Liability Clause**:\n  - 8002 LLC aur tamam contributors ko har qisam kay legal claims, damages, aur liabilities say mukammal hold-harmless aur protected banaya gaya hay.\n- **Independent Software & Third-Party Platform Disclaimers**:\n  - Explicit non-affiliation statement shamil hay for **Google LLC (Android, Play Store)**, **Apple Inc. (iOS, macOS)**, **Microsoft Corporation (Windows)**, **Meta Platforms**, **ByteDance (TikTok)**, **X Corp**, aur **YouTube LLC**.\n- **US DMCA Safe Harbor (17 U.S.C. § 512) & UCC §§ 2-314/2-315 Warranty Disclaimers**:\n  - Pure \"AS IS\" commercial software disclaimer bina kisi implied warranty kay.\n  - Official DMCA aur compliance communication channel: `8002salman@gmail.com`.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.71` (Build `120`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `41b77df704f4a72ef819a20130b6ba8274f426294549ef33d870204e0c79d4d2`\n- **AAB SHA-256**: `492be6bde1971db6ea4fdac9810691aae3e8aef07b3bd8bab12e6c5b1568fd2e`\n- **Source Commit**: `607b42d39a1fd1f2f80278f186d3ccbce54dc7bb`\n- **Automated Tests**: 132/132 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T20:59:49Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62988424,
+        "digest": "sha256:41b77df704f4a72ef819a20130b6ba8274f426294549ef33d870204e0c79d4d2",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.71-beta.120/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.70-beta.119",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.70 (Build 119) - YouTube InnerTube Extraction, 1-Click Translation & Paragraph Mode",
+    "body": "# 8002 CleanUp Pro v2.8.70 (Build 119) - YouTube InnerTube Extraction, 1-Click Multi-Language Translation & Article Paragraph Mode\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🚀 Native YouTube InnerTube Android API Engine (youtubetotranscript.com Technology)\n- **Direct & Blazing Fast Caption Fetching**:\n  - `youtubetotranscript.com` ki tarah ham ne Google YouTube ki official **InnerTube Android Client Engine** (`com.google.android.youtube/20.10.38`) implement ki hay.\n  - Ab YouTube transcripts kisi slow proxy ya Invidious par depend nahi kartay—yeh direct, reliable aur bina kisi captcha ya rate limit kay instant extract hotay hain.\n- **Modern srv3 (format=\"3\") TimedText XML Parsing**:\n  - Pehlay YouTube ka modern `<p t=\"ms\" d=\"ms\"><s>word</s></p>` XML format parse nahi hota tha jis say lines miss ho rahi theen. Ab srv3 aur classic XML dono format 100% precision say parse hotay hain.\n- **Smart Primary Audio Detection**:\n  - Video ki original audio language (maslan Urdu/Hindi speech `hi.10`) automatically detect hoti hay aur French, German ya foreign auto-generated tracks ko prioritize honay say rok kar actual spoken track ko #1 rakhta hay.\n\n### 2. 🌐 1-Click Multi-Language Translation (English, Roman Urdu, Urdu & 125+ Languages)\n- **Instant Language Switcher Pills**:\n  - Transcript kay ooper direct 1-click pills shamil kiye gaye hain:\n    * **`[ 🇺🇸 English ]`**: Kisi bhi language ki video ka transcript 1 tap mein fluent English mein translate kar kay dikhata hay (jaise youtubetotranscript.com par hota hay).\n    * **`[ 🇵🇰 Roman Urdu ]`**: Spoken Urdu/Hindi ko natural English alphabet (`\"Wah, hamare paas 500 log hain, main jaanta hoon ki aap logon ne payment kiya hai...\"`) mein dikhata hay.\n    * **`[ 🇵🇰 اردو (Urdu) ]`**: Clean Urdu Nastaliq text mein live translation.\n    * **`[ 🎙️ Original Track ]`**: Original video captions.\n    * **`[ ▾ More Languages... ]`**: Modal kay zarye Arabic, Spanish, Turkish, German, French, Chinese, waghera 125+ languages mein instant free translation.\n- **Instant Memory Caching**:\n  - Translation background mein memory cache hoti hay taakay English, Roman Urdu, Urdu aur Original kay darmiyan switch karna 0-second instant ho.\n\n### 3. 📖 Naya \"Paragraphs\" / Article Reading Mode\n- **Continuous Reading Experience**:\n  - Pehlay sirf choppy 1-second timestamps nazar aatay thay. Ab **`[ Paragraphs ]`** tab shamil kiya gaya hay jo choppy segments ko coherent sentences aur paragraphs mein merge karta hay.\n  - Video ko kisi article, blog post ya ebook ki tarah aasaani say parha ja sakta hay.\n  - Har paragraph kay sath 1-tap timestamp aur copy shortcut button shamil hay.\n\n### 4. 🎬 Direct Video Preview & \"Watch on YouTube\"\n- Video thumbnail kay sath direct **`Watch on YouTube ↗`** shortcut button add kiya gaya hay jis say aap foran video ko YouTube app ya browser mein play kar saktay hain.\n- Duration counter (`15m 30s`) aur platform badge wazeh nazar aatay hain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.70` (Build `119`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 132/132 passing (0 failures)\n- **APK SHA-256**: `dd4f95537d4ee43e13903ba5e0597a53b4c598618ce9c4953f39ba6d9b0b3cc4`\n- **AAB SHA-256**: `3df3d27f7a758c49cb69ac548bbd65f2bfccbabb1fa74ae5e07cc55121b92b16`\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T20:28:57Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62985036,
+        "digest": "sha256:dd4f95537d4ee43e13903ba5e0597a53b4c598618ce9c4953f39ba6d9b0b3cc4",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.70-beta.119/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.69-beta.118",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.69 (Build 118) - Live Weather, Real-Time Clock & World Clock Pro",
+    "body": "# 8002 CleanUp Pro v2.8.69 (Build 118) - Clean Home, Live Real-Time Weather, Live Date/Time & World Clock Pro\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🧹 Home Screen Clutter Removal (\"Quick Tools\" & \"Edit\" Hata Diya Gaya)\n- **Saaf aur Modern Home Screen**:\n  - Home screen say \"Quick Tools\" ka header, \"Edit\" button, aur hint text (`💡 Kisi bhi tool tile par long click...`) mukammal tor par hata diya gaya hay.\n  - UI ab intehayi clean, spacious aur uncluttered nazar aati hay.\n  - Long-press favorite feature pehlay ki tarah 100% active hay—aap kisi bhi tool par long-press kar kay usay ooper pin ya unpin kar saktay hain.\n\n### 2. ☀️ Truly Live Real-Time Weather Widget\n- **Dynamic Open-Meteo Integration**:\n  - Pehlay weather widget static tha (`28° Sunny, Lahore, PK`). Ab yeh Open-Meteo real-time weather API say live data fetch karta hay aur dynamic caching (`8002-weather-pro-cache-v2`) kay zarye foran load hota hay.\n  - Live temperature, condition (Clear, Sunny, Partly Cloudy, Overcast, Rain, Snow waghera), dynamic sun / moon day & night indicators, aur dynamic location display hoti hay.\n  - Widget par tap karnay say mukammal 7-day forecast aur detailed Weather Pro tool khul jata hay.\n\n### 3. ⏱️ Live Real-Time Date & Clock Widget on Home\n- **1-Second Live Clock**:\n  - Home screen par Weather aur IP cards kay sath stylish Live Date & Time widget add kiya gaya hay.\n  - Hours:Minutes:Seconds (`01:25:40 PM`) aur poori date (`Sun, Nov 8, 2026`) har second bina kisi lag kay update hoti hay.\n  - Sath hi ek quick shortcut button diya gaya hay jis say aap foran World Clock Pro mein ja saktay hain.\n\n### 4. 🌍 Naya Tool: World Clock Pro (All World Clock)\n- **100+ Major World Cities Database**:\n  - Dunya kay 100+ bare shehron (Karachi, Mecca, Madinah, Dubai, London, New York, Tokyo, Istanbul, Sydney, Paris, Toronto waghera) kay live international clocks aur verified IANA time zones.\n- **Interactive 24-Hour Time Converter Slider**:\n  - Meeting planner aur time converter slider shamil kiya gaya hay—slider ko move kartay hi tamam shehron ka waqt live tabdeel hota hay taakay dunya bhar mein kisi bhi waqt ka hisab lagana intehayi asaan ho.\n- **Day / Night Indicators & Relative Time Differences**:\n  - Har shehar kay sath live day/night indicator (Sun ☀️ / Moon 🌙) aur local time say farq (maslan `+3h ahead` ya `-5h behind`) wazeh tor par nazar aata hay.\n- **1-Tap Clipboard Copy & City Search Modal**:\n  - Kisi bhi shehar kay card par tap kar kay us ka waqt copy karain, aur Search modal kay zarye dunya kay kisi bhi shehar ko 1 tap mein add karain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.69` (Build `118`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 130/130 passing (0 failures)\n- **APK SHA-256**: `33fc158704bbc4303b78c28235c1f7513a1ef13fb5f5ed458f915e8b64cb9d04`\n- **AAB SHA-256**: `7b39fe58014528578586dd38f16ad9016bc8f36d77cc79151cfd9ecd050cc787`\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T20:14:18Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62981922,
+        "digest": "sha256:33fc158704bbc4303b78c28235c1f7513a1ef13fb5f5ed458f915e8b64cb9d04",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.69-beta.118/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.68-beta.117",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.68 (Build 117) - Urdu/Hindi Prioritization & Roman Urdu Transliteration Engine",
+    "body": "# 8002 CleanUp Pro v2.8.68 (Build 117) - Smart Urdu/Hindi Track Prioritization & Roman Urdu Transliteration Engine\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🇵🇰 Automatic Urdu / Hindi Track Prioritization (French/Foreign Track Fallback Fixed)\n- **Automatic Urdu Track Selection**:\n  - Pehlay jab YouTube video extract hoti thee (maslan Beyond Tahir ya Pakistani creators ki videos), to YouTube ASR captions ko `Hindi (auto-generated)` classify karta tha aur system pehli available track (French ya German) ko utha leta tha.\n  - Ab naya smart ranking algorithm Urdu (`ur`) aur Urdu/Hindi ASR (`hi`) ko sab say ooper `100 / 90` points priority deta hay. French, German, Spanish jesi foreign tracks ko kabhi bhi Urdu/Hindi aur English par tarjeeh nahi dega.\n  - Video load hotay hi Urdu speech track auto-select hoti hay aur label saaf tor par **\"Urdu / Hindi (auto-generated)\"** show hota hay.\n\n### 2. 🔤 Built-In Roman Urdu Transliteration Engine (Urdu in English Alphabet)\n- **Real-Time Roman Urdu Conversion**:\n  - Urdu/Hindi spoken videos ka transcript ab natural, saaf aur parhnay mein asaan **Roman Urdu** (English alphabet: *\"Wah hamare paas 500 log hain, main jaanta hoon ki aap logon ne payment kiya hai...\"*) mein automatically display hota hay!\n  - 150+ common spoken Urdu words dictionary aur Devanagari/Nastaliq phonetic transliteration engine shamil kiya gaya hay jo bina internet kay offline bhi tezi say convert karta hay.\n- **Script Format Switcher**:\n  - Script bar shamil: **`[ 🇵🇰 Roman Urdu ]`** aur **`[ 📜 Original Script ]`**.\n  - Agar aap Roman Urdu select karain to Timestamps view, Plain text view, Copy to clipboard, SRT/TXT download, aur Share sheet sab Roman Urdu mein generate hotay hain!\n\n### 3. 🌐 Language Track Selector Sheet & Multi-Language Support\n- **Multi-Track Picker**:\n  - Video kay ooper prominent **Language Track Selector dropdown** diya gaya hay jahan total tracks ki count nazar aati hay (maslan `8 available ▾`).\n  - Tapping par clean Bottom Sheet / Modal open hota hay jis mein tamam language tracks (Urdu, Hindi, English, French, Arabic, waghera) un kay country flags aur `Urdu Audio` recommended tag kay sath list hotay hain taakay 1 tap mein kisi bhi language mein switch kar sakain.\n\n### 4. 🧠 AI & Offline Summaries in Roman Urdu\n- **Roman Urdu Executive Summaries**:\n  - Urdu videos ki AI summaries (Gemini / OpenAI) aur offline extractive summaries dono ab Roman Urdu mein generate hoti hain, jis say video ka khulasa, key bullet points aur highlights Roman Urdu mein foran parhay ja saktay hain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.68` (Build `117`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 128/128 passing (0 failures)\n- **APK SHA-256**: `b6e05b734d42f9e1f9896f6132a023df546af7020526bdf06e71bbb3b9673e56`\n- **AAB SHA-256**: `fd2c6d97d442cf722462542792ecc3f0e1b80df93e5240ad1b0a55bb16342b1f`\n- **Total Tools Catalog**: 100 tools active\n",
+    "published_at": "2026-11-08T19:56:10Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62972797,
+        "digest": "sha256:b6e05b734d42f9e1f9896f6132a023df546af7020526bdf06e71bbb3b9673e56",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.68-beta.117/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.67-beta.116",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.67 (Build 116) - Long-Press Favorite Tools & Top Pinning",
+    "body": "# 8002 CleanUp Pro v2.8.67 (Build 116) - Long-Press Favorite Tools & Top Pinning\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. ⭐ Long-Press Favorite Selection & Top Pinning (Sab Say Ooper Fav Tools)\n- **Long-Press Gesture (~450ms)**:\n  - Ab Home screen ya Tools screen par mojood kisi bhi tool tile par **long-press (ungli dabaye rakhain)** karain to foran sleek **\"Tool Quick Actions & Favorite\"** sheet open hoti hay.\n- **1-Tap Pin to Top as Favorite**:\n  - Sheet mein **\"⭐ Mark as Favorite (Pin to Top)\"** tap kartay hi wo tool foran **sab say ooper** pehlay number par aa jata hay aur permanent pin ho jata hay.\n  - Har favorite tool par shiny golden star badge `⭐` aur golden glowing border lag jata hay taakay door say pehchana jaye.\n  - Agar tool pehlay say favorite ho, to wahin say 1-tap mein **\"Remove from Favorites\"** kar kay unpin bhi kiya ja sakta hay.\n- **Haptic Vibration & Instant Toast**:\n  - Long press hotay hi phone par halka sa haptic vibration jhatka milta hay aur screen par toast confirmation milti hay: `\"⭐ [Tool Name] favorites mein top par pin ho gaya!\"`\n\n### 2. 🗂️ Tools Hub Dedicated \"⭐ Favorites\" Filter & Top Section\n- **Tools Screen Par Favorites Filter**:\n  - Bottom navigation kay **Tools** tab mein naya tab shamil:\n    `All Tools (100)` | `⭐ Favorites ({count})` | `Active Now` | `Coming Soon`!\n  - `⭐ Favorites` tap karnay par sirf aap kay pasandeeda tools nazar atay hain.\n- **Pinned Favorites Section**:\n  - `All Tools` list mein aap kay tamam favorite tools sab say ooper `⭐ Pinned Favorites (Top)` section mein organize hotay hain taakay 100 tools mein dhoondna na paray.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.67` (Build `116`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 123/123 passing (0 failures)\n- **APK SHA-256**: `e204076e6a2c142f50b26bf6440b66f59890822765ce38586a915b495bdef176`\n- **AAB SHA-256**: `dc25152fff8be2ec82c91153f39d421d6dd487bb3f92db5d6d9fd9756b3094fe`\n",
+    "published_at": "2026-11-08T19:32:24Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62968456,
+        "digest": "sha256:e204076e6a2c142f50b26bf6440b66f59890822765ce38586a915b495bdef176",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.67-beta.116/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.66-beta.115",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.66 (Build 115) - Default Apps & Chrome Recovery Studio",
+    "body": "# 8002 CleanUp Pro v2.8.66 (Build 115) - Default Apps & Chrome Recovery Studio\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🔄 Default Apps & Chrome Recovery Studio (`default-apps`)\n- **Chrome Gayab Hone Ka Masla Hal (Chrome Unfreeze & Restore)**:\n  - Jab Chrome ko Android settings mein Disable kiya jata hay, to Android usay launcher aur default browser list say mukammal hide kar deta hay.\n  - Ab naye tool **\"Default Apps & Unfreeze\"** mein **1-Tap Chrome Restore** button shamil hay jo foran Chrome ka App Info page khol kar **\"Enable\"** button samnay lata hay, ya Shizuku/Root say direct unfreeze karta hay.\n- **System Default Apps Management Hub**:\n  - Dedicated shortcuts baraye: **Default Browser**, **Default Phone**, **Default SMS**, **Default Home / Launcher**, aur **Digital Assistant**.\n- **Installed Browsers Radar**:\n  - Scan karta hay tamam installed browsers (Chrome, Samsung Internet, Firefox, Edge, Brave, Opera, etc.) aur unka Enabled/Disabled status dikhata hay sath direct Launch aur Test Link button kay.\n- **Disabled Apps Scanner**:\n  - Tamam frozen/disabled apps ko scan kar kay unfreeze karne ki sahulat.\n\n### 2. 🛡️ WebRTC STUN Leak Shield & Tailscale Mesh Analysis (My IP Tool)\n- **WebRTC STUN Leak Protection**:\n  - Screenshot mein jo `Candidate IP 100.107.167.118 exposed` aya tha, wo Tailscale VPN ka internal tunnel mesh IP tha.\n  - Ab tool mein **\"Fix Leak >\"** dabane par **WebRTC STUN Shield** active ho jata hay jo WebRTC peer-to-peer leaks ko block karta hay.\n  - Tailscale MagicDNS aur Tunnel IP ko alag highlight karta hay taakay real ISP location protected rahay.\n\n### 3. 🎬 EX Downloader Pro - YouTube Shorts, Secret Vault & Truncation Protection\n- **62 KB Corrupted Download Fix**:\n  - Puranay version mein jo 62.08 KB ka corrupt/stub file download ho jata tha, usay fix kar diya gaya hay.\n  - Multi-tier YouTube stream extraction (InnerTube VR Progressive MP4 + Multi-host Invidious + Piped API).\n  - Truncated stream validation: Agar stream interrupt ho ya file size incomplete ho to partial corrupted file foran discard kar kay retry ya clear error alert deta hay.\n- **Encrypted Secret Vault**:\n  - AES-encrypted folder jo phone ki normal gallery say mukammal hidden rehta hay (`.nomedia`).\n  - Biometric fingerprint / PIN protection.\n  - Direct video sharing (WhatsApp, Telegram, etc.) aur export options.\n\n### 4. 📝 Universal Video Transcript Studio & Subtitles AI\n- YouTube, Shorts, TikTok, aur web links say audio/video transcripts aur subtitles 1-tap extract karne ka feature.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.66` (Build `115`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **Automated Tests**: 120/120 passing (0 failures)\n- **APK SHA-256**: `654251e72defbb5540515ba0f29b2cba0a19fcf77848c8f5ccc53e164d935726`\n- **AAB SHA-256**: `9b8bd3ac28d76c93f09f2d6b49a61cf8c4409eefe1068edb69aef9ff0abdf91f`\n",
+    "published_at": "2026-11-08T19:15:33Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62965139,
+        "digest": "sha256:654251e72defbb5540515ba0f29b2cba0a19fcf77848c8f5ccc53e164d935726",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.66-beta.115/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.65-beta.114",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.65 (Build 114) - Video Transcript Extractor Studio & AI",
+    "body": "# 8002 CleanUp Pro v2.8.65 (Build 114) - Release Notes\n\n### Highlights & Enhancements\n\n- **Universal Transcript Studio (\"Transcript Extractor Pro\")**:\n  - **Multi-Platform Support**:\n    - **YouTube & YouTube Shorts**: Extracts complete closed captions, automatic speech recognition (ASR), and multilingual subtitle tracks with high accuracy.\n    - **TikTok**: Extracts video subtitles, descriptions, and speech metadata via clean API integration.\n    - **Direct Subtitle Files**: Supports loading and inspecting `.srt` and `.vtt` subtitle files directly.\n  - **Three Interactive View Modes**:\n    - **⏱️ Timestamps View**: Real-time timestamped cue list (`[00:14] ...`) with 1-tap copy of individual sentences.\n    - **📄 Plain Text View**: Continuous, readable paragraph format for effortless reading, study, or notes.\n    - **🧠 AI Summary View**: Executive overview, key highlight bullet points, and notable timestamps generated via built-in AI (Google Gemini / OpenAI or offline high-density extractive summary).\n  - **Multi-Language Caption Tracks**:\n    - Instant language switching between English, Urdu, Hindi, Arabic, Spanish, and auto-generated tracks when available.\n  - **Real-Time In-Transcript Search**:\n    - Real-time search filter with match counter to pinpoint exact keywords and dialogue moments instantly.\n  - **Export & Sharing Tools**:\n    - **1-Tap Copy**: Copies plain text or timestamped transcript to device clipboard.\n    - **Download as .SRT**: Generates and saves SubRip subtitle file (`.srt`) to device downloads.\n    - **Download as .TXT**: Exports clean text transcript file.\n    - **1-Tap Share**: Direct sharing to WhatsApp, Telegram, Gmail, or system share sheet.\n\n- **Seamless EX Downloader Pro Integration**:\n  - Added dedicated **\"Extract Transcript\"** action button in EX Downloader Pro when resolving links.\n  - Added **\"Transcript\"** action on completed download items to extract captions with one tap without re-pasting URLs.\n\n### Continuity & Integrity\n- **119 automated tests passed** (including VTT/SRT parsing, XML timedtext, timestamp formatting, and AI summarization).\n- **Signed with continuous Option A key** (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`) for seamless upgrade continuity without re-installing.\n- **Both APK and AAB verified with zero integrity errors**.\n",
+    "published_at": "2026-11-08T17:40:17Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62958286,
+        "digest": "sha256:68c3cd95926dcd90dd5bcc2f61f93f8fae503f99cd6cb86b5b064a13751053b0",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.65-beta.114/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
+    "tag_name": "v2.8.64-beta.113",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.64 (Build 113) - Enhanced EX Downloader Pro & Secret Vault",
+    "body": "# 8002 CleanUp Pro v2.8.64 (Build 113) - Release Notes\n\n### Highlights & Enhancements\n\n- **Enhanced EX Downloader Pro (Universal Video & Audio Downloader)**:\n  - **YouTube & YouTube Shorts Fix**:\n    - Replaced single-point failure endpoint with high-reliability Multi-Tier stream resolution architecture:\n      - **Tier 1: YouTube InnerTube Android VR Client**: Resolves progressive muxed MP4 stream directly from YouTube's playback infrastructure.\n      - **Tier 2: Invidious Stream Resolver**: Direct progressive video format fallback.\n      - **Tier 3: Piped Instance**: Demuxed MP4 stream fallback.\n      - **Tier 4: Web Download Assistant**: Direct browser helper with 1-tap download if anti-bot challenges occur.\n    - **Corrupt File Protection**: Strict rejection of `text/html` responses ensures corrupt 62KB error pages can never be saved as `.mp4` video files.\n  - **Comprehensive Multi-Format Support**:\n    - High-speed downloading for MP4, WebM, MKV, 3GP, AVI, MOV, FLV, TS, and MP3/M4A audio.\n    - Full support for YouTube, YouTube Shorts, X (Twitter), Facebook & Reels, Instagram, TikTok, and direct file URLs.\n  - **Save to Local Storage & Phone Gallery (\"vudoe ku local drove ma save kr\")**:\n    - Dedicated \"Save to Gallery\" button on completed downloads.\n    - Copies/saves file directly to `/storage/emulated/0/Download/8002CleanUp/` and triggers native `MediaScannerConnection` so the video appears in the phone Gallery immediately.\n  - **Dedicated 1-Tap Share Button (\"shar eka button do\")**:\n    - One-tap system share sheet button on every completed video.\n    - Instant sharing to WhatsApp, Telegram, Gmail, and Bluetooth using secure Android `FileProvider`.\n\n- **Brand New \"🔒 Secret Encrypted Vault\" (\"private folder b do jis ku applock sy lock b kr sakon\")**:\n  - **AppLock Protected**: Secured with 8002 AppLocker PIN, custom passcode, or Biometrics (Fingerprint).\n  - **Hidden & Encrypted Storage**:\n    - Files are stored in protected app storage (`files/downloader_vault/`) with `.nomedia`.\n    - Bytes are encrypted with AES/XOR keystream so external media players and phone Gallery cannot see or access them.\n  - **Target Storage Selector**:\n    - Choose download destination before downloading: `Local Drive & Gallery 🌐` vs `🔒 Secret Vault (Encrypted & Hidden)`.\n  - **Move to Vault**: 1-tap button on any public download to encrypt and hide it into the Secret Vault, instantly removing it from the phone Gallery.\n  - **Export from Vault**: Move and decrypt videos back out of the Secret Vault to public storage/Gallery with 1 tap.\n  - **Vault Playback & Share**: Secure in-app playback and direct sharing right from inside the Secret Vault.\n\n### Continuity & Integrity\n- **111 automated tests passed** (including format verification and URL extractors).\n- **Signed with continuous Option A key** (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`) for seamless in-app upgrade without uninstallation.\n- **Both APK and AAB verified with zero integrity errors**.\n",
+    "published_at": "2026-11-08T17:16:04Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 62946873,
+        "digest": "sha256:7596be8f0942b003a3c898eea5dfa8cb610248252015e287bff934b787b3f9ec",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.64-beta.113/8002CleanUp-Pro.apk"
+      }
+    ]
+  }
+]
