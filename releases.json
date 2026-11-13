@@ -2,7 +2,7 @@
   {
     "tag_name": "v2.8.111-beta.161",
     "draft": false,
-    "prerelease": true,
+    "prerelease": false,
     "name": "8002 CleanUp Pro v2.8.111-beta.161",
     "body": "## 8002 CleanUp Pro v2.8.111 (Build 161) - Public Beta\n\nMaintenance build of the 2.8.11x line: the same verified feature set as 2.8.110 (customizable bottom dock, Sky Map, Files layout, WMA recovery), refreshed with a version bump so the in-app updater can deliver it over 2.8.110.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.111` (Build `161`)\n- **APK SHA-256**: `7139f5e286c23643d93698e2dc3a00fd92850256823110a9d4c905d3b476103a`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n\nUpgrade over 2.8.110 preserves app data; signing certificate matches the existing public releases.\n",
     "published_at": "2026-11-13T21:19:31Z",
