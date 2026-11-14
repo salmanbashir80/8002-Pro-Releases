@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.114-beta.164",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.114 (Build 164) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.114 (Build 164) - Public Beta\n\nDirect Google Gemini App integration, In-App Gemini Vision Forensics scan, and beautifully redesigned & organized Forensics Studio.\n\n### What's New:\n\n1. **Direct Google Gemini App Integration**:\n   • 1-Tap \"Open in Google Gemini App\" button (`com.google.android.apps.bard`).\n   • Automatically attaches the image with a prefilled SynthID / AI provenance verification prompt.\n   • Seamless fallback to system chooser and Gemini web (`gemini.google.com`).\n\n2. **In-App Gemini AI Forensics Scanner**:\n   • On-device / In-App AI forensic scan powered by Google Gemini Vision.\n   • Inspects synthetic diffusion noise, generative smoothing, unnatural textures, and SynthID watermark characteristics right inside the app.\n   • Outputs instant verdict badges (`AI GENERATED`, `AUTHENTIC PHOTO`, `DIGITAL SCREENSHOT`), visual markers, and confidence levels.\n\n3. **Redesigned & Organized Forensics Studio**:\n   • Segmented 3-tab layout:\n     - **📋 Overview**: Accurate Origin banner (Device Screenshot vs Messaging Media vs Camera Optics vs AI Generation), 4-Box Key Metrics Grid (Resolution, File Size, Date, Folder), and Geolocation map card.\n     - **✨ Gemini & SynthID**: Dedicated Gemini App launcher, in-app scanner, and official DeepMind SynthID resources.\n     - **🔍 Technical EXIF**: Optical camera specs (Aperture, Shutter, ISO, Focal Length) plus searchable/filterable raw EXIF attributes.\n   • Fixed confusing misclassifications: screenshots and chat media are never falsely labelled as \"Phone Camera Capture\".\n\n### Integrity & Verification:\n\n• Package: `com.salmanbashir.cleanup8002`\n• Version: `2.8.114` (Build `164`)\n• Commit: `600a659`\n• APK SHA-256: `354cee1cbc4744b40a1b0fb7e9f8493d59c22e5a8760f3fc699613462e50de20`\n• AAB SHA-256: `725c6fa8246f7caccd38ce58aadfcb68a934344bd4951284bf47f3e93db72031`\n• Signing Certificate SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n\nUpgrade over 2.8.113 preserves all local app data and settings.\n",
+    "published_at": "2026-11-14T22:05:45Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63476674,
+        "digest": "sha256:354cee1cbc4744b40a1b0fb7e9f8493d59c22e5a8760f3fc699613462e50de20",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.114-beta.164/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.113-beta.163",
     "draft": false,
     "prerelease": false,
@@ -601,23 +618,6 @@
         "size": 63030159,
         "digest": "sha256:edf275a77195715a7f075157da3bcd63ff590a0cf44a0fbd856c5e71f40fd60b",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.80-beta.129/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.75-beta.124",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.75 (Build 124) - Calculator Worksheet Text Scaling & Keyboard Height Workspace Fix",
-    "body": "# 8002 CleanUp Pro v2.8.75 (Build 124) - Calculator Worksheet Text Scaling & Keyboard Height Workspace Fix\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 🔠 Worksheet Text Scaling System Fixed (80% Compact to 150% Huge)\n- **CSS Variables Connected**:\n  - Pehlay settings dialog mein text size slider aur presets (`Compact 80%`, `Default 100%`, `Large 125%`, `Huge 150%`) state update kar rahay thay magar worksheet ke CSS elements par hardcoded pixel sizes ki wajah say tape text scale nahi ho raha tha.\n  - Ab saaray worksheet elements (`.tape-calc-line`, `.tape-calc-op`, `.tape-calc-num-container`, `.tape-calc-num-display`, `.tape-calc-num.total-num`, `.tape-calc-comment`, `.tape-rule-single`, `.tape-rule-double`, `.tape-empty`) mukammal tor par dynamic CSS variables (`--tape-font-scale`, `--tape-line-height`, `--tape-line-font-size`, `--tape-op-font-size`, `--tape-comment-font-size`, `--tape-total-font-size`, `--tape-num-width`, `--tape-op-width`, `--tape-rule-width`) kay sath live connect ho gaye hain.\n- **Interactive Live Preview Box**:\n  - Worksheet Settings dialog kay andar hi foran aik **Live Preview Box** shamil kar diya gaya hay jo slider ya button touch kartay hi realtime mein sample line aur total ko scale kar kay dikhata hay.\n\n### 2. ⌨️ Keyboard Height & Screen Workspace Modes (Small / Medium / Large)\n- **Screen Workspace Dynamic Balancing**:\n  - **Small (Max space)**: Sleek ~34px compact keys aur tightened padding. Calculator keypad ki vertical height ~35% kam ho jati hay jis say calculation tape ke liye maximum screen workspace nikal aata hay aur lambi calculations baghair scroll kiye nazar aati hain.\n  - **Medium (Balanced)**: Standard ~44px balanced keys, perfect typing comfort aur spacious worksheet rows ka behad umdah balance.\n  - **Large (Spacious)**: Luxurious ~54px big keys aur spacious touch targets, barey hath ya fast single-hand typing ke liye ideal.\n- **Helper Description Text**:\n  - Settings dialog mein har mode choose karnay par wazeh visual indicator aur description text aata hay jo batata hay kay keypad aur screen workspace mein kya tabdeeli aayi hay.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.75` (Build `124`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK SHA-256**: `e08c1bc4870ce49b16bd00b57d7cade914a31e5fdef31ce835ce7c6d18ec9034`\n- **AAB SHA-256**: `1ff795687915e184417606fa34359dce83688966d9ff79e73e9eaa19a2ba376e`\n- **Source Commit**: `29b7bd4946f48adf5789005b6adfb7d9bfd2b92c`\n- **Automated Tests**: 134/134 passing (0 failures)\n- **Total Tools Catalog**: 100 tools active\n- **Developer / Organization**: 8002 LLC (`8002salman@gmail.com`)\n",
-    "published_at": "2026-11-08T22:39:00Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 62991152,
-        "digest": "sha256:e08c1bc4870ce49b16bd00b57d7cade914a31e5fdef31ce835ce7c6d18ec9034",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.75-beta.124/8002CleanUp-Pro.apk"
       }
     ]
   }
