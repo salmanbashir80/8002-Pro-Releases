@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.116-beta.166",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.116 (Build 166) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.116 (Build 166) - Public Beta\n\nInteractive Taskbar Bottom Dock upgrade: Compact Manage/Add button, 1-tap in-place slot assignment, and long-press quick action popover (Move Left/Right, Replace Tool, and Remove Tool).\n\n### What's New:\n\n1. **Compact Manage (+) Button**:\n   • Streamlined from 48px to a sleek 34px compact button with dashed accent styling.\n   • Eliminates crowding in the bottom navigation dock, saving precious horizontal space.\n\n2. **In-Place Slot Replacement & Vacation**:\n   • Adding a tool directly occupies the slot in the dock.\n   • Removing a tool immediately vacates the slot so another tool can be added in its place.\n\n3. **Long-Press Quick Action Popover**:\n   • Press and hold any custom dock tool (or right-click) to open an instant action sheet:\n     - **⬅ Move Left / ➡ Move Right**: Instant one-tap position shifting within the dock.\n     - **🔄 Replace Tool**: Directly swaps this slot with any tool from the 100-tool catalog.\n     - **❌ Remove from Dock**: Immediately removes the tool from the taskbar, clearing the slot.\n   • Direct touch-and-drag gesture reordering across the dock remains fully supported.\n\n### Integrity & Verification:\n\n• Package: `com.salmanbashir.cleanup8002`\n• Version: `2.8.116` (Build `166`)\n• Commit: `6228b2e`\n• APK SHA-256: `e53d7a469bb4c4c4e7075cd464766da3fd4f1a13da80a0be4b174de9b14cdb48`\n• AAB SHA-256: `291d068fea2293d57eb5a34f6399166f23107596528c33f115054b1a729ad21b`\n• Signing Certificate SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n\nUpgrade over 2.8.115 preserves all local app data and settings.\n",
+    "published_at": "2026-11-14T22:33:04Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63479702,
+        "digest": "sha256:e53d7a469bb4c4c4e7075cd464766da3fd4f1a13da80a0be4b174de9b14cdb48",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.116-beta.166/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.115-beta.165",
     "draft": false,
     "prerelease": false,
@@ -601,23 +618,6 @@
         "size": 63038403,
         "digest": "sha256:7b517a2d1dcfe055c273513d2476a20f183b981bf7553a25f1ef64ba4b29659a",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.82-beta.131/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.81-beta.130",
-    "draft": false,
-    "prerelease": false,
-    "name": "8002 CleanUp Pro v2.8.81 (Build 130) - AI Chat Studio & Universal File Extractor",
-    "body": "# 8002 CleanUp Pro v2.8.81 (Build 130)\n\n### 🚀 What's New in Build 130:\n\n#### 1. 🤖 8002 AI Chat Studio (Multi-Model & Vision & Files)\n- **Pixel-Perfect Aurora Aesthetics**: Deep midnight space background (`#080614`) with glowing neon wave curves, gradient infinity logo (`♾️`), glass back and action buttons.\n- **Universal File & Document Reader (📎)**:\n  - Attach images (JPG, PNG, WEBP, GIF, SVG, BMP), documents (PDF, Word .docx via JSZip, TXT, Markdown), code files (JS, TS, PY, HTML, CSS, SQL, SH), data (JSON, CSV), and archives (ZIP).\n  - Automatically extracts and reads textual content and structures client-side, enabling full AI summarization, translation, analysis, and data extraction.\n- **Flux AI Image Generation (🎨)**:\n  - Natural language triggers (`make image of...`, `draw...`, `tasweer banao...`, `/image ...`) trigger high-definition neural rendering via Flux AI.\n  - Interactive image cards in chat with **Save to Gallery / Download** and **Fullscreen Zoom Preview**.\n- **Multi-Model Intelligence**:\n  - **ChatGPT 4o**: Premier OpenAI multimodal intelligence.\n  - **DeepSeek R1 & V3**: Chain-of-Thought reasoning with collapsible `<details>` thinking box.\n  - **Qwen 2.5 72B & Qwen Coder**: Premier multilingual intelligence & natural Roman Urdu.\n  - **Mobile System AI (📱)**: 100% offline device health assistant (battery, storage, network shield) + Local LLM bridge for Ollama / Termux on-device servers.\n  - **Google Gemini 1.5 Flash** & **Meta LLaMA 3.3 70B**.\n- **Speech-to-Text Dictation (🎙️)**:\n  - Hands-free voice typing supporting Roman Urdu and English with live pulse indicator.\n\n#### 2. 🏠 Premium Search Bar & Home Widget Enhancements\n- **Redesigned Search Bar**: Sleek 48px aurora glass container with integrated 36px submit button and zero text cutoff.\n- **Dual Status Cards Overflow Fix**: IP address formatted in monospace with strict boundaries (`text-overflow: ellipsis`) so it never exceeds frame boundaries.\n- **Home Live World Clock Widget**:\n  - Live dates displayed alongside each city (`Mon, 9 Nov`).\n  - Replaced bulky text with sleek navigation arrow (`>`).\n  - **Interactive 3-City Customizer**: 1-tap city slot selector, search across 100+ global cities, and quick presets (Karachi/Mecca/Dubai, Lahore/London/Houston, New York/London/Tokyo).\n\n---\n*Built with Option A Continuous Signing Key by 8002 LLC (`8002salman@gmail.com`).*\n",
-    "published_at": "2026-11-09T07:09:44Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63038425,
-        "digest": "sha256:3e555a3e1f7a45a76e56ca53302796ac12014c984289d8476f806576e4aca6fc",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.81-beta.130/8002CleanUp-Pro.apk"
       }
     ]
   }
