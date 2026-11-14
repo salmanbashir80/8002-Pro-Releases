@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.117-beta.167",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.117 (Build 167) - Public Beta",
+    "body": "### 8002 CleanUp Pro v2.8.117 (Build 167) - Public Beta\n\n#### What's New & Improvements:\n- **Quick Tools Customization (`+` Button & Add Modal)**:\n  - Added a dedicated `+` button in the Quick tools header and an inline `+ Add Tool` card in the grid.\n  - Interactive search modal allows browsing all 100 catalog tools to easily add shortcuts to the Home screen.\n- **Windows-Style Long-Press Context Menu**:\n  - Long press (or right-click) any tool card on Home to open a Windows-style context sheet:\n    - 🚀 **Open Tool**: Immediate tool launch.\n    - 🗑 **Remove from Quick tools**: Instantly remove shortcut from Home.\n    - 📌 **Pin to Taskbar Dock**: Add/pin directly to the bottom navigation dock.\n    - ⭐ **Favorite / Unfavorite**: Pin or unpin tool favorites.\n- **Dynamic Quick Tools Reordering & Management**:\n  - Direct integration with bottom dock taskbar management.\n- **UI & Accessibility**:\n  - Full WCAG >= 4.5:1 contrast compliance in light theme.\n",
+    "published_at": "2026-11-14T22:43:22Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63480924,
+        "digest": "sha256:f0f56d0fba7e5534e3c39bdf79815d2c3d1fbf7419329371eb170087a8e1e350",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.117-beta.167/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.116-beta.166",
     "draft": false,
     "prerelease": false,
@@ -601,23 +618,6 @@
         "size": 63039390,
         "digest": "sha256:7084be4938de2ed1947fbeae843005fc9f65b08526f93c62e016571d9d60c02f",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.83-beta.132/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.82-beta.131",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.82 (Build 131)",
-    "body": "## 8002 CleanUp Pro v2.8.82 (Build 131)\n\n### 🚀 What's New & Fixed in Build 131:\n\n#### 1. 🛠️ APK In-App Installation & Android Package Installer Fix\n- **Safe Dynamic Signature Verification**: Resolved Android 9+ `NullPointerException` where `getPackageArchiveInfo` returned null `SigningInfo`, ensuring seamless in-app verification without crashes.\n- **Universal Installer URI Permissions**: Added explicit `grantUriPermission` iteration across all OEM package installers (`com.google.android.packageinstaller`, `com.android.packageinstaller`, Samsung, Xiaomi, OnePlus installer services).\n- **Public Downloads Media Scanning**: Updates downloaded to `/sdcard/Download/8002CleanUp-Pro.apk` are automatically scanned and indexed via `MediaScannerConnection` for immediate accessibility.\n- **Version Code Upgrade to 131**: Prevents Android OS from rejecting the update due to same-version conflict (`versionCode 130`).\n\n#### 2. 🤖 8002 AI Chat Studio Pro (From Build 130)\n- **Universal Document & File Extractor**: Attach documents (`.pdf`, `.docx` via JSZip, `.txt`, `.md`), data (`.csv`, `.json`), code (`.js`, `.py`, `.html`, etc.), and images.\n- **Flux AI Neural Image Rendering**: Automatic image creation for prompts like `make image of...`, `draw...`, `tasweer banao...`, `/image ...`.\n- **Multi-Model Support**: ChatGPT 4o, DeepSeek R1 & V3, Qwen 2.5 72B & Qwen Coder, Mobile System AI (100% offline device health + local LLM bridge), Gemini Flash, and LLaMA 3.3.\n- **Speech-to-Text Voice Dictation**: Hands-free voice typing supporting Roman Urdu and English.\n\n#### 3. ⏱️ 3-City Home Clock & Region Teleport\n- Live interactive time scrubber with date displays for all slots.\n- Direct quick presets and drag scrubber.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
-    "published_at": "2026-11-09T09:00:52Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63038403,
-        "digest": "sha256:7b517a2d1dcfe055c273513d2476a20f183b981bf7553a25f1ef64ba4b29659a",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.82-beta.131/8002CleanUp-Pro.apk"
       }
     ]
   }
