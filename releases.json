@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.115-beta.165",
+    "draft": false,
+    "prerelease": false,
+    "name": "8002 CleanUp Pro v2.8.115 (Build 165) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.115 (Build 165) - Public Beta\n\nDuck.ai Anonymous AI Chat integration, Header Live Weather & Date widget, clean header branding layout, and dynamic Shield Protection button.\n\n### What's New:\n\n1. **Duck.ai Anonymous AI Chat**:\n   • Replaced the Live Weather card in the Home screen dual status row with **Duck.ai**.\n   • Direct 1-tap launcher to `https://duck.ai/?origin=funnel_home_website` in private browser or external browser.\n   • Features custom Duck mascot icon with AI chat sparkle badge.\n\n2. **Header Live Weather & Date Widget**:\n   • Relocated live weather to the top header alongside `8002 WORKSPACE` and the live calendar date (e.g., `18° Clear · Sun, 15 Nov`).\n   • 1-tap on the header weather widget opens Weather Pro.\n\n3. **Streamlined Header Branding**:\n   • Removed the cyan square grid icon to give `8002 WORKSPACE` a sleek, left-aligned layout.\n   • Frees up space in the top header for weather and protection indicators.\n\n4. **Dynamic Shield Protection Status Button**:\n   • Replaced the Settings gear in the top right header with a live Shield status button.\n   • **Green (`#10b981`)** with glowing status dot when Shield / VPN protection is active.\n   • **Red (`#ef4444`)** with alert status dot when disconnected.\n   • 1-tap navigates directly to the Shield security screen.\n\n### Integrity & Verification:\n\n• Package: `com.salmanbashir.cleanup8002`\n• Version: `2.8.115` (Build `165`)\n• Commit: `c53a0d3`\n• APK SHA-256: `906d5c1892d8118f69d8023b779e80356bc003e92e3c7c576f8421b0a79248f5`\n• AAB SHA-256: `baf4f526339c480930bfffc153eee1ce64e6018bc83f35c20477e9e5374842a1`\n• Signing Certificate SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n\nUpgrade over 2.8.114 preserves all local app data and settings.\n",
+    "published_at": "2026-11-14T22:22:53Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63478547,
+        "digest": "sha256:906d5c1892d8118f69d8023b779e80356bc003e92e3c7c576f8421b0a79248f5",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.115-beta.165/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.114-beta.164",
     "draft": false,
     "prerelease": false,
@@ -601,23 +618,6 @@
         "size": 63038425,
         "digest": "sha256:3e555a3e1f7a45a76e56ca53302796ac12014c984289d8476f806576e4aca6fc",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.81-beta.130/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.80-beta.129",
-    "draft": false,
-    "prerelease": false,
-    "name": "8002 CleanUp Pro v2.8.80 (Build 129) - EX Downloader Full-Screen Frame Fix",
-    "body": "# 8002 CleanUp Pro v2.8.80 (Build 129) - EX Downloader Pro Full-Screen Immersive Frame & Bottom Scroll Expansion\n\n## 🌟 Nayi Tabdeeliyan & Khas Features (What's New)\n\n### 1. 📱 EX Downloader Pro Full-Screen Frame Fix (Bottom Black Void Removal)\n- **100% Immersive Full-Screen Frame**:\n  - `ExDownloaderModal.css` mein mojood `max-height: 85vh` ki pabandi ko mukammal taur par khatam kar diya gaya hay jo mobile ke bottom par 15% ka bad-numa black space chhor rahi thi aur 3rd downloaded video card ko beech mein se kaat rahi thi.\n  - Ab EX Downloader Pro pure mobile screen (`100%`, `100dvh`, `min-height: 100dvh`) par seamless aurora dark gradient frame ke sath display hota hay.\n- **📜 Bottom Safe Area Scroll Spacers**:\n  - `.ex-downloader-queue-list` aur `.vault-files-list` mein `padding-bottom: calc(40px + env(safe-area-inset-bottom, 28px))` shamil ki gayi hay.\n  - Dono lists ke aakhir mein dedicated safe area spacer shamil kiya gaya hay taakay Android gesture bar ya navigation pills ke sath koi bhi downloaded video card touch na ho aur aakhri video bhi bilkul asaani se scroll ho kar poori tarha nazar aaye.\n- **✨ Complete Visibility for All Downloaded Videos**:\n  - Tamam downloaded videos (\"Play\", \"Share\", \"Transcript\", \"Save to Gallery\", \"Move to Vault\", \"Open\", aur \"Delete Video\") card frame ke andar 100% comfortably fit aur visible hain.\n\n---\n\n## 🔒 Build & Security Verification\n- **Version**: `2.8.80` (Build `129`)\n- **Package Name**: `com.salmanbashir.cleanup8002`\n- **Signing Key**: Option A continuous release key (`92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`)\n- **APK Size**: `63,030,159 bytes` (~60.1 MB)\n- **APK SHA-256**: `edf275a77195715a7f075157da3bcd63ff590a0cf44a0fbd856c5e71f40fd60b`\n- **AAB Size**: `33,507,462 bytes` (~32.0 MB)\n- **AAB SHA-256**: `567b58dccb5f58365595e35c018bd38f5e6d78d9df9681fd23d13bb4ad60a81f`\n- **Automated Tests**: 153/153 passing (0 failures)\n- **Total Tools Catalog**: Exactly 100 tools maintained\n- **Developer / Organization**: 8002 LLC (`8002salman@gmail.com`)\n",
-    "published_at": "2026-11-09T05:50:34Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63030159,
-        "digest": "sha256:edf275a77195715a7f075157da3bcd63ff590a0cf44a0fbd856c5e71f40fd60b",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.80-beta.129/8002CleanUp-Pro.apk"
       }
     ]
   }
