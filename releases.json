@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.125-beta.175",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.125 (Build 175) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.125 (Build 175) - Public Beta\n\n### What's New in this Release:\n1. **Pakistan All-Cities Landmark Coverage (24 Landmarks across 19 Cities)**:\n   - Comprehensive landmark coverage across all major cities and provinces of Pakistan:\n     - **Punjab**: Lahore (Badshahi Mosque, Minar-e-Pakistan, Data Darbar), Faisalabad (Ghanta Ghar Clock Tower), Multan (Shah Rukn-e-Alam Shrine), Sialkot (Iqbal Manzil), Bahawalpur (Noor Mahal Palace, Derawar Fort), Jhelum (Rohtas Fort), Nankana Sahib (Gurdwara Janam Asthan).\n     - **Sindh**: Karachi (Mazar-e-Quaid, Clifton Beach & Port Grand), Hyderabad (Pacco Qillo Fort), Sukkur (Lansdowne Bridge), Larkana (Mohenjo-daro Ancient Ruins).\n     - **Federal**: Islamabad (Faisal Mosque, Pakistan Monument).\n     - **KPK**: Peshawar (Bab-e-Khyber), Swat (Malam Jabba Ski Resort & Peaks).\n     - **Balochistan**: Quetta / Ziarat (Quaid Residency Ziarat), Gwadar (Port & Hammerhead Peninsula).\n     - **Gilgit-Baltistan**: Gilgit (K2 Savage Mountain), Skardu (Shangrila Resort & Kachura Lake).\n     - **Azad Kashmir**: Muzaffarabad (Pir Chinasi Mountain Shrine).\n\n2. **City-Wise Sub-Filter Tab Bar**:\n   - When the `📍 Pakistan` scope is selected, an intuitive horizontal pill bar appears with all 19 cities plus `All`:\n     - Clicking any city dynamically isolates AR micro-capsules, compass bearings, 360° mini-radar HUD, and the bottom target selector ribbon to that specific city's landmarks.\n\n3. **Expanded Worldwide Iconic Landmarks (20 Global Landmarks)**:\n   - Iconic monuments spanning key world hubs:\n     - Egypt (Great Pyramids of Giza), France (Eiffel Tower), India (Taj Mahal), UAE (Burj Khalifa), USA (Statue of Liberty), Italy (Colosseum of Rome), Nepal/China (Mount Everest), China (Great Wall of China), UK (Big Ben), Jordan (Petra Treasury), Turkey (Hagia Sophia), Malaysia (Petronas Twin Towers), Australia (Sydney Opera House), Japan (Mount Fuji), Brazil (Christ the Redeemer), Russia (Saint Basil's Cathedral), Canada (CN Tower Toronto), Singapore (Marina Bay Sands), Greece (Acropolis & Parthenon), Spain (Sagrada Família).\n\n4. **Compact Micro-Capsule AR Pins with City Labels**:\n   - Ultra-sleek AR pins now include city identifiers: `[Emoji] Landmark · City · Distance` for immediate contextual orientation without clutter.\n\n5. **26 New Photorealistic Vector SVG Visuals (57 Total Visuals)**:\n   - Authored bespoke SVG vector illustrations for every new Pakistan city landmark and global wonder in `src/utils/famousPlacesVisuals.ts`.\n\n6. **Quality, Accessibility & Testing**:\n   - WCAG contrast ratio >= 4.5:1 strictly maintained for all new city pills and text badges in light theme (`html.theme-light`).\n   - All 300 unit tests passing with 0 failures.\n   - Built directly without Android emulators in compliance with user policy.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.125` (Build `175`)\n- **APK SHA-256**: `54d7fec00aa421f4dfcbce89d5f27bd52f553d70c8558c42c6d47b077d9e2f42`\n- **AAB SHA-256**: `28c3460df095f13fd114c4b3f30c1ce4c34c3e28e7997c245f62c3eacd24ee49`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-15T14:50:51Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.125-beta.175.apk",
+        "state": "uploaded",
+        "size": 63535724,
+        "digest": "sha256:54d7fec00aa421f4dfcbce89d5f27bd52f553d70c8558c42c6d47b077d9e2f42",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.125-beta.175/8002CleanUp-Pro-v2.8.125-beta.175.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63535724,
+        "digest": "sha256:54d7fec00aa421f4dfcbce89d5f27bd52f553d70c8558c42c6d47b077d9e2f42",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.125-beta.175/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.124-beta.174",
     "draft": false,
     "prerelease": true,
@@ -622,30 +646,6 @@
         "size": 63327415,
         "digest": "sha256:7f3b1eeb9d5fede274473a8142367d42f6fbb59726d4dfbb38713146cc7593a6",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.91-beta.140/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.90-beta.139",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.90 (Build 139) · Drag Reorder & Aesthetic Dynamic Island Notifications",
-    "body": "## 8002 CleanUp Pro v2.8.90 (Build 139)\n\n### 🚀 What's New & Upgraded in Build 139:\n\n#### 1. 🔄 Restored Home Screen Drag & Drop Tile Reordering\n- **Smooth Real-time Reordering**: Press and hold any app/tool tile on the Home screen for ~260ms to lift it into drag mode. Drag across tiles to rearrange your home layout live with fluid animations and haptic ticks.\n- **Persistent Custom Layout**: Drag-and-drop order is automatically saved and preserved across app sessions.\n- **Dual-Action Gestures**:\n  - **Quick tap**: Launches the tool instantly.\n  - **Hold & Drag (260ms + move)**: Smoothly reorders tools and moves tiles to any slot.\n  - **Stationary Long-Press (720ms in place)**: Opens the Favorite & Pin Quick Action Sheet.\n\n#### 2. ✨ Aesthetic Dynamic Island Heads-Up Notifications\n- **Ultra-Sleek Glassmorphic Floating Capsule**: Top-anchored floating dynamic pill with obsidian glass blur, glowing neon cyan/purple rim, and 3D depth shadows.\n- **Rich Icon Avatars & Badges**: Glowing animated icon rings for Favorites (⭐), Security/Shield (🛡️), Downloads (📥), Cleaner (🧹), and Alarms (⏰).\n- **Interactive & Swipeable**: Swipe up on the notification pill to dismiss instantly, or let it auto-dismiss with a smooth animated countdown progress glow line.\n- **Modernized Android System Notifications**: Native Android status bar notifications now feature vibrant cyan branding accents (`#00F2FE`), `8002 CleanUp Pro` subtext headers, and high-priority heads-up delivery.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
-    "published_at": "2026-11-10T02:44:23Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.90-beta.139.apk",
-        "state": "uploaded",
-        "size": 63309139,
-        "digest": "sha256:e25a989beab7d8a14735f1320e12e02ff646c2d58db5add4ffc2f027636bbe2a",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.90-beta.139/8002CleanUp-Pro-v2.8.90-beta.139.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63309139,
-        "digest": "sha256:e25a989beab7d8a14735f1320e12e02ff646c2d58db5add4ffc2f027636bbe2a",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.90-beta.139/8002CleanUp-Pro.apk"
       }
     ]
   }
