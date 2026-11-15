@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.122-beta.172",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.122 (Build 172) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.122 (Build 172) - Public Beta\n\n### What's New in this Release:\n1. **8002 App Killer Pro - Admin Level Usage & Accessibility Access**:\n   - **Removed Shizuku Requirement**: Completely removed all Shizuku warning banners, pairing instructions, Shizuku connect buttons, and Shizuku error messages from App Killer Pro.\n   - **Admin Level Usage Access**: Integrated Android `PACKAGE_USAGE_STATS` (`UsageStatsManager`) and `QUERY_ALL_PACKAGES` to accurately detect all active, recently used, and background applications across User and System categories.\n   - **Accessibility Service Integration**: Connected with `PrivacyWindowService` accessibility service for seamless background monitoring and app stopping.\n   - **Live Process & Memory Inspection**: Displays real installed applications with real/proportional RAM memory footprint badges (e.g., 180 MB - 350 MB) rather than an empty list.\n   - **Clean Background Stopping (`KILL_BACKGROUND_PROCESSES`)**: Enables immediate termination of selected background application processes and reclamation of cached RAM memory directly from the app without requiring Shizuku or Root.\n   - **Multi-Tab Categorization**: Clear segregation between User Apps, System Apps, and Whitelisted / Excluded Apps with quick `Select All` / `None` controls and protection star toggles.\n\n2. **Quality & UI Invariants**:\n   - Full light theme contrast support (`html.theme-light`) maintaining WCAG >= 4.5:1.\n   - All 298 unit tests passing with 0 failures.\n   - Preserves 103 active tool catalog invariant.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.122` (Build `172`)\n- **APK SHA-256**: `cc3ac1a11edd48694e7e903cb7c7bd32d7652c7eed92ebe1f34bca47e5e5dd26`\n- **AAB SHA-256**: `90bfa87966481d97d7368c4f7bd5ebec98cf4a3fd1b8cacf432b04d6180c5338`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-15T10:54:37Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.122-beta.172.apk",
+        "state": "uploaded",
+        "size": 63517595,
+        "digest": "sha256:cc3ac1a11edd48694e7e903cb7c7bd32d7652c7eed92ebe1f34bca47e5e5dd26",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.122-beta.172/8002CleanUp-Pro-v2.8.122-beta.172.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63517595,
+        "digest": "sha256:cc3ac1a11edd48694e7e903cb7c7bd32d7652c7eed92ebe1f34bca47e5e5dd26",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.122-beta.172/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.121-beta.171",
     "draft": false,
     "prerelease": true,
@@ -615,23 +639,6 @@
         "size": 63307267,
         "digest": "sha256:f7213ab7bdf78e51abf1b570d04892f9f97c556614f20bb673f3f0bb7dcd5cca",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.88-beta.137/8002CleanUp-Pro-v2.8.88.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.87-beta.136",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.87 (Build 136)",
-    "body": "### 8002 CleanUp Pro v2.8.87 (Build 136)\n- **Passive Zero-Latency VPN Detection**: Detects any active Android VPN or WireGuard tunnel in memory without sending packets, disturbing routes, or adding any ping latency.\n- **Intelligent Reassuring Status**: Replaces alarming 'Protection Paused' warnings with a clear 'VPN Active & Secured' cyan badge, reassuring that device traffic is already safely encrypted.\n- **Live Connected VPN/VPS Monitor**: Shows live tunnel status (interface name, protocol, 0ms ping impact) directly on the Shield overview.\n- **Smart VPN Coexistence Modal**: Gives single-tap options to keep active VPN or open Android VPN settings when switching.\n- **APK SHA-256**: `b8ca91ddfb620a6e03b69655039c0d8d8a7c05cd7e976a9d864a8f483d21dc2e`",
-    "published_at": "2026-11-09T21:12:08Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.87.apk",
-        "state": "uploaded",
-        "size": 63307308,
-        "digest": "sha256:b8ca91ddfb620a6e03b69655039c0d8d8a7c05cd7e976a9d864a8f483d21dc2e",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.87-beta.136/8002CleanUp-Pro-v2.8.87.apk"
       }
     ]
   }
