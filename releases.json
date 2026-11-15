@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.123-beta.173",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.123 (Build 173)",
+    "body": "## 8002 CleanUp Pro v2.8.123 (Build 173) - Public Beta\n\n### What's New in this Release:\n1. **Video Recorder Pro - Camera2 Recording & Seamless Playback Engine**:\n   - **Fixed Video Recording Failure**: Resolved the headless Camera2 capture session issue where a detached SurfaceTexture caused `onConfigureFailed` on Android devices (ColorOS, OxygenOS, MIUI, OneUI). Recording now cleanly streams to MediaRecorder's native surface.\n   - **Fixed Blank / Black Playback**: Resolved WebView origin security restrictions where local file paths (`/storage/emulated/0/...`) could not be decoded by `<video src=\"...\">`. Implemented `Capacitor.convertFileSrc` streaming bridge for immediate in-app video and image playback.\n   - **Integrated System Video Player Bridge**: Added a 1-tap \"System Player\" button in the preview modal calling `RecorderPlugin.openVideoInExternalPlayer` with Android `ACTION_VIEW` and `FileProvider` so users can watch recordings with hardware acceleration in VLC, MX Player, Google Photos, or system video players.\n   - **Codec Error Fallback**: Added automatic playback fallback detection in the video viewer offering an instant button to launch the hardware decoder player if WebView cannot decode the stream.\n   - **Multi-Directory Storage Discovery**: Enhanced `listRecordings` to scan public movies, app-specific movies, and internal storage, purging invalid 0-byte files so only real playable recordings are displayed.\n   - **Automatic Runtime Permission Requests**: Added `requestRecorderPermissions` bridge ensuring Camera and Microphone permissions are automatically prompted and granted before starting recording.\n   - **Safe MediaRecorder Stop Protection**: Ensured a minimum safe recording duration before stopping to prevent Android encoder `stop failed` exceptions and MP4 moov atom corruption.\n\n2. **Quality & UI Invariants**:\n   - Full light theme contrast support (`html.theme-light`) maintaining WCAG >= 4.5:1.\n   - All 299 unit tests passing with 0 failures.\n   - Preserves 103 active tool catalog invariant.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.123` (Build `173`)\n- **APK SHA-256**: `e7d5d1c222c8706a2f436da6a3a1d0a9562ab2a4a37a69e00bc69c48682908c6`\n- **AAB SHA-256**: `f9c9b4ffda3b64673e250ed0210d01e64999a5f8261fe12e41e74aa31cbadebd`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-15T11:34:08Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.123-beta.173.apk",
+        "state": "uploaded",
+        "size": 63518172,
+        "digest": "sha256:e7d5d1c222c8706a2f436da6a3a1d0a9562ab2a4a37a69e00bc69c48682908c6",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.123-beta.173/8002CleanUp-Pro-v2.8.123-beta.173.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63518172,
+        "digest": "sha256:e7d5d1c222c8706a2f436da6a3a1d0a9562ab2a4a37a69e00bc69c48682908c6",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.123-beta.173/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.122-beta.172",
     "draft": false,
     "prerelease": true,
@@ -622,23 +646,6 @@
         "size": 63307450,
         "digest": "sha256:3de64f1a7bcde1ef0b4de3d103a8b31415192cb27528dfe56c79b9a968e8975e",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.89-beta.138/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.88-beta.137",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.88 (Build 137)",
-    "body": "### 8002 CleanUp Pro v2.8.88 (Build 137)\n- **3D Metallic Chrome Header Logo**: Replaced the plain text '8002' on the top left with the official wide 3D titanium chrome infinity (\\infty2$) logo with cyan/purple rim lighting.\n- **Enhanced Dark Mode Depth**: Refined header drop shadow to highlight the metallic logo without color washout.\n- **Maintained Passive VPN Telemetry**: Preserved the zero-overhead VPN detection and reassuring status monitor.\n- **APK SHA-256**: `f7213ab7bdf78e51abf1b570d04892f9f97c556614f20bb673f3f0bb7dcd5cca`",
-    "published_at": "2026-11-09T21:33:15Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.88.apk",
-        "state": "uploaded",
-        "size": 63307267,
-        "digest": "sha256:f7213ab7bdf78e51abf1b570d04892f9f97c556614f20bb673f3f0bb7dcd5cca",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.88-beta.137/8002CleanUp-Pro-v2.8.88.apk"
       }
     ]
   }
