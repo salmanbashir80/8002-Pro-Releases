@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.124-beta.174",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.124 (Build 174) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.124 (Build 174) - Public Beta\n\n### What's New in this Release:\n1. **3D Compass Famous Places - Compact Micro-Capsule AR Pins (\"Small Size / Unobtrusive Pins\")**:\n   - Replaced bulky cards with ultra-sleek, semi-transparent micro-capsule pills (`[Emoji] Name · Distance`, ~26px height).\n   - Added glowing vertical laser stems connecting each pin to its ground horizon vector without blocking the camera preview or overlapping nearby bearings.\n   - Added interactive `ViewMode` toggle (`Layers` icon in top bar) switching between Compact Micro-Pins (default) and Expanded 3D Cards.\n   - Tapping any micro-pin highlights its target trajectory and opens the full spiritual and historical telemetry dossier modal.\n\n2. **Category Scope Filtering System (\"Never Mixed Up / Distinct Scopes\")**:\n   - Added segmented category scope tabs at the top:\n     - `⭐ All (31)`: Full panoramic perspective across all curated worldwide and sacred locations.\n     - `🕋 Holy (13)`: Sacred Islamic sanctuaries (Holy Kaaba, Al-Masjid an-Nabawi, Masjid al-Aqsa, Mount Arafat, Cave Hira, Masjid Quba, Mount Uhud, Masjid al-Qiblatayn, Cave Thawr, Jannat al-Baqi, Mina Valley, Imam Ali Shrine Najaf, Imam Husayn Shrine Karbala).\n     - `📍 Pakistan (8)`: Iconic national heritage landmarks (Badshahi Mosque, Minar-e-Pakistan, Faisal Mosque, Mazar-e-Quaid, K2 Mountain, Rohtas Fort, Mohenjo-daro Ruins, Data Darbar Shrine).\n     - `🌍 World (10)`: Globally renowned monuments and wonders (Great Pyramids of Giza, Eiffel Tower, Taj Mahal, Burj Khalifa, Statue of Liberty, Colosseum of Rome, Mount Everest, Great Wall of China, Big Ben, Petra Treasury).\n   - Scope filtering dynamically filters the live AR viewport, 360° mini-radar HUD, and bottom target selector carousel so locations are never mixed together.\n\n3. **20 New Photorealistic Vector SVG Visuals**:\n   - Created dedicated, high-fidelity vector illustrations in `src/utils/famousPlacesVisuals.ts` for all added Pakistan heritage and World wonder locations.\n\n4. **Quality & UI Invariants**:\n   - Maintained WCAG contrast ratio >= 4.5:1 across dark and light themes (`html.theme-light`).\n   - 300 unit tests passing with 0 failures.\n   - Strict direct build-to-publish compliance without running emulators.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.124` (Build `174`)\n- **APK SHA-256**: `bfa54db4d6e4a30e8f53b4dc9e22961828d4c41066ffa1284c917c66a9ea7d0b`\n- **AAB SHA-256**: `dcd42b067e1c2637663b287244aacc27da3a647e6c6de18d840b5f9002fd7741`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-15T13:47:40Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.124-beta.174.apk",
+        "state": "uploaded",
+        "size": 63525640,
+        "digest": "sha256:bfa54db4d6e4a30e8f53b4dc9e22961828d4c41066ffa1284c917c66a9ea7d0b",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.124-beta.174/8002CleanUp-Pro-v2.8.124-beta.174.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63525640,
+        "digest": "sha256:bfa54db4d6e4a30e8f53b4dc9e22961828d4c41066ffa1284c917c66a9ea7d0b",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.124-beta.174/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.123-beta.173",
     "draft": false,
     "prerelease": true,
@@ -622,30 +646,6 @@
         "size": 63309139,
         "digest": "sha256:e25a989beab7d8a14735f1320e12e02ff646c2d58db5add4ffc2f027636bbe2a",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.90-beta.139/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.89-beta.138",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.89 (Build 138) · Wi-Fi Subnet Scanning & Neighbor Discovery During Active VPN",
-    "body": "## 8002 CleanUp Pro v2.8.89 (Build 138)\n\n### 🚀 What's New & Upgraded in Build 138:\n\n#### 1. 📶 Direct Wi-Fi Scanning & Neighbor Discovery During Active VPN\n- **Unrestricted Wi-Fi Subnet Telemetry**: Network Scanner now inspects the physical Wi-Fi network and reads local subnet details (Your IP, Gateway, Subnet, and interface `wlan0`) seamlessly even when a third-party or WireGuard VPN is actively connected.\n- **VPN Coexistence & Zero Disturbance**: Querying Android's underlying Wi-Fi transport and `/proc/net/arp` cache creates no socket conflicts, requires no VPN disconnects, and causes **0ms ping impact / zero disturbance** to your active VPN tunnel.\n- **Reassuring Status Indicator**: Shows an active badge `🛡️ VPN Active · 0ms Impact` and informative status explaining that device traffic is protected while local Wi-Fi data is read directly.\n- **Auto-Scan on Entry**: Opening Network Scanner automatically reads and populates the Wi-Fi network information and neighbor device inventory without extra taps.\n- **Scoped Port Scanner Compatibility**: Updated single-host TCP checks in Network Engineering to identify physical Wi-Fi routes during an active VPN session.\n\n#### 2. 💎 3D Metallic Chrome 8002 Infinity Branding\n- Official 3D metallic chrome infinity logo integrated into the main application top header.\n- True dual-tone cyan/purple edge glow retained in both dark and light modes.\n\n---\nBuilt with Option A Continuous Signing Key by 8002 LLC (8002salman@gmail.com).\n",
-    "published_at": "2026-11-09T21:44:47Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.89-beta.138.apk",
-        "state": "uploaded",
-        "size": 63307450,
-        "digest": "sha256:3de64f1a7bcde1ef0b4de3d103a8b31415192cb27528dfe56c79b9a968e8975e",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.89-beta.138/8002CleanUp-Pro-v2.8.89-beta.138.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63307450,
-        "digest": "sha256:3de64f1a7bcde1ef0b4de3d103a8b31415192cb27528dfe56c79b9a968e8975e",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.89-beta.138/8002CleanUp-Pro.apk"
       }
     ]
   }
