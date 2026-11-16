@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.127-beta.177",
+    "draft": false,
+    "prerelease": true,
+    "name": "v2.8.127-beta.177",
+    "body": "## 8002 CleanUp Pro v2.8.127 (Build 177) - Public Beta\n\n### What's New in this Release:\n1. **WhatsApp Recover Pro Chat Back Button (`<--`)**:\n   - Added a dedicated, high-contrast back button (`.wa-modal-back-btn`) to the top-left of the chat modal header next to the contact name.\n   - Users can now easily tap to return from a single conversation view directly back to the conversations archive list.\n   - Fully styled with dark mode and light theme high contrast (`html.theme-light .wa-pro-container .wa-modal-back-btn` with WCAG >= 4.5:1).\n\n2. **Universal Hierarchical Back Navigation on Screen Swipe & Android Back**:\n   - Fixed screen swipe navigation (`isEdgeSwipeRight`, `isGeneralSwipeRight`, and `isTopBarSwipeDown`) so it correctly routes to hierarchical back navigation instead of terminating or dumping the user onto the home screen.\n   - When inside any tool (`WhatsAppRecoverPro`, `FamousPlaces3dCompass`, `VideoRecorderPro`, `VoiceRecorderPro`, `TapeCalculator`, `WeatherPro`, `OneTapCleanerPro`, `SkyMapPro`, `AppKillerPro`, `ApkSharePro`, `AppLockerPro`, `SnippetVault`):\n     - If any internal subview, chat thread, image/status preview lightbox, vault player, search modal, drawer, or dialog is active, pressing the Android back button or swiping back on the screen dismisses and exits that internal view FIRST.\n     - Only when the tool has no more internal windows or modals does the back action exit the tool back to the Tools Hub or Home screen (`clean` tab).\n   - Side drawer navigation from Home now tracks origin tab as Home, ensuring exiting tools opened from Home properly returns to Home.\n\n3. **Quality, Accessibility & Testing**:\n   - All light theme UI elements (`html.theme-light`) satisfy WCAG contrast ratio >= 4.5:1.\n   - All 300 unit tests passing with 0 failures.\n   - Direct build-to-publish execution compliant with user policy (zero Android emulators).\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.127` (Build `177`)\n- **APK SHA-256**: `5128fc81812bd98b8853f1696d260e3d8cfc570504f43253720123d1c583d2bb`\n- **AAB SHA-256**: `ff4557325cbdbc6e1961d46768cf78aa03ef0a82012aff5a540cc9509096470b`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-16T21:13:08Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.127-beta.177.apk",
+        "state": "uploaded",
+        "size": 63535659,
+        "digest": "sha256:5128fc81812bd98b8853f1696d260e3d8cfc570504f43253720123d1c583d2bb",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.127-beta.177/8002CleanUp-Pro-v2.8.127-beta.177.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63535659,
+        "digest": "sha256:5128fc81812bd98b8853f1696d260e3d8cfc570504f43253720123d1c583d2bb",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.127-beta.177/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.126-beta.176",
     "draft": false,
     "prerelease": true,
@@ -622,30 +646,6 @@
         "size": 63356118,
         "digest": "sha256:2f98e2478c0f493ff086cf3d137a14135be2d5f40023043f23bbfa5d0a87ac3d",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.93-beta.142/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.92-beta.141",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.92 (Build 141) · WhatsApp Forensic Suite & EX Downloader Overhaul",
-    "body": "## 8002 CleanUp Pro v2.8.92 (Build 141) · WhatsApp Forensic Suite & EX Downloader Overhaul\n\n### 🚀 Highlights & Major Updates:\n\n#### 1. 📥 EX Downloader Pro: Manual Detection, Instant Cancel & Background Streaming\n- **Manual Trigger Contract**: Fixed issue where copied links auto-triggered detection and froze the button on *\"Detecting...\"*. Links are pasted cleanly, but detection ONLY starts when the user taps **\"⚡ Detect & Download\"**.\n- **Instant Abort / Cancel Button**: Added **\"✕ Cancel\"** with `AbortController` and 3.8s timeout guard so users can abort long-running requests instantly without UI lockup.\n- **Background Download Persistence**: Downloads continue streaming uninterrupted via native Android background thread workers (`tasks.execute`) when the app is minimized. State immediately re-syncs upon reopening via `visibilitychange` listeners.\n- **1DM+ & Seal Inspired UI Redesign**: Platform detection badges (`[YouTube]`, `[TikTok]`, `[X / Twitter]`, `[Instagram]`, `[Facebook]`, `[Direct Link]`), format resolution cards, and streamlined direct download fallback.\n\n#### 2. 💬 WhatsApp Recover & Status Pro Suite\n- **Deleted Message & Media Forensic Recovery**: Native notification engine (`CallPrivacyObserverService` + `WhatsAppRecoveryStore`) intercepts WhatsApp & WhatsApp Business notifications in real time. When a sender uses *\"Delete for everyone\"*, the original text and media are preserved in the encrypted local vault.\n- **Strict Per-Contact Segregation**: Completely isolated chat histories and media galleries per contact — preventing cross-mixing between conversations.\n- **1-Tap WhatsApp Status Saver**: Live scan of WhatsApp `.Statuses` directory with 1-tap export to public `Pictures/StatusSaver` with `MediaScannerConnection` gallery indexing, 24h expiration countdowns, and video duration badges.\n- **Full Media Lightbox & Direct WA Chat**: Built-in viewer with zoom/pan and direct chat launcher by international phone number without saving contacts.\n\n#### 3. 🔒 Continuous Security & Integrity Gate\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Play Store policy compliance: No `REQUEST_INSTALL_PACKAGES` in release bundle.\n- 184 unit and integration test suites passing with 100% success.\n- Includes universal Release APK (`8002CleanUp-v2.8.92-release.apk`) and Play Store Bundle (`8002CleanUp-v2.8.92-release.aab`).\n",
-    "published_at": "2026-11-10T08:28:20Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.92-beta.141.apk",
-        "state": "uploaded",
-        "size": 63339445,
-        "digest": "sha256:0e7e9b0c29952863a57a191ae12e6acc165170e7262a93df65dc86090c8adfa0",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.92-beta.141/8002CleanUp-Pro-v2.8.92-beta.141.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63339445,
-        "digest": "sha256:0e7e9b0c29952863a57a191ae12e6acc165170e7262a93df65dc86090c8adfa0",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.92-beta.141/8002CleanUp-Pro.apk"
       }
     ]
   }
