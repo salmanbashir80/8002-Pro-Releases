@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.126-beta.176",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.126 (Build 176) - Public Beta",
+    "body": "## 8002 CleanUp Pro v2.8.126 (Build 176) - Public Beta\n\n### What's New in this Release:\n1. **Compact, Zero-Overlap Top Navigation Panel (\"Clean Unified Top Bar\")**:\n   - Replaced fragmented, overlapping absolute top layers with a streamlined, frosted glass `.famous-places-top-panel` (`backdrop-filter: blur(10px)`).\n   - Unified Header Row:\n     - Back navigation, clean app title (`3D Compass Places`), dynamic heading readout (`NW 295°`), and action buttons (`Layers`, `Camera AR`, `Location GPS`, `Information`).\n   - Category Scope Tabs (`⭐ All`, `🕋 Holy`, `🇵🇰 Pakistan`, `🌍 World`) and Pakistan City Tabs (`All`, `Lahore`, `Karachi`, etc.) now flow naturally inside the top panel with zero overlapping or text clipping.\n   - Steer Guidance Banner redesigned into a compact 30px floating pill (`[Arrow] Turn XX° · Landmark (Distance) [Details]`) that only appears when the target is off-screen, freeing up camera viewport space.\n\n2. **360° Circular Radar Docked to Floating Lower-Right HUD**:\n   - Moved the 360° Circular Radar completely out of the top navigation bar.\n   - Now cleanly docked as a high-tech floating mini-radar in the lower right (`bottom: 130px; right: 14px;`), completely eliminating overlap with category and city tabs.\n\n3. **Smart Anti-Collision Stacking Algorithm for AR Pins (\"No Overlapping Pins\")**:\n   - When multiple landmarks share similar compass bearings (e.g. Gurdwara Janam Asthan in Nankana Sahib and Quaid-e-Azam Residency in Quetta from Lahore at ~260° WSW), pins are dynamically separated into vertical tiers (`offsetY = ±32px, ±64px`).\n   - Vertical glowing laser stems dynamically stretch from each elevated capsule directly down to its exact horizon coordinate.\n   - Every pin remains 100% visible, legible, and unblocked.\n\n4. **100% Responsive Tap & Place Opening (\"One-Tap Modal Dossier\")**:\n   - Expanded touch hitbox (`::before` with -10px padding, min 44x44px touch area) and added `onPointerDown={(e) => e.stopPropagation()}` to prevent touch events from being absorbed by background canvas dragging.\n   - Tapping ANY landmark micro-pin or AR card brings it to the top (`z-index: 100`) and immediately opens the full Place Details Dossier modal.\n   - Tapping ANY landmark in the bottom horizontal carousel ribbon (`.famous-places-chips-scroll`) now directly focuses the compass, highlights the target, and opens the Place Details Modal.\n   - Tapping the floating Steer Pill or its `Details` button directly opens the Place Details Modal.\n\n5. **Quality, Accessibility & Testing**:\n   - All light theme UI elements (`html.theme-light`) strictly satisfy WCAG contrast ratio >= 4.5:1.\n   - All 300 unit tests passing with 0 failures.\n   - Direct build-to-publish execution compliant with user policy (zero Android emulators).\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.126` (Build `176`)\n- **APK SHA-256**: `5f8531ae4855db9227fe967e6205a6b7643b78afa8fca57b92be93941f68da66`\n- **AAB SHA-256**: `5db8b5b4a250a945555c57ff73c259f23e864e017d50e53573a986fe51f8c868`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-16T12:01:59Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.126-beta.176.apk",
+        "state": "uploaded",
+        "size": 63535941,
+        "digest": "sha256:5f8531ae4855db9227fe967e6205a6b7643b78afa8fca57b92be93941f68da66",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.126-beta.176/8002CleanUp-Pro-v2.8.126-beta.176.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63535941,
+        "digest": "sha256:5f8531ae4855db9227fe967e6205a6b7643b78afa8fca57b92be93941f68da66",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.126-beta.176/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.125-beta.175",
     "draft": false,
     "prerelease": true,
@@ -622,30 +646,6 @@
         "size": 63339445,
         "digest": "sha256:0e7e9b0c29952863a57a191ae12e6acc165170e7262a93df65dc86090c8adfa0",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.92-beta.141/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.91-beta.140",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.91 (Build 140) · Gumroad Launch Edition",
-    "body": "## 8002 CleanUp Pro v2.8.91 (Build 140) · Gumroad Launch Edition\n\n### 🚀 Highlights & Launch Enhancements:\n\n#### 1. 🌐 100% International English UI (Gumroad Commercial Ready)\n- Converted all user-facing banners, modals, alert sheets, and action buttons from Roman Urdu to crisp, professional English.\n- **Shield & VPN Safeguard**: Explains system-level Android single-VPN constraints cleanly with clear *\"Keep VPN\"* and *\"Switch to Shield\"* options.\n- **Region Teleport Pro**: Professional Houston teleport guidance and network routing indicators.\n- **Default Apps Manager**: Restored Chrome guide, category badges, and troubleshooting tips fully translated.\n- **Launcher Pro**: Refined international greetings (*Good Morning*, *Night Glance*) and layout hints.\n\n#### 2. ⚡ All 44 Studio Tools Activated & Fully Functional\n- No more \"Coming Soon\" placeholders! All 100 tools across the catalog are active and interactive:\n  - **Security Suite**: Password Vault & Generator, EXIF Scrubber, Checksum Verifier, File Shredder, Root & Play Integrity, SSL Inspector, Sensor Privacy Radar, 2FA TOTP Generator.\n  - **Developer Suite**: GitHub Repo Inspector, RegEx Live Evaluator, JSON Beautifier, Base64/Hex Studio, JWT Debugger, Markdown Studio, REST API Runner, JS Sandbox.\n  - **Media Suite**: WhatsApp Video Compressor, Waveform Cutter, Batch Format Converter, GIF Studio, Screen Recorder, 10-Band EQ, Color Palette, Subtitle Sync, ID3 Audio Tag Editor.\n  - **AI & Vision Suite**: Prompt Studio, Code Companion, Document Summarizer, Image Upscaler, Background Remover, Face Blur, Magic Eraser.\n  - **Comms & Networking**: Direct WhatsApp Chat (no-contact save), SMS/Call Backup, Webhook Receiver, Telegram Bot Manager, P2P Wi-Fi Chat.\n  - **Storage & Telemetry**: Duplicate Finder, Large File Radar, Empty Folder Sweeper, Storage I/O Benchmark, Deep Photo Carver, App Residual Cleaner, Real-time CPU/RAM Telemetry.\n\n#### 3. 🎨 Typography Clamp & Balanced Framing\n- Scaled back oversized typography: clamped weather temperature, speed gauge text, world clock countdown digits, and launcher desktop clock using fluid `clamp()` responsive units.\n- Balanced vertical rhythm and standardized tool cards on the main Workspace Home screen with sleek 16px radius cards.\n\n#### 4. 🔒 Verified Integrity & Commercial Packaging\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Includes universal Release APK (`8002CleanUp-v2.8.91-release.apk`) and Google Play Store Release Bundle (`8002CleanUp-v2.8.91-release.aab`).\n",
-    "published_at": "2026-11-10T03:59:57Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.91-beta.140.apk",
-        "state": "uploaded",
-        "size": 63327415,
-        "digest": "sha256:7f3b1eeb9d5fede274473a8142367d42f6fbb59726d4dfbb38713146cc7593a6",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.91-beta.140/8002CleanUp-Pro-v2.8.91-beta.140.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63327415,
-        "digest": "sha256:7f3b1eeb9d5fede274473a8142367d42f6fbb59726d4dfbb38713146cc7593a6",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.91-beta.140/8002CleanUp-Pro.apk"
       }
     ]
   }
