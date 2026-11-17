@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.129-beta.179",
+    "draft": false,
+    "prerelease": true,
+    "name": "v2.8.129-beta.179",
+    "body": "## 8002 CleanUp Pro v2.8.129 (Build 179) - Public Beta\n\n### What's New in this Release:\n1. **WhatsApp & WhatsApp Business Status Auto-Discovery (WMA)**:\n   - Fixed the \"No accessible statuses\" issue where WhatsApp media was hidden from Android's MediaStore index scanner. Android design excludes dot-directories (`.Statuses`) from MediaStore; 8002 CleanUp Pro now uses direct filesystem scanning via storage access across all standard WhatsApp paths (`Android/media/com.whatsapp/WhatsApp/Media/.Statuses`, `Android/media/com.whatsapp.w4b/WhatsApp Business/Media/.Statuses`, legacy paths, and multi-user/dual space clones).\n   - Viewed statuses from WhatsApp and WhatsApp Business are automatically detected, displayed in the Statuses tab, previewable in full resolution, and saveable to the device Gallery.\n\n2. **Streamlined One-Tap Storage Access**:\n   - Added automated detection of All Files Access permission (`MANAGE_EXTERNAL_STORAGE`).\n   - If storage permission is needed, a single tap opens Android's system All Files Access setting directly for 8002 CleanUp Pro, bypassing SAF document-tree picker limitations on modern Android versions.\n   - Added instant \"Refresh statuses\" controls and app-specific counts in the Statuses toolbar.\n\n3. **Quality, Accessibility & Contrast Compliance**:\n   - High-contrast alert boxes and action controls in light theme (`html.theme-light`) meeting WCAG >= 4.5:1 ratio.\n   - All 300 unit tests passing with 0 failures.\n   - Emulator-free CI pipeline compliant with strict user policy.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.129` (Build `179`)\n- **APK SHA-256**: `81b973fe9b04855f127b4d587fb262f59a7799478395e2fb8638fd066f0c109e`\n- **AAB SHA-256**: `dbb74c94abcf072ad9c64aadd36723c4a154caa4099b6b2c4e7e87fdf1f3ae9b`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-17T07:07:01Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.129-beta.179.apk",
+        "state": "uploaded",
+        "size": 63552414,
+        "digest": "sha256:81b973fe9b04855f127b4d587fb262f59a7799478395e2fb8638fd066f0c109e",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.129-beta.179/8002CleanUp-Pro-v2.8.129-beta.179.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.128-beta.178",
     "draft": false,
     "prerelease": true,
@@ -622,30 +639,6 @@
         "size": 63366216,
         "digest": "sha256:2cbf49b17fc6f1a8aece920a19dcfd1f97ded5e5f81884d1bc6d882a658a5d48",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.96-beta.145/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.94-beta.143",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.94 (Build 143) · Framing & Responsive Recalibration",
-    "body": "## 8002 CleanUp Pro v2.8.94 (Build 143) · Typography, Safe-Area & Framing In-Depth Recalibration\n\n### 🚀 Highlights & Major Updates:\n\n#### 1. 🔥 Fresh Releases & Quick Test Section (Precision Responsive Framing)\n- **Compact & Consistent Test Triggers**: Standardized all quick-launch triggers to `[⚡ Test Now]`, eliminating awkward text wrapping or `[⚡ Test No` cutoff on compact displays.\n- **Strict Viewport Containment**: Added `overflow: hidden; box-sizing: border-box; max-width: 100%` with CSS 2-line clamp (`-webkit-line-clamp: 2`) on descriptions to ensure test cards fit flush on all screen widths.\n- **Auto-Truncating Badges**: Tags, dates, and titles now feature strict `text-overflow: ellipsis` safeguards against layout blowouts.\n\n#### 2. 🧹 1Tap Cleaner Pro (Notch & Navigation Bar Safe-Area Calibration)\n- **Top Safe-Area Offset**: Integrated `padding-top: env(safe-area-inset-top, 0px)` so hardware camera punch-holes and dynamic island notches do not occlude the top header icons (Menu, APPS count, Search, Sort, Filter, Pro, Close).\n- **Responsive Action Buttons**: Scaled icon buttons to 6px padding with 4px gap so all 5 header actions remain 100% in-frame on 360px Android devices.\n- **App Storage 4-Column Grid Calibration**: Added `min-width: 0`, `white-space: nowrap`, and `text-overflow: ellipsis` on all metric columns (`Cache`, `Data`, `Code`, `Total`), ensuring storage values like `199.87 MB` never overflow or force card distortion.\n- **Bottom Status Bar & FAB Broom Clearance**: Padded the bottom storage gauge and floating green broom with `env(safe-area-inset-bottom, 0px)` to provide full clearance above the Android system gesture bar.\n\n#### 3. ⚡ 8002 App Killer Pro (RAM Gauge & Tabs Responsive Balancing)\n- **Tab Header Overhaul**: Shortened tab names to `Killable ({count})`, `Whitelisted ({count})`, and `System` with `text-overflow: ellipsis`, preventing the tabs bar from wrapping or pushing tabs out of screen.\n- **RAM Telemetry Gauge Scaling**: Compacted circular RAM gauge from 90px to 76px with 20px typography and tightened stat rows to fit narrow phone viewports comfortably.\n- **Safe-Area Padding**: Added top and bottom edge-to-edge safe area offsets.\n\n#### 4. 💬 WhatsApp Recover & Status Pro (Horizontal Tab & Header Balance)\n- **Tab Label Truncation**: Refactored tab labels to `Deleted Chats`, `Status Saver`, and `Direct Chat` with badge overflow protection.\n- **Header Font Normalization**: Tuned title typography to `1.02rem` with ellipsis handling to eliminate header clipping.\n\n#### 5. 📥 EX Downloader Pro (Target Selector Streamlining)\n- **Streamlined Storage Target Selector**: Replaced long verbose destination text with clean labels `Local Drive` and `🔒 Secret Vault` with responsive wrapping protection.\n- **Tab Buttons Ellipsis**: Public Downloads vs Secret Vault tabs now maintain strict truncation.\n\n#### 6. 🔒 Continuous Security & Integrity Gate\n- Continuous Signing Key SHA-256: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706` verified.\n- Play Store policy compliance: No `REQUEST_INSTALL_PACKAGES` in release bundle.\n- 189 unit and integration test suites passing with 100% success.\n- Includes universal Release APK (`8002CleanUp-v2.8.94-release.apk`) and Play Store Bundle (`8002CleanUp-v2.8.94-release.aab`).\n",
-    "published_at": "2026-11-11T04:19:14Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.94-beta.143.apk",
-        "state": "uploaded",
-        "size": 63356429,
-        "digest": "sha256:1c4658f4c6880bdc344f08c2eeaa0abd8d178aecd1359ee29738e461102bfc9d",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.94-beta.143/8002CleanUp-Pro-v2.8.94-beta.143.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63356429,
-        "digest": "sha256:1c4658f4c6880bdc344f08c2eeaa0abd8d178aecd1359ee29738e461102bfc9d",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.94-beta.143/8002CleanUp-Pro.apk"
       }
     ]
   }
