@@ -1,5 +1,29 @@
 [
   {
+    "tag_name": "v2.8.131-beta.181",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.131 (Build 181) - AI Magic Object Eraser Auto-Circle Detection & Inpainting",
+    "body": "## 8002 CleanUp Pro v2.8.131 (Build 181) - Public Beta\n\n### What's New in this Release:\n1. **AI Magic Object Eraser - Intelligent Circling & Loop Enclosure**:\n   - **Auto-Enclosure Detection (`fillEnclosedMaskRegions`)**: When circling an object, sticker, or watermark with your finger, the engine automatically bridges drawing gaps and flood-fills the entire interior of the loop so the complete encircled object is marked for erasure.\n   - **Multi-Layer Fast Marching Inpainting (`eraseMaskedRegion`)**: Advanced layered onion-peel distance transform with Laplacian diffusion relaxation and texture synthesis. Erases objects of any size cleanly without leaving uninpainted centers or seams.\n   - **Dynamic Touch Scale**: Calibrated stroke width scaling against high-resolution screen coordinates for smooth, gap-free finger circling.\n\n2. **Full Studio Suite & Status Integration**:\n   - **Studio Tools Suite**: `AI Magic Object Eraser` in the tools catalog is now fully interactive with image selection, real-time circle detection, inpainting, and instant download/saving.\n   - **WhatsApp Recover Pro Direct Shortcut**: Direct \"AI Magic Eraser\" button in the status preview lightbox to remove stickers or watermarks from any saved WhatsApp status image immediately.\n\n3. **Verification & Quality Assurance**:\n   - Light theme contrast compliant (WCAG >= 4.5:1 ratio).\n   - All 302 unit tests passing with 0 failures.\n   - Strict emulator-free CI pipeline compliance.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir80.cleanup8002`\n- **Version**: `2.8.131` (Build `181`)\n- **APK SHA-256**: `226d5911ac6535eef636025f212bf959a634445a8eba6103ffd7eb5d32322286`\n- **AAB SHA-256**: `12ce3d4119ab7436da60d6ae9c6dc3471dbfc3288dbc2b13842de46eb3cc9f3c`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n",
+    "published_at": "2026-11-17T09:31:15Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.131-beta.181.apk",
+        "state": "uploaded",
+        "size": 63559113,
+        "digest": "sha256:226d5911ac6535eef636025f212bf959a634445a8eba6103ffd7eb5d32322286",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.131-beta.181/8002CleanUp-Pro-v2.8.131-beta.181.apk"
+      },
+      {
+        "name": "8002CleanUp-Pro.apk",
+        "state": "uploaded",
+        "size": 63559113,
+        "digest": "sha256:226d5911ac6535eef636025f212bf959a634445a8eba6103ffd7eb5d32322286",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.131-beta.181/8002CleanUp-Pro.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.130-beta.180",
     "draft": false,
     "prerelease": true,
@@ -622,30 +646,6 @@
         "size": 63390589,
         "digest": "sha256:1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.98-beta.147/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.97-beta.146",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.97 (Build 146) - Premium Home & Search",
-    "body": "Four tools per row, readable light/dark Home themes, compact cards, crisp native text and subtle animations.\n\n- Improved tool search with aliases, common misspellings and a separate web-search action.\n- Pin or drag search results into a chosen Home position; layouts persist after reopening.\n- Fixed hidden-shortcut restoration and narrow-screen framing in Calculator, Battery, Note Pad and utility forms.\n- Catalog remains exactly 100 tools.\n\nValidation: 200 Node tests and 73 Android JVM tests passed. Home layouts checked at 320/360/390/430px in both themes; 100 tool destinations captured in each theme with no cropped visible controls or JavaScript page errors. APK/AAB signatures and all 122 final web assets verified.\n\nBeta verification limit: physical-device, TalkBack and emulator acceptance were not performed. GitHub Actions was blocked by account billing/spending settings, so these artifacts were built and verified locally.\n\nInstall the APK over the existing installation to retain app data. AAB uses the existing Play manifest. Signing certificate is unchanged.\n\nSource commit: 6e1859dbde4f72e2c041723b100627304b7989f4\nAPK SHA-256: 0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da\nAAB SHA-256: 9e53f55c6932b4a8043d5e823df8e080742f808f6062de2c086ac960e27c44b5\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
-    "published_at": "2026-11-11T20:45:05Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.97-beta.146.apk",
-        "state": "uploaded",
-        "size": 63371337,
-        "digest": "sha256:0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.97-beta.146/8002CleanUp-Pro-v2.8.97-beta.146.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63371337,
-        "digest": "sha256:0d3caaef49f49b8fc74399e7886eebd96e92b594cc68ea3c88d025dacdbe81da",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.97-beta.146/8002CleanUp-Pro.apk"
       }
     ]
   }
