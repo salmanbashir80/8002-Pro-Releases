@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.132-beta.182",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.132 (Build 182)",
+    "body": "## 8002 CleanUp Pro v2.8.132 (Build 182) - Public Beta\n\n### What's New in this Release:\n1. **WhatsApp Deleted Message Recovery (WMA) — WAMR-Grade Engine**:\n   - **Full Notification Capture**: Upgraded `WhatsAppRecoveryStore` to extract messages via AndroidX `NotificationCompat.MessagingStyle` (full Android 7–16 `Person` & legacy sender support), with automatic fallbacks to raw `EXTRA_MESSAGES`, InboxStyle `EXTRA_TEXT_LINES`, `EXTRA_BIG_TEXT`, and `EXTRA_TEXT`.\n   - **Auto-Rebind & Active Shade Sync**: Automatically rebinds `CallPrivacyObserverService` if disconnected on OEM ROMs (ColorOS/OneUI/MIUI) and syncs active WhatsApp notifications on refresh.\n   - **Real Deleted Message Attribution**: Matches deletion notices (English, Urdu, Roman Urdu) to captured messages via exact timestamp or 24h sender match, highlighting recovered messages with `Deleted by sender · Original recovered!` and live 4-second refresh.\n\n2. **AI Magic Object Eraser — Gallery Save & Seamless Blending Fix**:\n   - **Fixed Black Outline Artifact**: Fixed Laplacian diffusion boundary sampling in `galleryAi.ts` so unmasked background pixels are preserved during 12-pass blending, removing the dark border around erased regions.\n   - **Native Android Gallery Save**: Replaced web `<a download>` in `StudioToolsSuite` with native `GalleryPlugin.saveImage` (MediaStore + `DATE_ADDED`/`DATE_TAKEN` + `MediaScannerConnection`), saving directly to `Pictures/8002` so edited photos appear immediately at the top of Gallery.\n   - **Save As (Replace Original / Save New Copy)**: Enhanced `GalleryPlugin.saveImage` with direct file overwrite fallback when All Files Access is granted and instant viewer update in `GalleryPro`.\n\n3. **Google Play Protect Hardening**:\n   - **Shizuku Removed**: Completely removed `dev.rikka.shizuku` dependencies, exported `ShizukuProvider`, and Shizuku binder listeners.\n   - **Clean Service Naming**: Renamed `StealthAudioService` / `StealthVideoService` to `BackgroundAudioService` / `BackgroundVideoService` and removed deceptive \"Disguised as System Guard\" notification copy.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.132` (Build `182`)\n- **APK SHA-256**: `081afaf5ec2afb9ec6599febbd9818ddfc711e258ff1ce5014f5b7da3f2b93db`\n- **AAB SHA-256**: `d0b9bd6320c74bdd8e55d5722145cdb9ccba5d2c1b0141866c507b317e15b59c`\n- **Signing Certificate SHA-256**: `92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706`\n- **Tests**: 302/302 JS unit tests passing + Android JVM unit tests passing.\n",
+    "published_at": "2026-11-18T22:52:33Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.132-beta.182.apk",
+        "state": "uploaded",
+        "size": 63542807,
+        "digest": "sha256:081afaf5ec2afb9ec6599febbd9818ddfc711e258ff1ce5014f5b7da3f2b93db",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.132-beta.182/8002CleanUp-Pro-v2.8.132-beta.182.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.131-beta.181",
     "draft": false,
     "prerelease": true,
@@ -622,30 +639,6 @@
         "size": 63391827,
         "digest": "sha256:1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.99-beta.148/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.98-beta.147",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.98 (Build 147) - Launcher, Display & Compact Security",
-    "body": "8002 now opens a dedicated Android Home desktop after you select it as your default Home app. The normal app icon continues to open the tools hub.\n\n- Compact Shield and Boost screens: clear primary actions, less repeated text, concise counters and optional advanced details. DNS, activity, firewall/App Locker, file review and advanced cleanup controls remain available.\n- Crown-only Pro entry. Display & zoom adds75–125% custom size, Compact/Standard/Large presets and Reset; Android Display settings remain responsible for hardware resolution.\n- Home resets open tools and the app drawer to the desktop. Real installed launchable apps use192px icons; ordinary app-icon and Home tasks stay separate.\n- Fixed calculator startup on older WebViews without randomUUID, plus full-height fallback. Exactly100 catalog tools are preserved.\n\nVerified:206 Node tests,76 Android JVM tests and6 API30 emulator integration tests passed, including real Home/Back/Hub/calculator navigation and native75%/125% viewport scaling. Light/dark UI and100 Home tile frames passed browser checks;20 selected tool screens passed framing checks. Physical-device, TalkBack and live external WireGuard endpoint acceptance were not performed. Artifacts were built and verified locally; GitHub Actions status is separate.\n\nInstall the APK over your existing app to preserve data. In8002 Settings → Updates & reinstall, enable beta builds to receive this prerelease. To use the desktop, open Launcher → Set as Default Home and confirm Android’s chooser. The launcher replaces your Home screen, not the Android operating system.\n\nSource commit: 918d8b00acace2dedbafdd38427e4c506e5f45aa\nAPK SHA-256: 1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3\nAAB SHA-256: af76a040804f3f5a711e4702ba0ee28d8a9ebd9f1b2d8fbe23c721f069688cc3\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
-    "published_at": "2026-11-12T02:21:16Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.98-beta.147.apk",
-        "state": "uploaded",
-        "size": 63390589,
-        "digest": "sha256:1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.98-beta.147/8002CleanUp-Pro-v2.8.98-beta.147.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63390589,
-        "digest": "sha256:1c94365b3bbb7177c067e96d713fbe1d263396b9f8d5bef8a761f9bc03e352b3",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.98-beta.147/8002CleanUp-Pro.apk"
       }
     ]
   }
