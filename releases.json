@@ -1,5 +1,22 @@
 [
   {
+    "tag_name": "v2.8.133-beta.183",
+    "draft": false,
+    "prerelease": true,
+    "name": "8002 CleanUp Pro v2.8.133 (Build 183) - Production Release Signed",
+    "body": "## 8002 CleanUp Pro v2.8.133 (Build 183) - Production Release Signing & Play Protect Compliance\n\n> **Important Upgrade Note**: Starting with Build 183, 8002 CleanUp Pro is signed with its permanent **Production Release Certificate** (`CN=Salman Bashir, OU=8002CleanUp Pro, O=8002 LLC`) instead of the legacy debug certificate. If you have an older build (182 or earlier) installed, please uninstall it once before installing Build 183. All future updates (184+) will upgrade seamlessly.\n\n### What's New in this Release:\n1. **Production Release Signing (`release.keystore`)**:\n   - Permanently replaced `CN=Android Debug` (`debug.keystore`) with a 2048-bit RSA Production Release Keystore (v1/v2/v3 APK Signature Schemes, valid for 10,000 days) to satisfy Google Play Protect & Play Store signing requirements.\n2. **Automated Google Play Protect & Play Store Policy Gate**:\n   - Added mandatory automated verification in `scripts/verify-release-integrity.py` and `AGENTS.md` Section 6 to block any future tool or update that introduces `CN=Android Debug`, `Shizuku`, deceptive/stealth service names, `android:debuggable`, or forbidden high-risk permissions (`READ_SMS`, `READ_CALL_LOG`, `BIND_DEVICE_ADMIN`, or `REQUEST_INSTALL_PACKAGES` in Play builds).\n3. **Includes All Build 182 Fixes**:\n   - WAMR-grade WhatsApp Deleted Message Recovery (WMA) with Android 14–16 `NotificationCompat.MessagingStyle` capture, auto-rebind, and deleted message highlighting.\n   - AI Magic Object Eraser native Android Gallery save (`Pictures/8002`), Save As (Replace Original / Save New Copy), and black-border blending fix.\n\n### Integrity & Verification:\n- **Package**: `com.salmanbashir.cleanup8002`\n- **Version**: `2.8.133` (Build `183`)\n- **APK SHA-256**: `3e4dd8bc9014400faa4aa9a9dfca5343bb5786ffe7c816cef36f0d9f1057cb7c`\n- **AAB SHA-256**: `6b274a835cdc7885df4e16cbdbac5bfb6cfbc8d5c8c7544c8461cb998204bddf`\n- **Production Signing Certificate DN**: `CN=Salman Bashir, OU=8002CleanUp Pro, O=8002 LLC, L=Lahore, ST=Punjab, C=PK`\n- **Production Signing Certificate SHA-256**: `51f6022215af3a36efc71a2e950978f3f547f1e467b706077059cbf99e6b708a`\n- **Tests**: 302/302 JS unit tests passing + Android JVM unit tests passing.\n",
+    "published_at": "2026-11-19T03:54:30Z",
+    "assets": [
+      {
+        "name": "8002CleanUp-Pro-v2.8.133-beta.183.apk",
+        "state": "uploaded",
+        "size": 63542857,
+        "digest": "sha256:3e4dd8bc9014400faa4aa9a9dfca5343bb5786ffe7c816cef36f0d9f1057cb7c",
+        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.133-beta.183/8002CleanUp-Pro-v2.8.133-beta.183.apk"
+      }
+    ]
+  },
+  {
     "tag_name": "v2.8.132-beta.182",
     "draft": false,
     "prerelease": true,
@@ -615,30 +632,6 @@
         "size": 63392653,
         "digest": "sha256:1ff9e8a37e1d48f692cbd7193a02492e372676f733d52895a453ec8ec1cda25f",
         "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.100-beta.150/8002CleanUp-Pro.apk"
-      }
-    ]
-  },
-  {
-    "tag_name": "v2.8.99-beta.148",
-    "draft": false,
-    "prerelease": true,
-    "name": "8002 CleanUp Pro v2.8.99 (Build 148) - Reliable Updates, Connected Shield & Manual Boost",
-    "body": "Reliable public updates and refreshed daily controls.\n\n- Fix GitHub API403 update checks: use public static metadata first, with an independent API alternate. Native downloads use the same metadata fallback and retain exact-tag, SHA-256, size/package and downgrade checks. No device/account token is embedded.\n- Restore the animated connected Shield indicator, driven by actual DNS protection state and respecting reduced-motion preferences.\n- Boost only starts after a user click. A completed nonempty scan posts the measured junk size/file count; tapping the notification opens Boost for review. No scheduled scans or automatic deletion. Notification settings are available from the bell.\n- Verified active paid licenses hide the Home upgrade card. Header Launcher/crown pills are replaced with a modern workspace identity and settings action. Options menu offers Set as default Home and Open launcher.\n- Preserve all100 catalog tools, display zoom, existing package and signing identity.\n\nExisting2.8.97/2.8.98 installations need one manual install-over to receive the403 repair. Do not uninstall the app. Include beta builds to receive this prerelease. Android confirms Home-role selection and package updates.\n\nValidation:213 Node tests,79 Android JVM tests,6 feed-publisher tests and15 API30 metadata/notification/archive instrumentation tests passed. Browser checks cover actual403 recovery, beta preference, trusted download links, active paid vs trial promotion, no auto-start/manual Boost actions, connected animation/reduced motion, both themes and all100 Home tile frames. The prior build147 to148 upgrade retained a sentinel file. Physical-device and live external WireGuard acceptance were not performed. GitHub Actions billing prevents hosted runs, so artifacts were built and verified locally and the public feed is explicitly refreshed after publishing.\n\nSource commit: 46b6e2b01b372a0a80316bf3a0bbc06a86df7245\nAPK SHA-256: 1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55\nAAB SHA-256: da47d30205676088e057e2ca6c513d0d0f7666dfa1a456b74e8651a7710315d8\nSigning certificate SHA-256: 92cbdb92ec298f841523d065fb0008d455fc823a1f72054602af47d15c740706\n",
-    "published_at": "2026-11-12T03:07:36Z",
-    "assets": [
-      {
-        "name": "8002CleanUp-Pro-v2.8.99-beta.148.apk",
-        "state": "uploaded",
-        "size": 63391827,
-        "digest": "sha256:1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.99-beta.148/8002CleanUp-Pro-v2.8.99-beta.148.apk"
-      },
-      {
-        "name": "8002CleanUp-Pro.apk",
-        "state": "uploaded",
-        "size": 63391827,
-        "digest": "sha256:1376af47b1f833c2c4a581c9bb86cd0a94e771ab19d4761d79c230512d4dee55",
-        "browser_download_url": "https://github.com/salmanbashir80/8002-Pro-Releases/releases/download/v2.8.99-beta.148/8002CleanUp-Pro.apk"
       }
     ]
   }
